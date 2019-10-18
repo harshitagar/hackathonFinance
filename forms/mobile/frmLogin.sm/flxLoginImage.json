@@ -35,7 +35,8 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
-        "flxLoginImageContainer"
+        "flxLoginImageContainer",
+        "Label0dd3133de3ed845"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -45,7 +46,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "ee29082429f9432691b624cfee7cd31d",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxLoginpage",
     "pf": "frmLogin",
