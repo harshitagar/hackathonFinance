@@ -1,7 +1,8 @@
 define({ 
 
- //Type your controller code here 
+  //Type your controller code here 
   onClickLogin : function(){
+    showDefaultLoading();
     var serviceName = "RhinoLoginService";
     integrationObj = KNYMobileFabric.getIntegrationService(serviceName);
     var operationName =  "RhinoSignin";
@@ -12,12 +13,18 @@ define({
     integrationObj.invokeOperation(operationName, headers, data, operationSuccess, operationFailure);
     function operationSuccess(res){
       if(res.success)
+      {  
         commonNavigateFunction("frmHome");
+        hideDefaultLoading();
+      }
       else
-      alert("Wrong Password!");
-      //code for success call back
+      {
+        hideDefaultLoading();
+        alert("Wrong Password!");
+      }
     }
     function operationFailure(res){
+      hideDefaultLoading();
       alert("Wrong Password!");
       //code for failure call back
     }
