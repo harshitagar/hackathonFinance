@@ -1,30 +1,30 @@
 {
-    "AS_FlexContainer_c5d4db2c4fd0491cb00e2fd3b4cc62b0": {
-        "id": "AS_FlexContainer_c5d4db2c4fd0491cb00e2fd3b4cc62b0",
+    "AS_FlexContainer_d5ac70c82c4d439b80fc430efd2b86b5": {
+        "id": "AS_FlexContainer_d5ac70c82c4d439b80fc430efd2b86b5",
         "type": "ACTION_SEQUENCE",
         "params": [{
             "datatype": "collection",
             "name": "eventobject"
         }],
         "contextObj": {
-            "name": "frmHome",
+            "name": "frmShare",
             "type": "forms",
             "platform": "",
-            "KUID": "j5481af9f81642a69d5790f389780cb2"
+            "KUID": "b049e9e3c621478f8e7a81ad3c5edcbb"
         },
         "language": "js",
         "actions": [{
-            "id": "NAVIGATE_TO_FORM___i016df5d74434e6c86b2ac573be0df2e",
+            "id": "NAVIGATE_TO_FORM___de9835d7a7fd437f930a01d7c5781929",
             "type": "NAVIGATE_TO_FORM",
-            "formId": "frmShare",
-            "formKUID": "b049e9e3c621478f8e7a81ad3c5edcbb",
+            "formId": "frmHome",
+            "formKUID": "j5481af9f81642a69d5790f389780cb2",
             "mappings": {},
             "mappingsOrder": [],
             "parentId": "",
             "callbackType": null,
             "enableMappingEditor": true,
             "package": "",
-            "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"\",\n        \"widgetId\": \"\"\n    }\n}",
+            "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"flxBack\"\n    }\n}",
             "isCustomInput": false
         }]
     }

@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "70dp"
+        "value": "65dp"
     },
     "_left_": {
         "type": "string",
@@ -30,12 +30,15 @@
     },
     "_width_": {
         "type": "string",
-        "value": "70dp"
+        "value": "65dp"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "Label0cbc1e02fafd04f",
+        "Label0d82341944e2f4f"
+    ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,

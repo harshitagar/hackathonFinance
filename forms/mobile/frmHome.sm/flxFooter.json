@@ -39,7 +39,13 @@
         "flxAnimate",
         "flxTab1",
         "flxTab3",
-        "flxTab2"
+        "flxTab2",
+        "lbl1",
+        "lbl2",
+        "lbl3",
+        "lbl11",
+        "lbl21",
+        "lbl31"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -37,7 +37,9 @@
     "canUpdateUI": true,
     "children": [
         "frmTop",
-        "flxBody"
+        "flxBody",
+        "flxAdd",
+        "flxBack"
     ],
     "clipbounds": true,
     "containerweight": 100,

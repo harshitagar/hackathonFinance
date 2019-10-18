@@ -3,7 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "90%"
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5%"
     },
     "_margin_": [
         0,
@@ -19,50 +23,40 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sd7549bce9824f8a947793a9ea7e7b0c",
+    "_skin_": "sb005f1d97cf4cbc9c9ecea7f3f616e5",
+    "_top_": {
+        "type": "string",
+        "value": "2%"
+    },
     "_width_": {
         "type": "string",
-        "value": "85%"
+        "value": "50dp"
     },
     "allboxes": [],
-    "allowhorizontalbounce": false,
-    "allowverticalbounce": true,
-    "bounces": true,
+    "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
-    "children": [],
+    "children": [
+        "Label0d3b7f38d98fe4b"
+    ],
     "clipbounds": true,
     "containerweight": 100,
-    "decelerat": false,
-    "dragg": false,
     "enablescrolling": true,
-    "horizontalscrollindicator": true,
-    "id": "CopyFlexScrollContainer0h7f433ec896e48",
+    "id": "flxBack",
+    "ide_onClick": "AS_FlexContainer_d5ac70c82c4d439b80fc430efd2b86b5",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f86527771ba542a5a50a04bcc03224fd",
+    "kuid": "cc6d03be0fa84f2e8c89ea2501473018",
     "layouttype": 2,
-    "name": "kony.ui.FlexScrollContainer",
-    "pagingenabled": false,
-    "parent": "flx3",
+    "name": "kony.ui.FlexContainer",
+    "parent": "frmMain",
     "pf": "frmShare",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "scrolldirection": 2,
     "snapgridsize": 10,
     "snaptogrid": true,
-    "track": false,
-    "verticalscrollindicator": false,
-    "wType": "FlexScrollContainer",
+    "wType": "FlexContainer",
     "widgetalignment": 1,
     "zindex": 1
 }

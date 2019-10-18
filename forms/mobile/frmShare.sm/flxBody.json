@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "70%"
+        "value": "80%"
     },
     "_left_": {
         "type": "string",
@@ -26,7 +26,7 @@
     "_skin_": "s710437c80484aeaa0fb6a23acd4e352",
     "_top_": {
         "type": "string",
-        "value": "30%"
+        "value": "20%"
     },
     "_width_": {
         "type": "string",
@@ -53,7 +53,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "h3d625e52df54baabae8d753b7243be4",
-    "layouttype": 2,
+    "layouttype": 3,
     "name": "kony.ui.FlexScrollContainer",
     "pagingenabled": true,
     "parent": "frmMain",
