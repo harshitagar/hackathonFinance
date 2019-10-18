@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "210dp"
+        "value": "180dp"
     },
     "_left_": {
         "type": "string",
@@ -36,10 +36,6 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
-    "centery": {
         "type": "string",
         "value": "50%"
     },
