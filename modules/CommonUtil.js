@@ -18,3 +18,7 @@ function animate( element, params, duration, callback, delay ){
       "animationEnd": callback
     });
 }
+function commonNavigateFunction(frmName){
+  var ntf = new kony.mvc.Navigation(frmName);
+  ntf.navigate();
+}
