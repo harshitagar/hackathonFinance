@@ -5,52 +5,52 @@
     "_data_": [
         [
             {
-                "lblDescription": {
+                "lblOfferDistance": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Distance"
+                    "text": "20mi"
                 },
-                "lblHeading": {
+                "lblOfferPlace": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Burger King"
+                    "text": "Burger King "
                 }
             },
             [
                 {
                     "lblDescription": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "10% off on burger "
+                        "text": "10% offer on Burger"
                     }
                 },
                 {
                     "lblDescription": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "0% off on ice cream"
+                        "text": "20% offer on ice cream"
                     }
                 }
             ]
         ],
         [
             {
-                "lblDescription": {
+                "lblOfferDistance": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Distance"
+                    "text": "10mi"
                 },
-                "lblHeading": {
+                "lblOfferPlace": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Make My Trip"
+                    "text": "Dominos"
                 }
             },
             [
                 {
                     "lblDescription": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "20 % off in flight ticekts"
+                        "text": "20% offer on ice cream"
                     }
                 },
                 {
                     "lblDescription": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "20 % off in train tickets"
+                        "text": "20% offer on cake"
                     }
                 }
             ]
@@ -137,15 +137,15 @@
     "rowtemplate": "flxOffersNearMeList",
     "screenlevelwidget": false,
     "seccounter": 1,
-    "sectionHeaderTemplateId": "5b5ada69c50746feba6a40270fa09838",
+    "sectionHeaderTemplateId": "caf10a94b67f4619a9fb8ccc28b8af3b",
     "sectionheaderskin": "s0af4d526f5f4b5c898fe2c44e792e9c",
-    "sectionheadertemplate": "flxOffersNearMe",
+    "sectionheadertemplate": "flxOffersNearMeHeader",
     "selectedRows": null,
     "selectedState": false,
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectionbehavior": "singleselect",
     "selectionbehaviorconfig": {},
     "separatorrequired": false,
@@ -156,11 +156,13 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
+        "flxOfferNearMeHeader": "flxOfferNearMeHeader",
         "flxOffersHeading": "flxOffersHeading",
-        "flxOffersNearMe": "flxOffersNearMe",
+        "flxOffersNearMeHeader": "flxOffersNearMeHeader",
         "flxOffersNearMeList": "flxOffersNearMeList",
         "lblDescription": "lblDescription",
-        "lblHeading": "lblHeading"
+        "lblOfferDistance": "lblOfferDistance",
+        "lblOfferPlace": "lblOfferPlace"
     },
     "zindex": 1
 }

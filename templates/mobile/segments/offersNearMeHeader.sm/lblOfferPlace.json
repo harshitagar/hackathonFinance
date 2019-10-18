@@ -7,8 +7,8 @@
         "value": "preferred"
     },
     "_left_": {
-        "type": "string",
-        "value": "4%"
+        "type": "number",
+        "value": "1"
     },
     "_margin_": [
         1,
@@ -22,15 +22,19 @@
         0,
         0
     ],
-    "_skin_": "s839edbfa0714c62a0314f8d7923e117",
-    "_text_": "Heading",
+    "_right_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_skin_": "s11f36ef7bf1402a8926d02bddc0a24e",
+    "_text_": "Offer Place",
     "_top_": {
         "type": "string",
-        "value": "8.00%"
+        "value": "0"
     },
     "_width_": {
         "type": "string",
-        "value": "45%"
+        "value": "60%"
     },
     "_wrapping_": 2,
     "android": {
@@ -43,7 +47,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblHeading",
+    "id": "lblOfferPlace",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,17 +59,15 @@
             "wrapping": 2
         }
     },
+    "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "7afce9153ad243c894f5c44faa8ec1c7",
-    "maxwidth": {
-        "type": "string",
-        "value": "50%"
-    },
+    "kuid": "dc97a33fc04f435a8e80d7ad088d42d1",
     "name": "kony.ui.Label",
-    "parent": "flxSampleRowTemplate",
-    "pf": "SampleRowTemplate",
+    "parent": "flxOfferNearMeHeader",
+    "pf": "offersNearMeHeader",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
     "textstyle": {},
     "tooltip": "",
-    "wType": "Label",
-    "zindex": 1
+    "wType": "Label"
 }

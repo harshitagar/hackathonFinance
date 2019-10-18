@@ -21,7 +21,7 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
-        "flxOffersNearMe"
+        "flxOffersNearMeHeader"
     ],
     "containerId": true,
     "containerweight": 100,
@@ -29,16 +29,15 @@
     "device": "iPhoneX",
     "displayorientation": 3,
     "enabledforidletimeout": false,
-    "id": "offersNearMeTemplate",
+    "id": "offersNearMeHeader",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
     "intransitionconfig": {
         "formTransition": "None"
     },
-    "isSampleTemplate": true,
     "isvisible": true,
-    "kuid": "5b5ada69c50746feba6a40270fa09838",
+    "kuid": "caf10a94b67f4619a9fb8ccc28b8af3b",
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "outtransitionconfig": {

@@ -23,7 +23,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxOffersHeading"
+        "flxOfferNearMeHeader"
     ],
     "clipbounds": true,
     "containerId": true,
@@ -31,19 +31,19 @@
     "controllerInfo": {
         "default": {
             "channel": "mobile",
-            "name": "flxOffersNearMeController"
+            "name": "flxOffersNearMeHeaderController"
         }
     },
     "enablescrolling": true,
-    "id": "flxOffersNearMe",
+    "id": "flxOffersNearMeHeader",
     "info": null,
     "isTemplate": true,
     "isvisible": true,
-    "kuid": "cdceab0b7a904beb85bceba1159c0d44",
-    "layouttype": 3,
+    "kuid": "g7b70b1b20dd47779ea2d3b28e30a04f",
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "offersNearMeTemplate",
-    "pf": "offersNearMeTemplate",
+    "parent": "offersNearMeHeader",
+    "pf": "offersNearMeHeader",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",

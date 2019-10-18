@@ -2,17 +2,9 @@
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_bottom_": {
-        "type": "string",
-        "value": "10%"
-    },
     "_height_": {
         "type": "ref",
         "value": "preferred"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "4%"
     },
     "_margin_": [
         1,
@@ -26,30 +18,32 @@
         0,
         0
     ],
-    "_skin_": "s75d38934ca74897bc99c5b4270ed150",
-    "_text_": "Sub-Heading",
+    "_right_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_skin_": "sc369672ac33407dadc21a194df569a3",
+    "_text_": "Distance",
     "_top_": {
         "type": "string",
-        "value": "42%"
+        "value": "0"
     },
     "_width_": {
-        "type": "string",
-        "value": "70%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
-        "maxNumberOfLines": 3,
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
-        },
-        "textTruncatePosition": 0
+        }
     },
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
-    "contentalignment": 1,
-    "id": "lblDescription",
+    "contentalignment": 4,
+    "id": "lblOfferDistance",
     "info": null,
     "ipad": {
         "psp": {
@@ -57,25 +51,19 @@
         }
     },
     "iphone": {
-        "maxNumberOfLines": 3,
         "psp": {
             "wrapping": 2
-        },
-        "textTruncatePosition": 0
+        }
     },
+    "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "343868bb57274a37be5d705c48c22f0d",
-    "maxnumberoflines": 3,
-    "maxwidth": {
-        "type": "string",
-        "value": "70%"
-    },
+    "kuid": "ie210995627449a099637e5bfa06942d",
     "name": "kony.ui.Label",
-    "parent": "flxSampleRowTemplate",
-    "pf": "SampleRowTemplate",
+    "parent": "flxOfferNearMeHeader",
+    "pf": "offersNearMeHeader",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
     "textstyle": {},
-    "texttruncateposition": 0,
     "tooltip": "",
-    "wType": "Label",
-    "zindex": 1
+    "wType": "Label"
 }
