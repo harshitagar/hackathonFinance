@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "40dp"
+        "value": "25dp"
     },
     "_left_": {
         "type": "string",
@@ -36,7 +36,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblOfferPlace",
+        "lblofferPlace",
         "lblOfferDistance"
     ],
     "clipbounds": true,
