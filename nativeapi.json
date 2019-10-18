@@ -7,7 +7,7 @@
                     "platform": "iOS",
                     "os": "11.0",
                     "isDefault": true,
-                    "filepath": "Sample\\nativebindings\\iOS\\11.0\\Kony_FileStorage-iOS-11.0.zip",
+                    "filepath": "SampleNew\\nativebindings\\iOS\\11.0\\Kony_FileStorage-iOS-11.0.zip",
                     "nfiversion": "2.0",
                     "enable": true
                 },
@@ -16,7 +16,7 @@
                     "platform": "iOS",
                     "os": "11.0",
                     "isDefault": true,
-                    "filepath": "Sample\\nativebindings\\iOS\\11.0\\Kony_SyncV2-iOS-11.0.zip",
+                    "filepath": "SampleNew\\nativebindings\\iOS\\11.0\\Kony_SyncV2-iOS-11.0.zip",
                     "nfiversion": "2.0",
                     "enable": true
                 },
@@ -25,7 +25,7 @@
                     "platform": "iOS",
                     "os": "11.0",
                     "isDefault": true,
-                    "filepath": "Sample\\nativebindings\\iOS\\11.0\\Kony_SDKCommons-iOS-11.0.zip",
+                    "filepath": "SampleNew\\nativebindings\\iOS\\11.0\\Kony_SDKCommons-iOS-11.0.zip",
                     "nfiversion": "2.0",
                     "enable": true
                 }
@@ -38,7 +38,7 @@
                     "platform": "Android",
                     "os": "4.0",
                     "isDefault": true,
-                    "filepath": "Sample\\nativebindings\\Android\\4.0\\Kony_FileStorage-Android-4.0.zip",
+                    "filepath": "SampleNew\\nativebindings\\Android\\4.0\\Kony_FileStorage-Android-4.0.zip",
                     "enable": true
                 },
                 "Kony_SDKCommons-Android-4.0": {
@@ -46,7 +46,7 @@
                     "platform": "Android",
                     "os": "4.0",
                     "isDefault": true,
-                    "filepath": "Sample\\nativebindings\\Android\\4.0\\Kony_SDKCommons-Android-4.0.zip",
+                    "filepath": "SampleNew\\nativebindings\\Android\\4.0\\Kony_SDKCommons-Android-4.0.zip",
                     "enable": true
                 },
                 "Kony_SyncV2-Android-4.0": {
@@ -54,7 +54,7 @@
                     "platform": "Android",
                     "os": "4.0",
                     "isDefault": true,
-                    "filepath": "Sample\\nativebindings\\Android\\4.0\\Kony_SyncV2-Android-4.0.zip",
+                    "filepath": "SampleNew\\nativebindings\\Android\\4.0\\Kony_SyncV2-Android-4.0.zip",
                     "enable": true
                 }
             }

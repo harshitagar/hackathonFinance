@@ -7,12 +7,10 @@ define({
   },
   PreShow:function(){
     this.view.flxTab1.onClick=()=>{animate(this.view.flxAnimate,{"left":"10%"});};
-    this.view.flxTab2.onClick=()=>{animate(this.view.flxAnimate,{"left":"40%"});};
+    this.view.flxTab2.onClick=()=>{animate(this.view.flxAnimate,{"left":"40%"},null,commonNavigateFunction("frmAccount"));};
     this.view.flxTab3.onClick=()=>{animate(this.view.flxAnimate,{"left":"70%"});};
-    
   },
   PostShow:function(){
     
   },
-
  });

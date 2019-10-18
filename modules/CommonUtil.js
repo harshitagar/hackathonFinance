@@ -22,3 +22,7 @@ function commonNavigateFunction(frmName){
   var ntf = new kony.mvc.Navigation(frmName);
   ntf.navigate();
 }
+
+function navigateToOffers(){
+  commonNavigateFunction("frmOffersNearMe");
+}

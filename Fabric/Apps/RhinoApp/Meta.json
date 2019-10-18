@@ -1,0 +1,18 @@
+{
+  "subType" : "customapp",
+  "description" : "RhinoApp",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "RhinoGoogleMapApi",
+    "version" : "1.0",
+    "etag" : "e62c9089-3083-44ea-af23-777dcf7a2714"
+  }, {
+    "name" : "RhinoGoogleVisionApi",
+    "version" : "1.0",
+    "etag" : "bd239653-8d6d-4701-b949-7b38ffc80204"
+  }, {
+    "name" : "RhinoLoginService",
+    "version" : "1.0",
+    "etag" : "428022a3-8f65-4430-ac52-a7ba7cfcf243"
+  } ]
+}
