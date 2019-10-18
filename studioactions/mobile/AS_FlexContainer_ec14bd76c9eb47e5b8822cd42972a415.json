@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_ec14bd76c9eb47e5b8822cd42972a415": {
+        "id": "AS_FlexContainer_ec14bd76c9eb47e5b8822cd42972a415",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "j5481af9f81642a69d5790f389780cb2"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___bac18bf891b645c08e423e063ac5da31",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "commonNavigateFunction",
+            "display": "commonNavigateFunction",
+            "inputparams": [{
+                "name": "frmName",
+                "value": "\"frmShare\""
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

@@ -5,11 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
-    },
-    "_left_": {
-        "type": "number",
-        "value": "0"
+        "value": "205dp"
     },
     "_margin_": [
         0,
@@ -25,13 +21,9 @@
     ],
     "_skin_": "saec212c115241f083765027c882a727",
     "_src_": "user.png",
-    "_top_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "205dp"
     },
     "canUpdateUI": true,
     "centerx": {
@@ -45,20 +37,21 @@
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-        "formID": "uwuea0cbaa67b14f399d9ba6fa3f8fe8b2",
+        "formID": "frmLogin",
         "platform": "iphone",
-        "templateType": "userwidgets",
+        "templateType": "forms",
         "topLevelBox": null
     },
-    "id": "memberImage",
+    "id": "loginImage",
     "imagescalemode": 1,
     "info": null,
+    "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ef25f96cd58a453893a61560b1a6b4e8",
+    "kuid": "c5b073e0afc9447bb909427b66c3254e",
     "name": "kony.ui.Image2",
-    "parent": "flxMemberName",
-    "pf": "userwidgetmodel",
+    "parent": "flxLoginImageContainer",
+    "pf": "frmLogin",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "srcType": 1,

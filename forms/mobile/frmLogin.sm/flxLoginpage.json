@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "25dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -36,22 +36,21 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblofferPlace",
-        "lblOfferDistance"
+        "flxLoginImage",
+        "flxLoginContainer"
     ],
     "clipbounds": true,
-    "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxOfferNearMeHeader",
+    "id": "flxLoginpage",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c6da587acb8e4e07b193fc268d60575d",
+    "kuid": "h9602a2a0044432c8edbff06d27b5aab",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxOffersNearMeHeader",
-    "pf": "offersNearMeHeader",
+    "parent": "frmLogin",
+    "pf": "frmLogin",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

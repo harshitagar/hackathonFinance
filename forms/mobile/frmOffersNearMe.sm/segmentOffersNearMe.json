@@ -9,9 +9,9 @@
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "20mi"
                 },
-                "lblOfferPlace": {
+                "lblofferPlace": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Burger King "
+                    "text": "Label"
                 }
             },
             [
@@ -19,6 +19,12 @@
                     "lblDescription": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                         "text": "10% offer on Burger"
+                    }
+                },
+                {
+                    "lblDescription": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20% offer on ice cream"
                     }
                 },
                 {
@@ -35,9 +41,9 @@
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "10mi"
                 },
-                "lblOfferPlace": {
+                "lblofferPlace": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Dominos"
+                    "text": "Label"
                 }
             },
             [
@@ -162,7 +168,7 @@
         "flxOffersNearMeList": "flxOffersNearMeList",
         "lblDescription": "lblDescription",
         "lblOfferDistance": "lblOfferDistance",
-        "lblOfferPlace": "lblOfferPlace"
+        "lblofferPlace": "lblofferPlace"
     },
     "zindex": 1
 }
