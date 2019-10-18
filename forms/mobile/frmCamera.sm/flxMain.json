@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "25dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -26,7 +26,7 @@
     "_skin_": "s202d22373344e4cba29e38715747f5d",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -36,27 +36,27 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblofferPlace",
-        "lblOfferDistance"
+        "camera",
+        "img"
     ],
     "clipbounds": true,
-    "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxOfferNearMeHeader",
+    "id": "flxMain",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c6da587acb8e4e07b193fc268d60575d",
+    "kuid": "db3c56cc862b4c7baf1b048c555efda7",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxOffersNearMeHeader",
-    "pf": "offersNearMeHeader",
+    "parent": "frmCamera",
+    "pf": "frmCamera",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1
+    "widgetalignment": 1,
+    "zindex": 1
 }
