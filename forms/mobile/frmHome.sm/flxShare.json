@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "80dp"
+        "value": "70dp"
     },
     "_left_": {
         "type": "string",
@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "80dp"
+        "value": "70dp"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -40,6 +40,7 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxShare",
+    "ide_onClick": "AS_FlexContainer_c5d4db2c4fd0491cb00e2fd3b4cc62b0",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

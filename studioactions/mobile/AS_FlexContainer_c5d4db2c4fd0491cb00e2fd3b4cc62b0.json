@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_c5d4db2c4fd0491cb00e2fd3b4cc62b0": {
+        "id": "AS_FlexContainer_c5d4db2c4fd0491cb00e2fd3b4cc62b0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "j5481af9f81642a69d5790f389780cb2"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___i016df5d74434e6c86b2ac573be0df2e",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmShare",
+            "formKUID": "b049e9e3c621478f8e7a81ad3c5edcbb",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": "",
+            "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"flxShare\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}
