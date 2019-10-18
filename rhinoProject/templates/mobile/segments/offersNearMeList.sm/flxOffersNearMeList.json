@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "25dp"
+        "value": "20dp"
     },
     "_margin_": [
         0,
@@ -31,19 +31,19 @@
     "controllerInfo": {
         "default": {
             "channel": "mobile",
-            "name": "flxOffersNearMeController"
+            "name": "flxOffersNearMeListController"
         }
     },
     "enablescrolling": true,
-    "id": "flxOffersNearMe",
+    "id": "flxOffersNearMeList",
     "info": null,
     "isTemplate": true,
     "isvisible": true,
-    "kuid": "cdceab0b7a904beb85bceba1159c0d44",
+    "kuid": "fae6f2483df346059eba2d044bb71b5d",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "offersNearMeTemplate",
-    "pf": "offersNearMeTemplate",
+    "parent": "offersNearMeList",
+    "pf": "offersNearMeList",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",

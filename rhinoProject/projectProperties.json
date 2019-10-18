@@ -418,9 +418,9 @@
     "mwhttpsportkey": "",
     "mwportkey": "",
     "nativeContainerProperties": {
-        "isEnableJSContainer": false,
-        "isEnableJSContainerAndroid": false,
-        "isEnableJSContaineriOS": false,
+        "isEnableJSContainer": true,
+        "isEnableJSContainerAndroid": true,
+        "isEnableJSContaineriOS": true,
         "isModified": true
     },
     "objects3D": "false",
@@ -714,7 +714,7 @@
     "spawindows480basefontsize": "12",
     "spawindowstabbasefontsize": "17",
     "splashlogokey": "",
-    "startupformkey": "f0068998f51e4deba114bbdbd90c8cc5",
+    "startupformkey": "",
     "statusBarHidden": "false",
     "statusBarStyle": "STATUS_BAR_STYLE_DEFAULT",
     "studiovizproject": "true",

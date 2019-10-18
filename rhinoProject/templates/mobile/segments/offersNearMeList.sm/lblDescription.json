@@ -22,28 +22,34 @@
         0,
         0
     ],
-    "_skin_": "s839edbfa0714c62a0314f8d7923e117",
-    "_text_": "Offer place",
+    "_right_": {
+        "type": "number",
+        "value": "2"
+    },
+    "_skin_": "s75d38934ca74897bc99c5b4270ed150",
+    "_text_": "Distance",
     "_top_": {
         "type": "string",
-        "value": "8.00%"
+        "value": "2%"
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "97%"
     },
     "_wrapping_": 2,
     "android": {
+        "maxNumberOfLines": 3,
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
-        }
+        },
+        "textTruncatePosition": 0
     },
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblHeading",
+    "id": "lblDescription",
     "info": null,
     "ipad": {
         "psp": {
@@ -51,20 +57,24 @@
         }
     },
     "iphone": {
+        "maxNumberOfLines": 3,
         "psp": {
             "wrapping": 2
-        }
+        },
+        "textTruncatePosition": 0
     },
     "isvisible": true,
-    "kuid": "7afce9153ad243c894f5c44faa8ec1c7",
+    "kuid": "fbaa28da637c4730a5b95bbe7e5223b6",
+    "maxnumberoflines": 3,
     "maxwidth": {
         "type": "string",
-        "value": "50%"
+        "value": "70%"
     },
     "name": "kony.ui.Label",
     "parent": "flxOffersHeading",
-    "pf": "offersNearMeTemplate",
+    "pf": "offersNearMeList",
     "textstyle": {},
+    "texttruncateposition": 0,
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "55%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -26,7 +26,7 @@
     "_skin_": "sd48af6bb3ec4fc3a91e1b275e7f8b62",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -36,20 +36,21 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "segmentOffersNearMe"
+        "flxMemberName",
+        "flxMemberInfo"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxOffersSegment",
+    "id": "flxProfileSection",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "icd53614df9a44f5b555f08599319a03",
-    "layouttype": 2,
+    "kuid": "b4f1beb30a6d425ab1d632b236c4d6e5",
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmOffersNear",
-    "pf": "frmOffersNearMe",
+    "parent": "profile",
+    "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

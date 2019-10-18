@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "4%"
+        "value": "1%"
     },
     "_margin_": [
         1,
@@ -22,11 +22,15 @@
         0,
         0
     ],
-    "_skin_": "s85293082d58458cb5d164490b05d315",
-    "_text_": "Heading",
+    "_skin_": "sd7bea58518845baa11722858c6c1ace",
+    "_text_": "Description",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
     "_width_": {
         "type": "string",
-        "value": "75%"
+        "value": "50%"
     },
     "_wrapping_": 2,
     "android": {
@@ -36,14 +40,10 @@
         }
     },
     "canUpdateUI": true,
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblHeading",
+    "id": "lblTransactionDescription",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,17 +55,15 @@
             "wrapping": 2
         }
     },
+    "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ea2966274bba4fcdb6d84c91a0126eec",
-    "maxwidth": {
-        "type": "string",
-        "value": "50%"
-    },
+    "kuid": "e5f56871df9844179668f117f3f0f24c",
     "name": "kony.ui.Label",
-    "parent": "flxSectionHeaderTemplate",
-    "pf": "SampleSectionHeaderTemplate",
+    "parent": "flxTransactionSection",
+    "pf": "tempTransactions",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
     "textstyle": {},
     "tooltip": "",
-    "wType": "Label",
-    "zindex": 1
+    "wType": "Label"
 }

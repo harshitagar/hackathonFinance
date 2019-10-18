@@ -1,13 +1,15 @@
 {
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
     "__parentReadjusting__": false,
+    "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "55%"
+        "value": "15%"
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -15,7 +17,7 @@
         0,
         0
     ],
-    "_orientation_": 6,
+    "_orientation_": 1,
     "_padding_": [
         0,
         0,
@@ -23,38 +25,38 @@
         0
     ],
     "_percent_": true,
+    "_render_": true,
     "_skin_": "sd48af6bb3ec4fc3a91e1b275e7f8b62",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
-    "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "segmentOffersNearMe"
-    ],
     "clipbounds": true,
-    "containerweight": 100,
+    "containerweight": 0,
+    "data": {},
     "enablescrolling": true,
-    "id": "flxOffersSegment",
+    "id": "profile",
     "info": null,
     "iscustomlayout": false,
+    "issegmentchild": false,
     "isvisible": true,
-    "kuid": "icd53614df9a44f5b555f08599319a03",
+    "kuid": "b78bf6366ea7491c97b7e9dd3b6f5778",
     "layouttype": 2,
-    "name": "kony.ui.FlexContainer",
-    "parent": "frmOffersNear",
-    "pf": "frmOffersNearMe",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxAccount",
+    "pf": "frmAccount",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
     "snapgridsize": 10,
     "snaptogrid": true,
-    "wType": "FlexContainer",
-    "widgetalignment": 1
+    "sourceUserWidget": "hfd17c8cd363433b80ebc4c18012f992",
+    "wType": "UserWidgetInstance"
 }

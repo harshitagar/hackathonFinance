@@ -22,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "s839edbfa0714c62a0314f8d7923e117",
-    "_text_": "Offer place",
+    "_skin_": "sd7bea58518845baa11722858c6c1ace",
+    "_text_": "Date",
     "_top_": {
         "type": "string",
-        "value": "8.00%"
+        "value": "0"
     },
     "_width_": {
         "type": "string",
@@ -43,7 +43,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblHeading",
+    "id": "lblAmountDate",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,17 +55,15 @@
             "wrapping": 2
         }
     },
+    "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "7afce9153ad243c894f5c44faa8ec1c7",
-    "maxwidth": {
-        "type": "string",
-        "value": "50%"
-    },
+    "kuid": "bdc1007d86f74dbba00b10eeed6860cd",
     "name": "kony.ui.Label",
-    "parent": "flxOffersHeading",
-    "pf": "offersNearMeTemplate",
+    "parent": "flxBalanceDate",
+    "pf": "tempTransactions",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
     "textstyle": {},
     "tooltip": "",
-    "wType": "Label",
-    "zindex": 1
+    "wType": "Label"
 }

@@ -1,13 +1,12 @@
 {
     "DNDConfig": null,
-    "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "55%"
+        "value": "50dp"
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -26,7 +25,7 @@
     "_skin_": "sd48af6bb3ec4fc3a91e1b275e7f8b62",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -36,20 +35,28 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "segmentOffersNearMe"
+        "flxTransactionSection",
+        "flxBalanceDate"
     ],
     "clipbounds": true,
+    "containerId": true,
     "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "mobile",
+            "name": "flxTransactionsController"
+        }
+    },
     "enablescrolling": true,
-    "id": "flxOffersSegment",
+    "id": "flxTransactions",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "icd53614df9a44f5b555f08599319a03",
-    "layouttype": 2,
+    "kuid": "c9e684d8be7c455083c0c0f966a69eac",
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmOffersNear",
-    "pf": "frmOffersNearMe",
+    "parent": "tempTransactions",
+    "pf": "tempTransactions",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

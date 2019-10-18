@@ -30,7 +30,8 @@
     },
     "canUpdateUI": true,
     "children": [
-        "frmOffersNear"
+        "frmOffersNear",
+        "flxCameraWidget"
     ],
     "containerweight": 100,
     "controllerInfo": {
@@ -46,6 +47,7 @@
     "device": "iPhoneXS",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "friendlyName": "frmOffersNearMe",
     "id": "frmOffersNearMe",
     "info": null,
     "initdone": false,

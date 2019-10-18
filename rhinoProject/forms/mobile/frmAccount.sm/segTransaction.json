@@ -1,0 +1,285 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "flxRunningBalance": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "To Account"
+            },
+            "lblAmountDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Date"
+            },
+            "lblTransactionDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Description"
+            },
+            "lblTransactionId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Transaction ID"
+            }
+        },
+        {
+            "flxRunningBalance": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "To Account"
+            },
+            "lblAmountDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Date"
+            },
+            "lblTransactionDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Description"
+            },
+            "lblTransactionId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Transaction ID"
+            }
+        },
+        {
+            "flxRunningBalance": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "To Account"
+            },
+            "lblAmountDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Date"
+            },
+            "lblTransactionDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Description"
+            },
+            "lblTransactionId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Transaction ID"
+            }
+        },
+        {
+            "flxRunningBalance": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "To Account"
+            },
+            "lblAmountDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Date"
+            },
+            "lblTransactionDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Description"
+            },
+            "lblTransactionId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Transaction ID"
+            }
+        },
+        {
+            "flxRunningBalance": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "To Account"
+            },
+            "lblAmountDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Date"
+            },
+            "lblTransactionDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Description"
+            },
+            "lblTransactionId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Transaction ID"
+            }
+        },
+        {
+            "flxRunningBalance": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "To Account"
+            },
+            "lblAmountDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Date"
+            },
+            "lblTransactionDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Description"
+            },
+            "lblTransactionId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Transaction ID"
+            }
+        },
+        {
+            "flxRunningBalance": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "To Account"
+            },
+            "lblAmountDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Date"
+            },
+            "lblTransactionDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Description"
+            },
+            "lblTransactionId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Transaction ID"
+            }
+        },
+        {
+            "flxRunningBalance": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "To Account"
+            },
+            "lblAmountDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Date"
+            },
+            "lblTransactionDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Description"
+            },
+            "lblTransactionId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Transaction ID"
+            }
+        },
+        {
+            "flxRunningBalance": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "To Account"
+            },
+            "lblAmountDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Date"
+            },
+            "lblTransactionDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Description"
+            },
+            "lblTransactionId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Transaction ID"
+            }
+        },
+        {
+            "flxRunningBalance": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "To Account"
+            },
+            "lblAmountDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Date"
+            },
+            "lblTransactionDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Description"
+            },
+            "lblTransactionId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Transaction ID"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "1%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segTransaction",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f1578aa223294957802e9988385d87ac",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxAccount",
+    "pf": "frmAccount",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "f80c686518c94002bf9a3f53169224c3",
+    "rowcounter": 9,
+    "rowfocusskin": "s71ee8bbd9784ff6b5eb99e6f29b00dc",
+    "rowskin": "sa52fa13c1b14461a5d1d4082dada4bd",
+    "rowtemplate": "flxTransactions",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s0af4d526f5f4b5c898fe2c44e792e9c",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxBalanceDate": "flxBalanceDate",
+        "flxRunningBalance": "flxRunningBalance",
+        "flxTransactionSection": "flxTransactionSection",
+        "flxTransactions": "flxTransactions",
+        "lblAmountDate": "lblAmountDate",
+        "lblTransactionDescription": "lblTransactionDescription",
+        "lblTransactionId": "lblTransactionId"
+    }
+}
