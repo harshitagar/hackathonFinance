@@ -16,8 +16,63 @@ define({
     this.view.lblUserName.text="Hello! "+gblUserName;
     this.view.flxTransHistory.showFadingEdges=false;
     this.view.flxTransHistoryCredit.showFadingEdges=false;
+    this.setAllData();
   },
-    getUserInfo:function(){
+  setAllData:function(){
+    //     showDefaultLoading();
+    var self = this;
+    var params = gblUserName;
+    var service = "getAllTransForUser";
+    callService(service, params, userTransSuccessCall, userTransErrorCall);
+    function userTransSuccessCall(res){
+      var debit = [];
+      var credit = [];
+      try{
+        var transData = res.Transactions;
+        if(transData){
+          //           alert(transData);
+
+          for(var i=0;i<transData.length;i++)
+          {/* 
+	  alert(transData.amount); */
+            transDataVal = transData[i];
+            if(transDataVal.payeeUserName == gblUserName)
+            {
+              var temp = {"transactionName":transDataVal.transactionName,"amount":(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
+              debit.push(temp);
+              for(var k=0;k<transDataVal.usersName.length;k++)
+              {
+                var temp = {"transactionName":transDataVal.transactionName,"amount":(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
+                credit.push(temp);
+              } 	
+            }
+            else
+            {
+              var temp = {"transactionName":transDataVal.transactionName,"amount":(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
+              debit.push(temp);
+            }
+          }
+        }
+        self.view.segTransaction.widgetDataMap={
+          "lblName":"transactionName",
+          "lblAmount":"amount"
+        };
+        self.view.segTransCredit.widgetDataMap={
+          "lblName":"transactionName",
+          "lblAmount":"amount"
+        };
+      }catch(e){
+        hideDefaultLoading();
+      }
+      self.view.segTransaction.setData(debit);
+      self.view.segTransCredit.setData(credit);
+      hideDefaultLoading();
+    }
+    function userTransErrorCall(res){
+      hideDefaultLoading();
+    }
+  },
+  getUserInfo:function(){
     /*
     "User": {
     "phoneNumber": 12,
@@ -31,11 +86,11 @@ define({
       alert(res.User.accountBalance+"   "+res.User.phoneNumber);
     }
     function userErrorCall(res){
-      
+
     }
   },
   navigateToVision:function(){
-	commonNavigateFunction("frmCamera");
+    commonNavigateFunction("frmCamera");
   },
   tabOneSelected:function(){
     animate(this.view.flxAnimate,{"left":"10%"},0.25,()=>{
