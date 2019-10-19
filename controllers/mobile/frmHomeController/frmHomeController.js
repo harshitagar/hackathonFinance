@@ -6,7 +6,7 @@ define({
     this.view.postShow=this.PostShow;
   },
   PreShow:function(){
-    this.view.flxOffers.onClick=this.navigateToVision;
+    this.view.flxOffers.onClick=this.navigateToOffers;
     this.view.flxTab1.onClick=this.tabOneSelected.bind(this);
     this.view.lbl11.onClick=this.tabOneSelected.bind(this);
     this.view.flxTab2.onClick=this.tabTwoSelected.bind(this);
@@ -89,8 +89,8 @@ define({
 
     }
   },
-  navigateToVision:function(){
-    commonNavigateFunction("frmCamera");
+  navigateToOffers:function(){
+    commonNavigateFunction("frmOffersNearMe");
   },
   tabOneSelected:function(){
     animate(this.view.flxAnimate,{"left":"10%"},0.25,()=>{
