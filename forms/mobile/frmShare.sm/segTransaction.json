@@ -6,131 +6,111 @@
         {
             "lblCheck": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": ""
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Amrit"
+                "text": "Paytm"
             }
         },
         {
             "lblCheck": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": ""
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Harshit"
+                "text": "Paytm"
             }
         },
         {
             "lblCheck": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": ""
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Gagan"
+                "text": "Paytm"
             }
         },
         {
             "lblCheck": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": ""
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Shubham"
+                "text": "Paytm"
             }
         },
         {
             "lblCheck": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": ""
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Kartik"
+                "text": "Paytm"
             }
         },
         {
             "lblCheck": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": ""
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Abhi"
+                "text": "Paytm"
             }
         },
         {
             "lblCheck": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": ""
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Shubu"
+                "text": "Paytm"
             }
         },
         {
             "lblCheck": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": ""
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Tami"
+                "text": "Paytm"
             }
         },
         {
             "lblCheck": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": ""
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Bhanu"
+                "text": "Paytm"
             }
         },
         {
             "lblCheck": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": ""
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Amrit"
+                "text": "Paytm"
             }
         },
         {
             "lblCheck": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": ""
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Amrit"
-            }
-        },
-        {
-            "lblCheck": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
-            },
-            "lblName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Bhanu"
-            }
-        },
-        {
-            "lblCheck": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
-            },
-            "lblName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Bhanu"
+                "text": "Paytm"
             }
         }
     ],
@@ -164,11 +144,6 @@
         "type": "string",
         "value": "100%"
     },
-    "android": {
-        "psp": {
-            "pressedSkin": "sa52fa13c1b14461a5d1d4082dada4bd"
-        }
-    },
     "autogrowmode": 1,
     "canUpdateUI": true,
     "centerx": {
@@ -176,13 +151,12 @@
         "value": "50%"
     },
     "containerweight": 100,
-    "counter": "012",
-    "disabledSkins": {},
+    "counter": "010",
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,
     "hasSections": false,
-    "id": "segContacts",
+    "id": "segTransaction",
     "info": null,
     "ipad": {
         "psp": {
@@ -196,7 +170,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "af81c0c36d90480881d1925b87ccfb36",
+    "kuid": "e663ec8608664efcb70f1ced6d8314f8",
     "masterdata": {},
     "name": "kony.ui.SegmentedUI2",
     "needpageindicator": true,
@@ -205,16 +179,16 @@
     "paginationconfig": {
         "position": "bottom"
     },
-    "parent": "flxSeg",
+    "parent": "flxTransHistory",
     "pf": "frmShare",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainselection": false,
-    "rowTemplateId": "g44fcb9b77e24f8abbc530e587b6b408",
-    "rowcounter": 12,
+    "rowTemplateId": "c09ea069a5c0461994f1d3e7740ed7ad",
+    "rowcounter": 10,
     "rowfocusskin": "sa52fa13c1b14461a5d1d4082dada4bd",
     "rowskin": "sa52fa13c1b14461a5d1d4082dada4bd",
-    "rowtemplate": "flxAddMembers",
+    "rowtemplate": "flxTransaction",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "s0af4d526f5f4b5c898fe2c44e792e9c",
@@ -233,7 +207,7 @@
     "widgetalignment": 5,
     "widgetdatamap": {
         "CopyFlexContainer0e42b2667ee6a49": "CopyFlexContainer0e42b2667ee6a49",
-        "flxAddMembers": "flxAddMembers",
+        "flxTransaction": "flxTransaction",
         "lblCheck": "lblCheck",
         "lblName": "lblName"
     },

@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "3%"
+    },
+    "_skin_": "s700c6fbce8549daa9dca4c1dfeec171",
+    "_text_": "Done",
+    "_top_": {
+        "type": "string",
+        "value": "7%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "android": {
+        "psp": {
+            "pressedSkin": "s274f3e20fc6426d8bf12dc53ffb87c0"
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s700c6fbce8549daa9dca4c1dfeec171",
+    "id": "btnCreateGroup",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "id3e29dd583b474ea04f0ce1ffcd4d35",
+    "name": "kony.ui.Button",
+    "parent": "frmGrpTop",
+    "pf": "frmShare",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 2
+}

@@ -26,6 +26,12 @@
             "callbackType": null,
             "disabled": null,
             "source": "module"
+        }, {
+            "id": "ADD_SNIPPET__fda8b4def131428dadbdd4eb59fb1a5e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showDefaultLoading();",
+            "parentId": null,
+            "callbackType": null
         }]
     }
 }

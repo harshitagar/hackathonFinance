@@ -48,7 +48,9 @@
             "name": "flxAddMembersController"
         }
     },
+    "disabledSkins": {},
     "enablescrolling": true,
+    "focusskin": "s76212ccd9d74677b9149088e9e28b89",
     "id": "flxAddMembers",
     "info": null,
     "isTemplate": true,

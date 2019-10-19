@@ -1,9 +1,8 @@
 {
     "DNDConfig": null,
-    "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "35%"
+        "value": "40dp"
     },
     "_left_": {
         "type": "string",
@@ -23,7 +22,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s202d22373344e4cba29e38715747f5d",
+    "_skin_": "s76212ccd9d74677b9149088e9e28b89",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -36,29 +35,35 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "CopyflxImg0caa16dea7fd54e",
-        "txtGrpName",
-        "CopyFlexContainer0e42b2667ee6a49",
-        "btnCreateGroup"
+        "lblName",
+        "lblCheck",
+        "CopyFlexContainer0e42b2667ee6a49"
     ],
     "clipbounds": true,
+    "containerId": true,
     "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "mobile",
+            "name": "flxTransactionController"
+        }
+    },
     "enablescrolling": true,
-    "id": "frmGrpTop",
+    "id": "flxTransaction",
     "info": null,
+    "isTemplate": true,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "a8644155fabe48ecaa1c5f144d7012af",
+    "kuid": "a301314bd5db48cebaf656ff0bcfc042",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxAddNewGrp",
-    "pf": "frmShare",
+    "parent": "tmpTransaction",
+    "pf": "tmpTransaction",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }
