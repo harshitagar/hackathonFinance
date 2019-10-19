@@ -35,7 +35,10 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "CopyLabel0d32c2007b01c4c",
+        "CopyLabel0de943ea9a1c24b"
+    ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,

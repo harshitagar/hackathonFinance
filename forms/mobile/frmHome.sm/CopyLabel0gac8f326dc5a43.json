@@ -18,15 +18,11 @@
         0,
         0
     ],
-    "_skin_": "sd016264f6a945a28e9fc49cca57a0bb",
-    "_text_": "Offers",
-    "_top_": {
-        "type": "string",
-        "value": "63%"
-    },
+    "_skin_": "se389f4e53c24331b15745d62bbdc6da",
+    "_text_": "Pay to contacts",
     "_width_": {
         "type": "string",
-        "value": "60%"
+        "value": "80%"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,9 +36,13 @@
         "type": "string",
         "value": "50%"
     },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "CopyLabel0fb0dee740a8144",
+    "id": "CopyLabel0gac8f326dc5a43",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,9 +56,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b3e29a2cabbe45359a2545c44cc2c102",
+    "kuid": "eb4af53cbfff4ac3a639c3e4a2a1e6e7",
     "name": "kony.ui.Label",
-    "parent": "flxOffers",
+    "parent": "flx",
     "pf": "frmHome",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

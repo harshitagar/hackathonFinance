@@ -3,8 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "15%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
     },
     "_margin_": [
         1,
@@ -18,15 +22,15 @@
         0,
         0
     ],
-    "_skin_": "sd016264f6a945a28e9fc49cca57a0bb",
-    "_text_": "Offers",
+    "_skin_": "s11347e96e454329ac86876a72798367",
+    "_text_": "Balance: $10,00,000",
     "_top_": {
         "type": "string",
-        "value": "63%"
+        "value": "82%"
     },
     "_width_": {
-        "type": "string",
-        "value": "60%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -42,7 +46,7 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "CopyLabel0fb0dee740a8144",
+    "id": "lblBalance",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,14 +60,14 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b3e29a2cabbe45359a2545c44cc2c102",
+    "kuid": "gec98777aed84eeb89f24ec398764d8f",
     "name": "kony.ui.Label",
-    "parent": "flxOffers",
+    "parent": "frmTop",
     "pf": "frmHome",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},
     "tooltip": "",
     "wType": "Label",
-    "zindex": 1
+    "zindex": 2
 }

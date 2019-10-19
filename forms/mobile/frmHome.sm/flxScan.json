@@ -35,11 +35,14 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "CopyLabel0d1b5e6ba66a64c",
+        "CopyLabel0b17236889e4049"
+    ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyFlexContainer0d4494f10dcf046",
+    "id": "flxScan",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

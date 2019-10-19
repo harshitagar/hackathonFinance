@@ -37,7 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "CopyflxImg0ic7372c58d1a4a",
-        "lblUserName"
+        "lblUserName",
+        "lblBalance"
     ],
     "clipbounds": true,
     "containerweight": 100,

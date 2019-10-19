@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30%"
+        "value": "12.50%"
     },
     "_margin_": [
         0,
@@ -19,31 +19,33 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "saf40b2324584c8f9de2d25ee1c5c0e8",
-    "_top_": {
+    "_right_": {
         "type": "string",
         "value": "5%"
     },
+    "_skin_": "saf40b2324584c8f9de2d25ee1c5c0e8",
+    "_top_": {
+        "type": "string",
+        "value": "40%"
+    },
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "42.50%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
-    "children": [],
+    "children": [
+        "CopyLabel0gac8f326dc5a43"
+    ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "FlexContainer0b80dbd286f3f49",
+    "id": "flx",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ec6409b0e7ee43e7878e5180e619b8a6",
+    "kuid": "fce2e44157ae44d4a6ed4a263104569e",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxPay",

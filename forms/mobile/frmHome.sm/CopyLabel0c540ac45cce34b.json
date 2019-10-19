@@ -18,15 +18,11 @@
         0,
         0
     ],
-    "_skin_": "sd016264f6a945a28e9fc49cca57a0bb",
-    "_text_": "Offers",
-    "_top_": {
-        "type": "string",
-        "value": "63%"
-    },
+    "_skin_": "se389f4e53c24331b15745d62bbdc6da",
+    "_text_": "Pay",
     "_width_": {
         "type": "string",
-        "value": "60%"
+        "value": "80%"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,9 +36,13 @@
         "type": "string",
         "value": "50%"
     },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "CopyLabel0fb0dee740a8144",
+    "id": "CopyLabel0c540ac45cce34b",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,9 +56,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b3e29a2cabbe45359a2545c44cc2c102",
+    "kuid": "a37f7b13d6bd4f3ea5ebbb2aec947108",
     "name": "kony.ui.Label",
-    "parent": "flxOffers",
+    "parent": "CopyFlexContainer0d0f180fc7fc142",
     "pf": "frmHome",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
