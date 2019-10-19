@@ -8,6 +8,7 @@ define({
     integrationObj = KNYMobileFabric.getIntegrationService(serviceName);
     var operationName =  "RhinoSignin";
     var username = this.view.tbxuserName.text;
+    gblUserName = username;
     var password = this.view.tbxPassword.text;
     var data= {"username": username,"password": password};
     var headers= {};
