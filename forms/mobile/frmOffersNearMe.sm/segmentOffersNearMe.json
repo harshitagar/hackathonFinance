@@ -3,26 +3,74 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_data_": [
-        {
-            "lblOfferDistance": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "20% on Whooper"
+        [
+            {
+                "lblOfferDistance": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Distance"
+                },
+                "lblofferPlace": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label"
+                }
             },
-            "lblofferPlace": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Burger king"
-            }
-        },
-        {
-            "lblOfferDistance": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "10% off on Pizza"
+            [
+                {
+                    "lblOfferDistance": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20% on Whooper"
+                    },
+                    "lblofferPlace": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Burger king"
+                    }
+                },
+                {
+                    "lblOfferDistance": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "10% off on Pizza"
+                    },
+                    "lblofferPlace": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Dominos"
+                    }
+                }
+            ]
+        ],
+        [
+            {
+                "lblOfferDistance": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Distance"
+                },
+                "lblofferPlace": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label"
+                }
             },
-            "lblofferPlace": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Dominos"
-            }
-        }
+            [
+                {
+                    "lblOfferDistance": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20% on Whooper"
+                    },
+                    "lblofferPlace": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Burger king"
+                    }
+                },
+                {
+                    "lblOfferDistance": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "10% off on Pizza"
+                    },
+                    "lblofferPlace": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Dominos"
+                    }
+                }
+            ]
+        ]
     ],
     "_height_": {
         "type": "string",
@@ -31,7 +79,7 @@
     "_indicator_": "none",
     "_left_": {
         "type": "string",
-        "value": "1%"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -48,11 +96,11 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "2dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "98%"
+        "value": "100%"
     },
     "android": {
         "psp": {
@@ -62,12 +110,12 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "containerweight": 100,
-    "counter": "01",
+    "counter": "11",
     "editstyle": "none",
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": true,
-    "hasSections": false,
+    "hasSections": true,
     "id": "segmentOffersNearMe",
     "info": null,
     "ipad": {
@@ -104,15 +152,16 @@
     "rowskin": "s8ab58280acf4fb7acaec72e42ca9790",
     "rowtemplate": "flxOffersNearMeHeader",
     "screenlevelwidget": false,
-    "seccounter": 0,
-    "sectionHeaderTemplateId": null,
+    "seccounter": 1,
+    "sectionHeaderTemplateId": "caf10a94b67f4619a9fb8ccc28b8af3b",
     "sectionheaderskin": "s0af4d526f5f4b5c898fe2c44e792e9c",
+    "sectionheadertemplate": "flxOffersNearMeHeader",
     "selectedRows": null,
     "selectedState": false,
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectionbehavior": "default",
     "separatorrequired": false,
     "showprogressindicator": false,

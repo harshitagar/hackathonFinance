@@ -3,12 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "17%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "135dp"
     },
     "_margin_": [
         1,
@@ -22,15 +22,15 @@
         0,
         0
     ],
-    "_skin_": "s7b575e488484bea8c7ebcc51083b9af",
-    "_text_": "User Name",
+    "_skin_": "sf9201d7b12545779356e90769347618",
+    "_text_": "Check Offers",
     "_top_": {
         "type": "string",
-        "value": "65%"
+        "value": "3%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "60%"
     },
     "_wrapping_": 2,
     "android": {
@@ -46,7 +46,7 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "lblUserName",
+    "id": "Label0f2263daf80dd48",
     "info": null,
     "ipad": {
         "psp": {
@@ -60,14 +60,14 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ca8dc5b81eea4255b72001ea19b5d9bd",
+    "kuid": "c26bbdd67f5b42a8944d95b790c8b2d5",
     "name": "kony.ui.Label",
-    "parent": "frmTop",
-    "pf": "frmHome",
+    "parent": "frmOffersNearMe",
+    "pf": "frmOffersNearMe",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},
     "tooltip": "",
     "wType": "Label",
-    "zindex": 2
+    "zindex": 115
 }
