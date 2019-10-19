@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30dp"
+        "value": "50%"
     },
     "_left_": {
         "type": "string",
-        "value": "2%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -23,40 +23,43 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s202d22373344e4cba29e38715747f5d",
+    "_skin_": "sa3166ac988a45a6acf620c253b07bc2",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "96%"
+        "value": "92%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
-        "lblofferPlace"
+        "mapNearMe"
     ],
     "clipbounds": true,
-    "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxOfferNearMeHeader",
+    "id": "FlexContainer0i5bd959653b74c",
     "info": null,
     "iscustomlayout": false,
-    "ismodalcontainer": false,
     "isvisible": true,
-    "kuid": "c6da587acb8e4e07b193fc268d60575d",
-    "layouttype": 3,
+    "kuid": "c64ef7bf1ae1484897346324d4d17f68",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxOffersNearMeHeader",
-    "pf": "offersNearMeHeader",
+    "parent": "frmOffersNear",
+    "pf": "frmOffersNearMe",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1
+    "widgetalignment": 1,
+    "zindex": 1
 }

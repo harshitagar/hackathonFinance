@@ -30,6 +30,10 @@ define(function() {
                     _bgColor:"000000",
                     _enableChartAnimation:true   
   	  };
+      this.view.doughnutBrowser.requestURLConfig={
+        "URL": "Chart_donut/donut.html",
+        "requestMethod": constants.BROWSER_REQUEST_METHOD_GET
+      }; 
       this._data = [];
       this._chartTitle = "";
       this._enableStaticPreview = true;

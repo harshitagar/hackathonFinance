@@ -27,7 +27,7 @@
     "_indicator_": "none",
     "_left_": {
         "type": "string",
-        "value": "1%"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -44,11 +44,11 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "2dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "98%"
+        "value": "100%"
     },
     "android": {
         "psp": {
@@ -102,14 +102,14 @@
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionHeaderTemplateId": "caf10a94b67f4619a9fb8ccc28b8af3b",
-    "sectionheaderskin": "s0af4d526f5f4b5c898fe2c44e792e9c",
+    "sectionheaderskin": "s7ffec6a45d64e3ba8a37ba6e3f91e6f",
     "sectionheadertemplate": "flxOffersNearMeHeader",
     "selectedRows": null,
     "selectedState": false,
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": null,
+    "selectedsectionindex": 0,
     "selectionbehavior": "default",
     "separatorrequired": false,
     "showprogressindicator": false,
@@ -119,7 +119,6 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
-        "flxOfferNearMeHeader": "flxOfferNearMeHeader",
         "flxOffersNearMeHeader": "flxOffersNearMeHeader",
         "flxOffersRow": "flxOffersRow",
         "lblOffer": "lblOffer",

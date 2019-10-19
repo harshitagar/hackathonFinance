@@ -119,7 +119,6 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
-        "flxOfferNearMeHeader": "flxOfferNearMeHeader",
         "flxOffersNearMeHeader": "flxOffersNearMeHeader",
         "flxOffersRow": "flxOffersRow",
         "lblOffer": "lblOffer",

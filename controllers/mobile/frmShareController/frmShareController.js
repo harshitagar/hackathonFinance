@@ -14,7 +14,7 @@ define({
   },
   PostShow:function(){
     this.getContactsInfo();
-    this.getGroupInfo();
+    
     this.view.lblUserName.text = gblUserName;
     this.view.flxBackAddGrp.onClick=()=>{
       animate(this.view.flxAddNewGrp,{"centerX":"150%","centerY":"150%"});};
@@ -22,7 +22,6 @@ define({
     this.view.segContacts.onRowClick=this.segSelect.bind(this);
     
     this.view.btnCreateGroup.onClick=this.servCreateGroup.bind(this);
-    hideDefaultLoading();
   },
   getContactsInfo:function(){
     showDefaultLoading();
@@ -54,6 +53,7 @@ define({
     this.view.segContacts.setDataAt( data[parseInt(slectedRow)], parseInt(slectedRow), 0);
   },
   showContactsSuccess:function(response){
+    
     this.view.segContacts.removeAll();
     //animate(this.view.flxAddNewGrp,{"centerX":"50%","centerY":"50%"});
     // alert(response.Users);
@@ -68,10 +68,9 @@ define({
     }
     //alert(contactsData);
     this.view.segContacts.setData(contactsData);
-    hideDefaultLoading();
     this.view.flxAdd.onClick=()=>{animate(this.view.flxAddNewGrp,{"centerX":"50%","centerY":"50%"});};
     //  this.view.segContacts.removeAll();
-
+this.getGroupInfo();
   },
   showContactsFail:function(error){
     hideDefaultLoading();
@@ -116,7 +115,8 @@ define({
         grpTotal += transaction.amount;
         data.push({
           "lblCheck": "",
-          "lblName" : transaction.transactionName
+          "lblName" : transaction.transactionName,
+          "lblAmount" : transaction.amount+""
         });
       }
     }
@@ -333,7 +333,7 @@ define({
       "zIndex": 1
     }, {}, {});
     flxTransHistory.setDefaultUnit(kony.flex.DP);
-    kony.mvc.registry.add('tmpTransaction', 'tmpTransaction', 'tmpTransactionController');
+    kony.mvc.registry.add('tempDebitCardTrans', 'tempDebitCardTrans', 'tempDebitCardTransController');
     var segTransaction = new kony.ui.SegmentedUI2({
       "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
       "centerX": "50%",
@@ -348,7 +348,7 @@ define({
       "retainSelection": false,
       "rowFocusSkin": "seg2Normal",
       "rowSkin": "seg2Normal",
-      "rowTemplate": "flxTransaction",
+      "rowTemplate": "tempDebitTrans",
       "scrollingEvents": {},
       "sectionHeaderSkin": "sliPhoneSegmentHeader",
       "selectionBehavior": constants.SEGUI_DEFAULT_BEHAVIOR,
@@ -357,7 +357,8 @@ define({
       "top": "0%",
       "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
       "widgetDataMap": {
-        "lblName": "lblName"
+        "lblName": "lblName",
+        "lblAmount": "lblAmount"
       },
       "width": "100%",
       "zIndex": 1

@@ -50,7 +50,7 @@
     "mapsource": "non-native",
     "mapsrc": "non-native",
     "name": "kony.ui.Map",
-    "parent": "frmOffersNear",
+    "parent": "FlexContainer0i5bd959653b74c",
     "pf": "frmOffersNearMe",
     "provider": "google",
     "retaincontentalignment": false,
