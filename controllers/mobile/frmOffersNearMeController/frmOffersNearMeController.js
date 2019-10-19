@@ -25,60 +25,18 @@ define({
      * @description preShow of the form
      */
   onPreShow: function(){
-    
+	
     kony.print(this._formName + " : onPreShow start...");
-    var latitude = "";
-    var longitude = "";
     var self = this;
-    this.view.mapNearMe.locationData = [{
-        lat: "17.419805",
-        lon: "78.379124",
-        name: "Parshat Hills",
-        desc: "Hyderabad,Telangana",
-        image: "pin1.png",
-        showCallout: true,
-        calloutData: {
-            lbl1: "KonyLabs"
-        }
-    }, {
-        lat: "17.420962",
-        lon: "78.381141",
-        name: "dtdc",
-        desc: "Telangana",
-        image: "pin1.png",
-        showCallout: true,
-        calloutData: {
-            lbl1: "KonyLabs"
-        }
-    }];
-    
-    
-    kony.location.getCurrentPosition(function(response){
-      
-       latitude = response.coords.latitude;
-       longitude = response.coords.longitude;   
-    	var pin1 = {
-        id: "id1", // id is mandatory for every pin
-        lat: latitude,
-        lon: longitude,
-        name: "Current Location",
-        image: "icon1.png",
-        //focus image will be shown while map pin selected
-        desc: "current location",
-        showCallout: true,
-        meta: {
-            color: "red",
-            label: "A"
-        }
-		};
-		self.view.mapNearMe.addPin(pin1);     
-   },{}, {});
-    
+   
+	this.view.mapNearMe.height = "100%";
     this.view.mapNearMe.showZoomControl = true;
     this.view.mapNearMe.screenLevelWidget = true;
     this.view.mapNearMe.enableCache = true;
-    this.view.mapNearMe.zoomLevel = 16;
-   //this.setOffersData();
+    this.view.mapNearMe.zoomLevel = 15;
+    this.setLocationData();
+    //this.setOffersData();
+    this.setCurrentLocation();
   },
   /**
      * @function onPostShow
@@ -86,6 +44,28 @@ define({
      */
   onPostShow: function(){
     kony.print(this._formName + " : onPostShow start...");
+  },
+
+  setCurrentLocation : function(){
+    var self = this;
+    kony.location.getCurrentPosition(function(response){
+      var pin1 = {
+        id: "id1", // id is mandatory for every pin
+        lat: response.coords.latitude,
+        lon: response.coords.longitude,
+        name: "Current Location",
+        image: "icon1.png",
+        //focus image will be shown while map pin selected
+        desc: "current location",
+        showCallout: true,
+        navigateAndZoom: true,
+        meta: {
+          color: "red",
+          label: "A"
+        }
+      };
+      self.view.mapNearMe.addPin(pin1);     
+    },{}, {});
   },
   /**
      * @function bindActions
@@ -116,31 +96,115 @@ define({
       CommonUtil.logException(+ " : onCloseView", exception);
     }
   },
-  
+
   setOffersData : function(){
-   
+
     showDefaultLoading();
-    var serviceName = "";
-    integrationObj = KNYMobileFabric.getIntegrationService(serviceName);
-    var operationName =  "";
-    var data= {};
-    var headers= {};
-    integrationObj.invokeOperation(operationName, headers, data, operationSuccess, operationFailure);
+    var data= {"placeName" : "MC"};
+    callService("offerByName", data, operationSuccess, operationFailure);
     function operationSuccess(res){
       if(res.success)
       { 
-        // modify the returned data
+        var input = res.offers;
+        var data = [];
+        input.forEach(function(offer){
+          var header = {
+            "lblofferPlace" : offer.placeName,
+            "template": "flxOffersNearMeHeader"
+          };
+          data.push(header);
+          var offers = offer.offers;
+          offers.forEach(function(item){
+            var row = {
+              "lblOffer" : item,
+              "template" :"flxOffersRow"
+            };
+            data.push(row);
+          });
+        });
         this.view.segmentOffersNearMe.setData(data);
+        hideDefaultLoading();
+      }else
+      {
+        alert("No Offers Available");
+        hideDefaultLoading();
+      }
+    }
+    function operationFailure(res){
+      alert("No Offers Available");
+      hideDefaultLoading();
+      //code for failure call back
+    }
+  },
+
+  setLocationData : function(){
+
+    var data= {
+      "longitude" : "",
+      "latitude" : ""
+    }; 
+    var self = this;
+    showDefaultLoading();
+    kony.location.getCurrentPosition(function(response){ 
+      data.latitude = response.coords.latitude;
+      data.longitude = response.coords.longitude;  
+    });
+    data.latitude = "17";
+    data.longitude = "78";
+    callService("offerByLocation", data, operationSuccess, operationFailure);
+    function operationSuccess(res){
+      if(res.success)
+      { 
+        var input = res.offers;
+        // modify the returned data
+        var data = [];
+        var segData = [];
+        var j = 0;
+        input.forEach(function(offers){
+          var pin1 = {
+            id: "id"+ (j++), // id is mandatory for every pin
+            lat: offers.latitude,
+            lon: offers.longitude,
+            name: offers.placeName,
+            image: ".png",
+            //focus image will be shown while map pin selected
+            desc: "You are at "+ offers.placeName,
+            showCallout: true,
+            meta: {
+              color: "red",
+              label: "A"
+            }
+          };
+          data.push(pin1);
+          var header = {
+            "lblofferPlace" : offers.placeName,
+            "template": "flxOffersNearMeHeader"
+          };
+          segData.push(header);
+          var offerValue = offers.offers;
+          offerValue.forEach(function(item){
+              var row = {
+                "lblOffer" : item,
+                "template" :"flxOffersRow"
+              };
+              segData.push(row);
+          });
+        });
+        self.view.segmentOffersNearMe.setData(segData);   
+        self.view.mapNearMe.addPins(data);
+        self.view.mapNearMe.height = "50%";
         hideDefaultLoading();
       }
       else
       {
         hideDefaultLoading();
+        alert("NO offers Available");
       }
     }
     function operationFailure(res){
+      alert("NO offers Available");
       hideDefaultLoading();
-      //code for failure call back
     }
   }
+
 });

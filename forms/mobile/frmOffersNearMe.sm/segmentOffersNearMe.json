@@ -5,68 +5,16 @@
     "_data_": [
         [
             {
-                "lblOfferDistance": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Distance"
-                },
                 "lblofferPlace": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Label"
+                    "text": ""
                 }
             },
             [
                 {
-                    "lblOfferDistance": {
+                    "lblOffer": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "20% on Whooper"
-                    },
-                    "lblofferPlace": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Burger king"
-                    }
-                },
-                {
-                    "lblOfferDistance": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "10% off on Pizza"
-                    },
-                    "lblofferPlace": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Dominos"
-                    }
-                }
-            ]
-        ],
-        [
-            {
-                "lblOfferDistance": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Distance"
-                },
-                "lblofferPlace": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Label"
-                }
-            },
-            [
-                {
-                    "lblOfferDistance": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "20% on Whooper"
-                    },
-                    "lblofferPlace": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Burger king"
-                    }
-                },
-                {
-                    "lblOfferDistance": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "10% off on Pizza"
-                    },
-                    "lblofferPlace": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Dominos"
+                        "text": ""
                     }
                 }
             ]
@@ -110,7 +58,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "containerweight": 100,
-    "counter": "11",
+    "counter": "00",
     "editstyle": "none",
     "focusedindex": null,
     "focuseditem": null,
@@ -146,13 +94,13 @@
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainselection": false,
-    "rowTemplateId": "caf10a94b67f4619a9fb8ccc28b8af3b",
-    "rowcounter": 1,
+    "rowTemplateId": "fb72543525174f5191fcccc2d5961dc6",
+    "rowcounter": 0,
     "rowfocusskin": "s71ee8bbd9784ff6b5eb99e6f29b00dc",
     "rowskin": "s8ab58280acf4fb7acaec72e42ca9790",
-    "rowtemplate": "flxOffersNearMeHeader",
+    "rowtemplate": "flxOffersRow",
     "screenlevelwidget": false,
-    "seccounter": 1,
+    "seccounter": 0,
     "sectionHeaderTemplateId": "caf10a94b67f4619a9fb8ccc28b8af3b",
     "sectionheaderskin": "s0af4d526f5f4b5c898fe2c44e792e9c",
     "sectionheadertemplate": "flxOffersNearMeHeader",
@@ -173,7 +121,8 @@
     "widgetdatamap": {
         "flxOfferNearMeHeader": "flxOfferNearMeHeader",
         "flxOffersNearMeHeader": "flxOffersNearMeHeader",
-        "lblOfferDistance": "lblOfferDistance",
+        "flxOffersRow": "flxOffersRow",
+        "lblOffer": "lblOffer",
         "lblofferPlace": "lblofferPlace"
     },
     "zindex": 1

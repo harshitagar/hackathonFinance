@@ -13,6 +13,7 @@ define({
   navigateToAllOffers:function(){
     commonNavigateFunction("frmOffersNearMe");
   },
+  
   img:function(){
     var self=this;
     showDefaultLoading();
@@ -36,6 +37,7 @@ define({
         self.view.btnOffers.text = "See All Offers Instead";
       }
     }
+    
     function imageReadfail(res)
     {
       hideDefaultLoading();

@@ -6,7 +6,7 @@ define({
     this.view.postShow=this.PostShow;
   },
   PreShow:function(){
-    this.view.flxOffers.onClick=this.navigateToVision;
+    this.view.flxOffers.onClick=this.navigateToOffers;
     this.view.flxTab1.onClick=this.tabOneSelected.bind(this);
     this.view.lbl11.onClick=this.tabOneSelected.bind(this);
     this.view.flxTab2.onClick=this.tabTwoSelected.bind(this);
@@ -30,25 +30,22 @@ define({
       try{
         var transData = res.Transactions;
         if(transData){
-          //           alert(transData);
-
           for(var i=0;i<transData.length;i++)
-          {/* 
-	  alert(transData.amount); */
+          {
             transDataVal = transData[i];
             if(transDataVal.payeeUserName == gblUserName)
             {
-              var temp = {"transactionName":transDataVal.transactionName,"amount":(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
+              var temp = {"transactionName":transDataVal.transactionName,"amount":"$"+(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
               debit.push(temp);
               for(var k=0;k<transDataVal.usersName.length;k++)
               {
-                var temp = {"transactionName":transDataVal.transactionName,"amount":(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
+                var temp = {"transactionName":transDataVal.transactionName,"amount":"$"+(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
                 credit.push(temp);
               } 	
             }
             else
             {
-              var temp = {"transactionName":transDataVal.transactionName,"amount":(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
+              var temp = {"transactionName":transDataVal.transactionName,"amount":"$"+(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
               debit.push(temp);
             }
           }
@@ -66,7 +63,7 @@ define({
       }
       self.view.segTransaction.setData(debit);
       self.view.segTransCredit.setData(credit);
-      hideDefaultLoading();
+      self.getUserInfo();
     }
     function userTransErrorCall(res){
       hideDefaultLoading();
@@ -80,17 +77,19 @@ define({
     "accountBalance": 1100000,
     "
     */
+    var self = this;
     params = {"username":gblUserName};
     callService("getUser", params, userSuccessCall, userErrorCall);
     function userSuccessCall(res){
-      alert(res.User.accountBalance+"   "+res.User.phoneNumber);
+      self.view.lblBalance.text = "Balance: $"+res.User.accountBalance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+".00";
+      hideDefaultLoading();
     }
     function userErrorCall(res){
-
+      hideDefaultLoading();
     }
   },
-  navigateToVision:function(){
-    commonNavigateFunction("frmCamera");
+  navigateToOffers:function(){
+    commonNavigateFunction("frmOffersNearMe");
   },
   tabOneSelected:function(){
     animate(this.view.flxAnimate,{"left":"10%"},0.25,()=>{
