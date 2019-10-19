@@ -26,7 +26,7 @@
     "_text_": "Login",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "-15%"
     },
     "_width_": {
         "type": "string",
@@ -37,22 +37,18 @@
         "type": "string",
         "value": "50%"
     },
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
     "focusskin": "s2096c891447439c84667d14711b81bb",
     "id": "btnlogin",
-    "ide_onClick": "AS_Button_f398b27ff56c4d508e83fa94770b38a0",
+    "ide_onClick": "AS_Button_cd583a9a3e5d4833b9d87fcb771177b6",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "a9aa75162e24463398dd027c541ab696",
     "name": "kony.ui.Button",
-    "parent": "flxLOginSubmit",
+    "parent": "flxLoginImage",
     "pf": "frmLogin",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

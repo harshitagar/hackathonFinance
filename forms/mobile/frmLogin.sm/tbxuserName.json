@@ -23,7 +23,7 @@
         0
     ],
     "_placeholder_": "User Name",
-    "_skin_": "s4d2ef7b9a6a4c4ab40bf96404d36e00",
+    "_skin_": "sb56bba859274b1f9ffcbd0005aeee3a",
     "_text_": "",
     "_top_": {
         "type": "string",
@@ -31,29 +31,35 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "90%"
     },
+    "android": {},
     "autocapitalize": "none",
     "autocomplete": false,
     "autocorrect": false,
     "autofilter": false,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerheight": "",
     "containerheightmode": 1,
     "containerweight": 100,
     "contentalignment": 4,
-    "focusskin": "s92b05c206874dc9bf8a2ecdce5ea005",
+    "focusskin": "sb56bba859274b1f9ffcbd0005aeee3a",
     "id": "tbxuserName",
     "info": null,
+    "iphone": {},
     "iscustomlayout": false,
     "isvisible": true,
     "keyboardtype": "A",
     "kuid": "eeb1dc7d18e74e958c4545f5e0f6a1dd",
     "mode": "A",
     "name": "kony.ui.TextBox2",
-    "parent": "flxuserName",
+    "parent": "flxLoginContainer",
     "pf": "frmLogin",
-    "placeholderskin": "sdbbddc4034d4bba9c4e255a71a5cced",
+    "placeholderskin": "s310669b54ab4d7c99deb43c04e80706",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "securetextentry": false,

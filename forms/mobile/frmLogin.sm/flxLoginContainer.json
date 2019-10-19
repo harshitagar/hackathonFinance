@@ -26,7 +26,7 @@
     "_skin_": "s202d22373344e4cba29e38715747f5d",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "5%"
     },
     "_width_": {
         "type": "string",
@@ -39,15 +39,10 @@
         "type": "string",
         "value": "50%"
     },
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "children": [
-        "flxuserName",
-        "flxPassowrd",
-        "flxForgotPassword",
-        "flxLOginSubmit"
+        "tbxuserName",
+        "tbxPassword",
+        "flxForgotPassword"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -59,7 +54,7 @@
     "kuid": "c1af70aebdda4f79a9126aa0173c547a",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxLoginpage",
+    "parent": "flxLoginImage",
     "pf": "frmLogin",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

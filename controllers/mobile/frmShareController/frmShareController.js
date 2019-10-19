@@ -13,7 +13,17 @@ define({
     this.view.flxSeg.showFadingEdges=false;
   },
   PostShow:function(){
+    this.getContactsInfo();
 
+    this.view.flxBackAddGrp.onClick=()=>{
+      animate(this.view.flxAddNewGrp,{"centerX":"150%","centerY":"150%"});};
+
+    this.view.segContacts.onRowClick=this.segSelect.bind(this);
+    this.view.flxSeg.showFadingEdges=false;
+    this.view.btnCreateGroup.onClick=this.servCreateGroup.bind(this);
+    hideDefaultLoading();
+  },
+  getContactsInfo:function(){
     showDefaultLoading();
     serviceKey="getAllUsers";
     var serviceName = MFserviceList[serviceKey].serviceName;
@@ -22,13 +32,6 @@ define({
     var data = {};
     var headers= {};
     integrationObj.invokeOperation(operationName, headers, data, this.showContactsSuccess, this.showContactsFail);
-    this.view.flxBackAddGrp.onClick=()=>{
-      animate(this.view.flxAddNewGrp,{"centerX":"150%","centerY":"150%"});};
-
-    this.view.segContacts.onRowClick=this.segSelect.bind(this);
-    this.view.flxSeg.showFadingEdges=false;
-    this.view.btnCreateGroup.onClick=this.servCreateGroup.bind(this);
-    hideDefaultLoading();
   },
   segSelect:function(){
     var data=this.view.segContacts.data;
@@ -53,6 +56,8 @@ define({
     this.view.segContacts.setData(contactsData);
     hideDefaultLoading();
     this.view.flxAdd.onClick=()=>{animate(this.view.flxAddNewGrp,{"centerX":"50%","centerY":"50%"});};
+    //  this.view.segContacts.removeAll();
+
   },
   showContactsFail:function(error){
     alert("Service Failed. Please try again later: "+error);
@@ -79,6 +84,9 @@ define({
       };
       callService("createNewGroup",servData,(response)=>{
         animate(this.view.flxAddNewGrp,{"centerX":"150%","centerY":"150%"},0.25,()=>{hideDefaultLoading();});
+        this.view.txtGrpName.text="";
+        this.view.segContacts.removeAll();
+        this.getContactsInfo();
       },(error)=>{
         alert("Service Failed. Please try again later.");
       });

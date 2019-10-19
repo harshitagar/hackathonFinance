@@ -43,7 +43,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhoneXS",
+    "device": "GalaxyS8",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmLogin",
@@ -97,13 +97,13 @@
     "name": "kony.ui.Form2",
     "needappmenu": false,
     "paddinginpixel": false,
-    "platform": "iphone",
-    "prevDevice": "iPhoneXS",
+    "platform": "android",
+    "prevDevice": "Pixel3",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhoneXS",
+    "shellCSS": "and_GalaxyS8",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {
