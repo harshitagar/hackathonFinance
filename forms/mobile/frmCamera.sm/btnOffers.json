@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s8686128937b47da9ce8910b1eef5d80",
+    "_text_": "See All Offers Instead",
+    "_top_": {
+        "type": "string",
+        "value": "3%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s2096c891447439c84667d14711b81bb",
+    "id": "btnOffers",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "g381ede3915b4b6bb24a75f5af7c2d1c",
+    "name": "kony.ui.Button",
+    "parent": "FlexContainer0ce57e74ffe1c40",
+    "pf": "frmCamera",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

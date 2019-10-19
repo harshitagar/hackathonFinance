@@ -1,5 +1,5 @@
  /*
-  * kony-sdk-ide Version 8.4.43
+  * kony-sdk-ide Version 8.4.45
   */
         
 //#ifdef iphone
@@ -54,6 +54,7 @@
 //#ifdef spatabandroid
 //#define PLATFORM_ANDROID
 //#endif
+
 //#ifdef spaplaybook
 //#define PLATFORM_WINDOWS
 //#endif
@@ -69,11 +70,7 @@
 //#ifdef spatabwindows
 //#define PLATFORM_WINDOWS
 //#endif
-
 //#ifdef desktop_kiosk
-//#define PLATFORM_WINDOWS
-//#endif
-//#ifdef desktopweb
 //#define PLATFORM_WINDOWS
 //#endif
 
@@ -513,11 +510,12 @@ kony.sdk.isInitialized = false;
 kony.sdk.currentInstance = null;
 kony.sdk.isLicenseUrlAvailable = true;
 kony.sdk.constants = kony.sdk.constants || {};
-kony.sdk.version = "8.4.43";
+kony.sdk.version = "8.4.45";
 kony.sdk.logsdk = new konySdkLogger();
 kony.sdk.syncService = null;
 kony.sdk.dataStore = kony.sdk.dataStore || new konyDataStore();
 kony.sdk.skipAnonymousCall = false;
+kony.sdk.convertPassthroughResponseToJson = false;
 
 kony.sdk.getDefaultInstance = function() {
     return kony.sdk.currentInstance;
@@ -1492,6 +1490,7 @@ kony.sdk.constants =
         HASHING_ALGORITHM : "SHA256",
         REMOVE_INTEGRITY_CHECK : "removeIntegrityCheck",
         SET_INTEGRITY_CHECK : "setIntegrityCheck",
+        DISABLE_INTEGRITY_CHECK: "disableIntegrityCheck",
         DEFAULT_CACHE_SIZE : 100,
         GET_CLIENT_PROPERTY_URL : "/metadata/configurations/client/properties",
         DEFAULT_CACHE_EXPIRY_TIME : 0, //Which means it doesn't expire in the application session.
@@ -1559,6 +1558,16 @@ kony.sdk.constants =
         /***Metrics Constants**/
         REPORTING_PARAMS : "konyreportingparams",
         KEY_DEVICE_ID : "deviceID",
+        KONY_METRICS_BUFFER : "konyMetricsBuffer",
+        KONY_CUSTOM_REPORT_DATA : "konyCustomReportData",
+        EVENT_BUFFER_MAX_COUNT : "eventBufferMaxCount",
+        EVENT_BUFFER_AUTO_FLUSH_COUNT : "eventBufferAutoFlushCount",
+        EVENT_SUB_TYPE : "evtSubType",
+        FORM_ID : "formID",
+        WIDGET_ID : "widgetID",
+        FLOW_TAG : "flowTag",
+        BUFFER : "BUFFER",
+        CONFIG_TYPE : "confType",
 
         /**Headers**/
         APP_KEY_HEADER : "X-Kony-App-Key",
@@ -2141,6 +2150,69 @@ function IdentityService(konyRef, rec) {
 	}
 
 	/**
+	 * Register / Sign-Up a new user asynchronously and executes the given callback.
+	 * @param {object} params - Userid, password, firstName, lastname, phone)
+	 * e.g. {
+	 *     "userid":"john.doe@abc.com",
+	 *     "password":"Qwerty@123"'
+	 *		"first_name":"John",
+	 *		"last_name":"Doe",
+	 *		"phone":"1234569870"		// Phone- Not mandatory
+	 * }
+	 * @param {function} successCallback  - Callback method on success
+	 * @param {function} failureCallback - Callback method on failure
+	 * @param {object} options
+	 */
+	this.register = function(params, successCallback, failureCallback, options) {
+		kony.sdk.logsdk.perf("Executing Register");
+
+		function invokeAjaxCall(url, params, headers) {
+			if (kony.sdk.isNullOrUndefined(headers)) {
+				headers = {};
+			}
+            headers[kony.sdk.constants.KONY_AUTHORIZATION_HEADER] = konyRef.currentClaimToken;
+			headers[kony.sdk.constants.APP_KEY_HEADER] = mainRef.appKey;
+			headers[kony.sdk.constants.APP_SECRET_HEADER] = mainRef.appSecret;
+			headers[kony.sdk.constants.SDK_TYPE_HEADER] = kony.sdk.getSdkType();
+			headers[kony.sdk.constants.SDK_VERSION_HEADER] = kony.sdk.version;
+			headers[kony.sdk.constants.PLATFORM_TYPE_HEADER] = kony.sdk.getPlatformName();
+			headers[kony.sdk.constants.HTTP_REQUEST_HEADER_ACCEPT] = kony.sdk.constants.CONTENT_TYPE_JSON;
+			headers[kony.sdk.constants.HTTP_CONTENT_HEADER] = kony.sdk.constants.CONTENT_TYPE_FORM_URL_ENCODED;
+			populateHeaderWithFabricAppVersion(headers);
+			if(konyRef.reportingheaders_allowed) {
+				if (!kony.sdk.isNullOrUndefined(reportingData)) {
+					headers[kony.sdk.constants.REPORTING_HEADER] = reportingData;
+				}
+			}
+			var networkOptions = kony.sdk.util.checkAndFetchNetworkProviderOptions(options, false);
+			networkProvider.post(url, params, headers, localSuccessCallback, localFailureCallback,null, networkOptions);
+		}
+		function localFailureCallback(error) {
+            kony.sdk.logsdk.perf("Register finished with Failure");
+			kony.sdk.verifyAndCallClosure(failureCallback, error);
+		}
+		function localSuccessCallback(data) {
+            kony.sdk.logsdk.perf("Register finished with Success");
+			var response = {} ;
+			response["status"] = data.status;
+            kony.sdk.verifyAndCallClosure(successCallback, response);
+		}
+
+		kony.sdk.logsdk.debug("### AuthService:: Invoked Register call  for provider " + _providerName);
+		var reportingData = null;
+		if (kony.sdk.isNullOrUndefined(params)) {
+			throw new Exception(kony.sdk.errorConstants.AUTH_FAILURE, "Missing required params to register function");
+		}
+		function invokeSignUp() {
+			var endPointUrl = _serviceUrl + "/signup/register?provider=" + _providerName ;
+			reportingData = kony.sdk.getEncodedReportingParamsForSvcid("register_" + _providerName);
+			params["provider"] = _providerName;
+			invokeAjaxCall(endPointUrl, params, null);
+		}
+        kony.sdk.claimsRefresh(invokeSignUp, failureCallback);
+	};
+
+	/**
 	 * Login with the given credentials asynchronously and executes the given callback.
 	 * @param {object} options - User name and password
 	 * @param {function} successCallback  - Callback method on success
@@ -2590,8 +2662,8 @@ function IdentityService(konyRef, rec) {
 	};
 
     var processLoginSuccessResponse = function(data,konyRef,isAsync,callBack){
-    	var response = {};
 		kony.sdk.logsdk.perf("Executing processLoginSuccessResponse");
+    	var response = {};
         data = kony.sdk.formatSuccessResponse(data);
 		if(_type !== "anonymous" &&!konyRef.tokens[_providerName]){
 			konyRef.tokens[_providerName] = {};
@@ -2738,7 +2810,7 @@ function IdentityService(konyRef, rec) {
 	 * @param {object} options - additional options for logout
 	 */
 	this.logout = function(successCallback, failureCallback, options) {
-        kony.sdk.logsdk.trace("Entering logout");
+		kony.sdk.logsdk.trace("Entering logout");
 		function logoutHandler() {
 			_logout(successCallback, failureCallback, options);
 		}
@@ -3227,7 +3299,6 @@ function IdentityService(konyRef, rec) {
 		}
 	};
 }
-
 function konySdkLogger()
 {
 
@@ -5365,7 +5436,7 @@ kony.sdk.util.validateCriteriaObject = function (criteria) {
     }
 };
 
-kony.sdk.util.checkAndFetchNetworkProviderOptions = function (options) {
+kony.sdk.util.checkAndFetchNetworkProviderOptions = function (options, isPassThroughExpected) {
     var providerOptions = {};
     if(!kony.sdk.isNullOrUndefined(options)) {
         if (!kony.sdk.isNullOrUndefined(options["httpRequestOptions"]) &&
@@ -5377,8 +5448,12 @@ kony.sdk.util.checkAndFetchNetworkProviderOptions = function (options) {
             providerOptions["xmlHttpRequestOptions"] = options["xmlHttpRequestOptions"];
         }
         // [APPPLT-6138][MFSDK-4842] Handle passthrough option, if it is set by the user.
-        if (!kony.sdk.isNullOrUndefined(options[kony.sdk.constants.PASSTHROUGH])) {
-            providerOptions[kony.sdk.constants.PASSTHROUGH] = options[kony.sdk.constants.PASSTHROUGH];
+        // As Identity Service calls don't expect passthrough enabled, it will be explicitely set as False if it is called by any Identity service API
+        // else it tries to add passthrough for other calls if set by the user.
+        if(isPassThroughExpected !== false){
+            if (!kony.sdk.isNullOrUndefined(options[kony.sdk.constants.PASSTHROUGH])) {
+                providerOptions[kony.sdk.constants.PASSTHROUGH] = options[kony.sdk.constants.PASSTHROUGH];
+            }
         }
     }
     return providerOptions;
@@ -7201,6 +7276,11 @@ kony.sdk.KNYObj = function(name, objectServiceName, namespace){
 		kony.sdk.logsdk.perf(LOG_PREFIX + ": Executing Cancel for " + this.name + " object");
 		kony.sdk.KNYObj.cancelSync(this, options, successCallback, failureCallback);
 	};
+	
+	this.clearOfflineData = function(options, successCallback, failureCallback){
+		kony.sdk.logsdk.perf(LOG_PREFIX + ": Executing clearOfflineData for " + this.name + " object");
+		kony.sdk.KNYObj.clearOfflineData(this, options, successCallback, failureCallback);
+	};
 };
 
 //#endif
@@ -8284,6 +8364,26 @@ kony.sdk.KNYObj.getUploadDeferredRecordKeys = function (knyObj, successCallback,
 
 	function onFailure(error) {
 		kony.sdk.logsdk.error(LOG_PREFIX + ": Getting deffered records failed with error: " + JSON.stringify(error));
+		failureCallback(error);
+	}
+}
+
+kony.sdk.KNYObj.clearOfflineData = function (knyObj, options, successCallback, failureCallback) {
+	var LOG_PREFIX = "kony.sdk.KNYObj.clearOfflineData";
+	kony.sdk.logsdk.trace(" Entering " + LOG_PREFIX);
+	var optionsMap = kony.sdk.OfflineObjects.createHashMapFromJSONObject(options, "clearOfflineData options");
+	var syncCallback = kony.sdk.OfflineObjects.createSyncCallback("Successfully cleared offline data in " + knyObj.name + " object.", onSuccess, "Failed to clear offline data in " + knyObj.name + " object.", onFailure);
+	var sdkObjectSync = knyObj.getSdkObjectSync();
+	sdkObjectSync.clearData(optionsMap, syncCallback);
+
+	function onSuccess(obj) {
+		kony.sdk.logsdk.info(LOG_PREFIX + ": Successfully cleared offline data.");
+		var jsonObject = kony.sdk.OfflineObjects.createJSONObjectFromHashMap(obj, "clearDataSuccessCallbackObject");
+		successCallback(jsonObject);
+	}
+
+	function onFailure(error) {
+		kony.sdk.logsdk.error(LOG_PREFIX + ": Clearing offline data failed with error: " + JSON.stringify(error));
 		failureCallback(error);
 	}
 }
@@ -9558,6 +9658,14 @@ kony.sdk.KNYObj.cancelSync = function (knyObj, options, successCallback, failure
 	var syncCallback = kony.sdk.OfflineObjects.createSyncCallback("CancelSync on " + knyObj.name + " object success", successCallback, "CancelSync on " + knyObj.name + " object failed", failureCallback);
 	var sdkObjectSync = knyObj.getSdkObjectSync();
 	sdkObjectSync.cancelSyncOnFailure(syncCallback.onSuccess, syncCallback.onFailure);
+};
+
+kony.sdk.KNYObj.clearOfflineData = function (knyObj, options, successCallback, failureCallback) {
+	var LOG_PREFIX = "kony.sdk.KNYObj.clearOfflineData";
+	kony.sdk.logsdk.trace("Entering " + LOG_PREFIX);
+	var syncCallback = kony.sdk.OfflineObjects.createSyncCallback("Successfully cleared offline data in " + knyObj.name + " object .", successCallback, "Failed to clear offline data in " + knyObj.name + " object.", failureCallback);
+	var sdkObjectSync = knyObj.getSdkObjectSync();
+	sdkObjectSync.clearDataWithOptionsOnSuccessOnFailure(options, syncCallback.onSuccess, syncCallback.onFailure);
 };
 
 kony.sdk.KNYObjSvc.createSDKObjectServiceSync = function (name) {
@@ -11305,7 +11413,9 @@ function MessagingService(konyRef) {
                 kony.sdk.logsdk.debug("### MessagingService::getAndRefreshBoundaries registering " + geoBoundaries.length + " boundaries with frameworks for monitoring.");
                 // kony.location.setGeofencesCallback method should be called in PreAppInit for IOS to receive the callbacks. Other platforms do not have such rule.
                 if(kony.sdk.getPlatformName() !== kony.sdk.constants.PLATFORM_IOS){
-                    kony.location.setGeofencesCallback(this.manageGeoBoundariesCallback);
+                    kony.location.setGeofencesCallback(
+                        kony.sdk.getCurrentInstance().getMessagingService().manageGeoBoundariesCallback
+                    );
                 }
                 kony.location.createGeofences(geoBoundaries);
                 kony.sdk.verifyAndCallClosure(successCallback, res);
@@ -15926,9 +16036,9 @@ kony.setupsdks = function (initConfig, successCallBack, errorCallBack) {
             kony.sdk.dataStore.setItem("tools_etagID", currentToolsEtag);
             if (kony.sdk.util.isAppConfigEncrypted()) {
                 kony.sdk.dataStore.setItem(kony.sdk.util.prefixAppid(kony.sdk.constants.MOBILE_FABRIC_SERVICE_DOC), kony.sdk.util.encryptAppConfig(JSON.stringify(initConfig.appConfig.svcDoc)));
-             } else {
+            } else {
                 kony.sdk.dataStore.setItem(kony.sdk.util.prefixAppid(kony.sdk.constants.MOBILE_FABRIC_SERVICE_DOC), JSON.stringify(initConfig.appConfig.svcDoc));
-             }
+            }
         }
     }
 
@@ -16375,7 +16485,7 @@ function konyNetHttpRequest(url, params, headers, httpMethod, konyContentType, s
         var response = {};
         if (readyState === 4) {
             //If option "passthrough" is enabled then SDK will not parse the result from backend.
-            if (options && options[kony.sdk.constants.PASSTHROUGH]){
+            if (options && options[kony.sdk.constants.PASSTHROUGH] && kony.sdk.convertPassthroughResponseToJson !== true) {
                 response.rawResponse = result.response;
             }
             else{
@@ -16528,9 +16638,12 @@ function konyNetHttpRequest(url, params, headers, httpMethod, konyContentType, s
         //mesasging service and pass through enabled integration svc doesn't support http message body integrity
         //if integrity is enabled earlier,remove integrity
         //check is for windows 8.x and Kiosk platforms,which doesn't support integrity
-        if(kony.sdk.constants.REMOVE_INTEGRITY_CHECK in kony.net) {
+        if(kony.sdk.constants.DISABLE_INTEGRITY_CHECK in httpRequest) {
+            httpRequest.disableIntegrityCheck = true;
+        } else if(kony.sdk.constants.REMOVE_INTEGRITY_CHECK in kony.net) {
             kony.net.removeIntegrityCheck();
         }
+
         if (paramsTable) {
             httpRequest.send(paramsTable);
         } else {
@@ -16550,7 +16663,9 @@ function konyNetHttpRequest(url, params, headers, httpMethod, konyContentType, s
             }
         }else{
             //check is for windows 8.x and Kiosk platforms,which doesn't support integrity
-            if(kony.sdk.constants.REMOVE_INTEGRITY_CHECK in kony.net) {
+            if(kony.sdk.constants.DISABLE_INTEGRITY_CHECK in httpRequest) {
+                httpRequest.disableIntegrityCheck = true;
+            } else if(kony.sdk.constants.REMOVE_INTEGRITY_CHECK in kony.net) {
                 kony.net.removeIntegrityCheck();
             }
         }
@@ -16867,8 +16982,8 @@ kony.sdk.getChannelType = function() {
     return returnVal;
 };
 
-kony.sdk.getPlatformName = function() {
-    var returnVal = "";
+kony.sdk.getPlatformName = function () {
+    var returnVal = kony.sdk.constants.PLATFORM_WINDOWS;
     //#ifdef PLATFORM_IOS
     returnVal = kony.sdk.constants.PLATFORM_IOS;
     //#endif
@@ -16884,6 +16999,8 @@ kony.sdk.getPlatformName = function() {
     //#ifdef PLATFORM_BB
     returnVal = "blackberry";
     //#endif
+
+    //SPA platform should be added as thinclient
     return returnVal;
 };
 
@@ -17490,6 +17607,13 @@ kony.sdk.KNYObj.getPendingRecordsForUpload = function(knyObj, options, successCa
     var LOG_PREFIX = "kony.sdk.KNYObj.getPendingRecordsForUpload";
     kony.sdk.logsdk.trace(" Entering "+LOG_PREFIX);
     kony.sdk.KNYObj.getWindowsOfflineSDKObject().getPendingRecordsForUpload(knyObj.name.toString(),options, successCallback, failureCallback);
+};
+
+kony.sdk.KNYObj.clearOfflineData = function(knyObj, options, successCallback, failureCallback){
+
+    var LOG_PREFIX = "kony.sdk.KNYObj.clearOfflineData";
+    kony.sdk.logsdk.trace(" Entering " + LOG_PREFIX);
+    kony.sdk.KNYObj.getWindowsOfflineSDKObject().clearOfflineData(knyObj.name.toString(), options, successCallback, failureCallback);
 };
 
 kony.sdk.KNYObjSvc.createSDKObjectServiceSync = function(name){

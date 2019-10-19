@@ -38,6 +38,7 @@
     "context": {
         "channel": "mobile",
         "formID": "frmCamera",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -45,7 +46,7 @@
     "imagescalemode": 1,
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "b0630d483aa5486b81cbc3cbd410bbf1",
     "name": "kony.ui.Image2",
     "parent": "flxMain",

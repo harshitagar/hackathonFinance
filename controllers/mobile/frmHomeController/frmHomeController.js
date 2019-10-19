@@ -6,12 +6,16 @@ define({
     this.view.postShow=this.PostShow;
   },
   PreShow:function(){
+    this.view.flxOffers.onClick=this.navigateToVision;
     this.view.flxTab1.onClick=this.tabOneSelected.bind(this);
     this.view.lbl11.onClick=this.tabOneSelected.bind(this);
     this.view.flxTab2.onClick=this.tabTwoSelected.bind(this);
     this.view.lbl21.onClick=this.tabTwoSelected.bind(this);
     this.view.flxTab3.onClick=this.tabThreeSelected.bind(this);
     this.view.lbl31.onClick=this.tabThreeSelected.bind(this);
+  },
+  navigateToVision:function(){
+	commonNavigateFunction("frmCamera");
   },
   tabOneSelected:function(){
     animate(this.view.flxAnimate,{"left":"10%"},0.25,()=>{
@@ -31,7 +35,6 @@ define({
       this.view.lbl31.skin="sknFooterInActive1";
       this.view.lbl2.skin="sknFooterActive";
       this.view.lbl21.skin="sknFooterActive1";
-      commonNavigateFunction("frmCamera");
     });
   },
   tabThreeSelected:function(){

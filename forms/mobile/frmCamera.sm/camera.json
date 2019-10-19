@@ -41,7 +41,7 @@
     },
     "centery": {
         "type": "string",
-        "value": "90%"
+        "value": "85%"
     },
     "containerweight": 100,
     "contentalignment": 5,

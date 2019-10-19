@@ -43,7 +43,6 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxOffers",
-    "ide_onClick": "AS_FlexContainer_b7237a330e314c5cb3ae1bd2699c180c",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
