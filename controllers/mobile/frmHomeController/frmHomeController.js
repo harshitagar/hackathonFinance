@@ -38,17 +38,17 @@ define({
             transDataVal = transData[i];
             if(transDataVal.payeeUserName == gblUserName)
             {
-              var temp = {"transactionName":transDataVal.transactionName,"amount":(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
+              var temp = {"transactionName":transDataVal.transactionName,"amount":"$"+(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
               debit.push(temp);
               for(var k=0;k<transDataVal.usersName.length;k++)
               {
-                var temp = {"transactionName":transDataVal.transactionName,"amount":(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
+                var temp = {"transactionName":transDataVal.transactionName,"amount":"$"+(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
                 credit.push(temp);
               } 	
             }
             else
             {
-              var temp = {"transactionName":transDataVal.transactionName,"amount":(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
+              var temp = {"transactionName":transDataVal.transactionName,"amount":"$"+(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
               debit.push(temp);
             }
           }
@@ -66,7 +66,7 @@ define({
       }
       self.view.segTransaction.setData(debit);
       self.view.segTransCredit.setData(credit);
-      hideDefaultLoading();
+      self.getUserInfo();
     }
     function userTransErrorCall(res){
       hideDefaultLoading();
@@ -80,13 +80,15 @@ define({
     "accountBalance": 1100000,
     "
     */
+    var self = this;
     params = {"username":gblUserName};
     callService("getUser", params, userSuccessCall, userErrorCall);
     function userSuccessCall(res){
-      alert(res.User.accountBalance+"   "+res.User.phoneNumber);
+      self.view.lblBalance.text = "Balance: $"+res.User.accountBalance;
+      hideDefaultLoading();
     }
     function userErrorCall(res){
-
+      hideDefaultLoading();
     }
   },
   navigateToOffers:function(){
