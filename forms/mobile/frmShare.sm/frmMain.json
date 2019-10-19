@@ -39,7 +39,8 @@
         "frmTop",
         "flxBody",
         "flxAdd",
-        "flxBack"
+        "flxBack",
+        "flxAddNewGrp"
     ],
     "clipbounds": true,
     "containerweight": 100,

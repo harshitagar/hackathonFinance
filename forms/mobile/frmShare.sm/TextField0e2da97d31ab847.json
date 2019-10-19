@@ -1,0 +1,70 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "35dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "9dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Enter Group Name",
+    "_skin_": "s7707d5da7c34df587e1e2e42482251c",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "72%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "android": {},
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "focusskin": "s7707d5da7c34df587e1e2e42482251c",
+    "id": "TextField0e2da97d31ab847",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "e67d519350584d36a0503b858332a92f",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "frmGrpTop",
+    "pf": "frmShare",
+    "placeholderskin": "s7707d5da7c34df587e1e2e42482251c",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 2
+}

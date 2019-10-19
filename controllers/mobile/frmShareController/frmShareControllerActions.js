@@ -7,5 +7,11 @@ define({
         var self = this;
         var ntf = new kony.mvc.Navigation("frmHome");
         ntf.navigate();
+    },
+    /** onClick defined for flxBackAddGrp **/
+    AS_FlexContainer_g0824a3e19ee42b2994dd4c68fc40cd2: function AS_FlexContainer_g0824a3e19ee42b2994dd4c68fc40cd2(eventobject) {
+        var self = this;
+        var ntf = new kony.mvc.Navigation("frmHome");
+        ntf.navigate();
     }
 });
