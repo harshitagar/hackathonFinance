@@ -49,6 +49,7 @@
     "device": "GalaxyS8",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "enablescrolling": false,
     "friendlyName": "frmOffersNearMe",
     "id": "frmOffersNearMe",
     "info": null,
