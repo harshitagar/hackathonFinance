@@ -3,64 +3,26 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_data_": [
-        [
-            {
-                "lblOfferDistance": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "20mi"
-                },
-                "lblofferPlace": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Burger King"
-                }
+        {
+            "lblOfferDistance": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20% on Whooper"
             },
-            [
-                {
-                    "lblDescription": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Distance"
-                    }
-                },
-                {
-                    "lblDescription": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Distance"
-                    }
-                },
-                {
-                    "lblDescription": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Distance"
-                    }
-                }
-            ]
-        ],
-        [
-            {
-                "lblOfferDistance": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "10mi"
-                },
-                "lblofferPlace": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Mac'd"
-                }
+            "lblofferPlace": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Burger king"
+            }
+        },
+        {
+            "lblOfferDistance": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10% off on Pizza"
             },
-            [
-                {
-                    "lblDescription": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Distance"
-                    }
-                },
-                {
-                    "lblDescription": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Distance"
-                    }
-                }
-            ]
-        ]
+            "lblofferPlace": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Dominos"
+            }
+        }
     ],
     "_height_": {
         "type": "string",
@@ -86,7 +48,7 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "5dp"
+        "value": "2dp"
     },
     "_width_": {
         "type": "string",
@@ -100,12 +62,12 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "containerweight": 100,
-    "counter": "11",
+    "counter": "01",
     "editstyle": "none",
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": true,
-    "hasSections": true,
+    "hasSections": false,
     "id": "segmentOffersNearMe",
     "info": null,
     "ipad": {
@@ -136,22 +98,21 @@
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainselection": false,
-    "rowTemplateId": "e78a93ab53494dc9ad420133d5e7abea",
+    "rowTemplateId": "caf10a94b67f4619a9fb8ccc28b8af3b",
     "rowcounter": 1,
     "rowfocusskin": "s71ee8bbd9784ff6b5eb99e6f29b00dc",
     "rowskin": "s8ab58280acf4fb7acaec72e42ca9790",
-    "rowtemplate": "flxOffersNearMeList",
+    "rowtemplate": "flxOffersNearMeHeader",
     "screenlevelwidget": false,
-    "seccounter": 1,
-    "sectionHeaderTemplateId": "caf10a94b67f4619a9fb8ccc28b8af3b",
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
     "sectionheaderskin": "s0af4d526f5f4b5c898fe2c44e792e9c",
-    "sectionheadertemplate": "flxOffersNearMeHeader",
     "selectedRows": null,
     "selectedState": false,
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": null,
+    "selectedsectionindex": 0,
     "selectionbehavior": "default",
     "separatorrequired": false,
     "showprogressindicator": false,
@@ -162,10 +123,7 @@
     "widgetalignment": 5,
     "widgetdatamap": {
         "flxOfferNearMeHeader": "flxOfferNearMeHeader",
-        "flxOffersHeading": "flxOffersHeading",
         "flxOffersNearMeHeader": "flxOffersNearMeHeader",
-        "flxOffersNearMeList": "flxOffersNearMeList",
-        "lblDescription": "lblDescription",
         "lblOfferDistance": "lblOfferDistance",
         "lblofferPlace": "lblofferPlace"
     },

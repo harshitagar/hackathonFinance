@@ -37,9 +37,11 @@
     },
     "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "49.02%"
     },
-    "children": [],
+    "children": [
+        "Image0g02e8245058445"
+    ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,

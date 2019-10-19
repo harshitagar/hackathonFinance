@@ -13,6 +13,10 @@ define({
     this.view.lbl21.onClick=this.tabTwoSelected.bind(this);
     this.view.flxTab3.onClick=this.tabThreeSelected.bind(this);
     this.view.lbl31.onClick=this.tabThreeSelected.bind(this);
+    this.view.flxOffers.onClick = function(){
+      commonNavigateFunction("frmOffersNearMe");
+    }.bind(this);
+    
   },
   navigateToVision:function(){
 	commonNavigateFunction("frmCamera");

@@ -51,6 +51,8 @@ define({
             lbl1: "KonyLabs"
         }
     }];
+    
+    
     kony.location.getCurrentPosition(function(response){
       
        latitude = response.coords.latitude;
@@ -71,12 +73,12 @@ define({
 		};
 		self.view.mapNearMe.addPin(pin1);     
    },{}, {});
+    
     this.view.mapNearMe.showZoomControl = true;
     this.view.mapNearMe.screenLevelWidget = true;
     this.view.mapNearMe.enableCache = true;
     this.view.mapNearMe.zoomLevel = 16;
-    
-  	//  this.setOffersData();
+   //this.setOffersData();
   },
   /**
      * @function onPostShow
@@ -126,7 +128,9 @@ define({
     integrationObj.invokeOperation(operationName, headers, data, operationSuccess, operationFailure);
     function operationSuccess(res){
       if(res.success)
-      {          
+      { 
+        // modify the returned data
+        this.view.segmentOffersNearMe.setData(data);
         hideDefaultLoading();
       }
       else
