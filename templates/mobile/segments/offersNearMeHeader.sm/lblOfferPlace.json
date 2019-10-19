@@ -24,13 +24,9 @@
     ],
     "_skin_": "s85293082d58458cb5d164490b05d315",
     "_text_": "Label",
-    "_top_": {
-        "type": "number",
-        "value": "1"
-    },
     "_width_": {
         "type": "string",
-        "value": "60%"
+        "value": "94%"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,6 +36,14 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
@@ -59,7 +63,7 @@
     "isvisible": true,
     "kuid": "icc4b525f2ad4a8293f8b7adf75734dd",
     "name": "kony.ui.Label",
-    "parent": "flxOfferNearMeHeader",
+    "parent": "flxOffersNearMeHeader",
     "pf": "offersNearMeHeader",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "30dp"
+        "value": "40dp"
     },
     "_margin_": [
         0,
@@ -23,7 +23,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxOfferNearMeHeader"
+        "lblOffer"
     ],
     "clipbounds": true,
     "containerId": true,

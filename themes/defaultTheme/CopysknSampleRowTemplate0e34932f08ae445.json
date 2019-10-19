@@ -1,8 +1,8 @@
 {
-  "background_color": "ffffffff",
+  "background_color": "757575ff",
   "bg_type": "one",
-  "border_color": "e6e6e6ff",
-  "border_radius": 5,
+  "border_color": "e6e6e600",
+  "border_radius": 10,
   "border_style": "custom",
   "border_type": 0,
   "border_width": 1,

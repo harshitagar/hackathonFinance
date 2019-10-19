@@ -33,7 +33,8 @@
         "flxCameraWidget",
         "flxBack",
         "Label0f2263daf80dd48",
-        "frmOffersNear"
+        "frmOffersNear",
+        "FlexContainer0gdc0f61df57c4c"
     ],
     "containerweight": 100,
     "controllerInfo": {
@@ -102,7 +103,7 @@
     "needappmenu": false,
     "paddinginpixel": false,
     "platform": "android",
-    "prevDevice": "Pixel3",
+    "prevDevice": "iPhoneXS",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
