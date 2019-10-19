@@ -51,7 +51,7 @@
     "id": "flxDash",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "b593545c69444a2bbcdff94c469decef",
     "layouttype": 2,
     "name": "kony.ui.FlexScrollContainer",

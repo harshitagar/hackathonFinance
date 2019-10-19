@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "15%"
+        "value": "12.50%"
     },
     "_margin_": [
         0,
@@ -23,10 +23,10 @@
         "type": "string",
         "value": "5%"
     },
-    "_skin_": "s9704713903d4e2ba9fa6e9d3dbaabe6",
+    "_skin_": "saf40b2324584c8f9de2d25ee1c5c0e8",
     "_top_": {
         "type": "string",
-        "value": "62%"
+        "value": "40%"
     },
     "_width_": {
         "type": "string",
@@ -35,10 +35,7 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "CopyLabel0af43aedb6f294a",
-        "CopyFlexContainer0c7f10d9cdba443"
-    ],
+    "children": [],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,

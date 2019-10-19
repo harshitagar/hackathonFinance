@@ -7,8 +7,8 @@
         "value": "100%"
     },
     "_left_": {
-        "type": "number",
-        "value": "43"
+        "type": "string",
+        "value": "0dp"
     },
     "_margin_": [
         1,
@@ -22,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "se0ec37bce7e4156881b505702e8b8cb",
-    "_text_": "     Renewation",
+    "_skin_": "s7ce8178422a4cc0b8b4e869bd8258fa",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "12dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -50,7 +50,7 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "CopyLabel0f2240f3c559a4c",
+    "id": "CopyLabel0ae85b725880e49",
     "info": null,
     "ipad": {
         "psp": {
@@ -64,10 +64,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "i89b03df669348098d82444a096f103f",
+    "kuid": "d27face5221a4be09a3adf9edcfd12da",
     "name": "kony.ui.Label",
-    "parent": "CopyFlexContainer0j1a9bc1ae54842",
-    "pf": "frmHome",
+    "parent": "flxBackAddGrp",
+    "pf": "frmpay",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

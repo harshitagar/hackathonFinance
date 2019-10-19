@@ -7,8 +7,8 @@
         "value": "100%"
     },
     "_left_": {
-        "type": "number",
-        "value": "43"
+        "type": "string",
+        "value": "0dp"
     },
     "_margin_": [
         1,
@@ -22,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "se0ec37bce7e4156881b505702e8b8cb",
-    "_text_": "Travel",
+    "_skin_": "s7ce8178422a4cc0b8b4e869bd8258fa",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "12dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -42,15 +42,15 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "50%"
+        "value": "45%"
     },
     "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "48%"
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "CopyLabel0c82e5d2b11c144",
+    "id": "Label0d3b7f38d98fe4b",
     "info": null,
     "ipad": {
         "psp": {
@@ -64,10 +64,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ea170b6629b94e8188466b0188cb5bf6",
+    "kuid": "d9c606c33af8470f8515007a0b56fc16",
     "name": "kony.ui.Label",
-    "parent": "CopyFlexContainer0d47c8a9954b046",
-    "pf": "frmHome",
+    "parent": "flxBack",
+    "pf": "frmpay",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},
