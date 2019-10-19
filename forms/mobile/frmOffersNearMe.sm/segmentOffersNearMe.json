@@ -151,7 +151,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": null,
+    "selectedsectionindex": 0,
     "selectionbehavior": "singleselect",
     "selectionbehaviorconfig": {},
     "separatorrequired": false,

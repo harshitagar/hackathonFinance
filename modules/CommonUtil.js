@@ -1,4 +1,6 @@
 //Type your code here
+gblUserName="";
+
 function animate( element, params, duration, callback, delay ){
   duration = duration || 0.25;
   callback = callback || null;

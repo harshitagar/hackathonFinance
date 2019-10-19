@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "80dp"
+        "value": "40dp"
     },
     "_left_": {
         "type": "string",
-        "value": "13%"
+        "value": "1%"
     },
     "_margin_": [
         0,
@@ -23,38 +23,40 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s8724f94cf6f4df2b6bb491bc33e7c3d",
+    "_skin_": "sb005f1d97cf4cbc9c9ecea7f3f616e5",
     "_top_": {
         "type": "string",
-        "value": "8%"
+        "value": "2%"
     },
     "_width_": {
         "type": "string",
-        "value": "80dp"
+        "value": "40dp"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "memberImage"
+        "Label0d3b7f38d98fe4b"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxMemberName",
+    "id": "flxBack",
+    "ide_onClick": "AS_FlexContainer_c3eb47befc34482eaca677b1c7b34c28",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b2b3ba1d5d7c4032adf65d72265459de",
+    "kuid": "g26371767f4d4dba8cddd3ffdedb300b",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxProfileSection",
-    "pf": "userwidgetmodel",
+    "parent": "frmAccount",
+    "pf": "frmAccount",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1
+    "widgetalignment": 1,
+    "zindex": 1
 }
