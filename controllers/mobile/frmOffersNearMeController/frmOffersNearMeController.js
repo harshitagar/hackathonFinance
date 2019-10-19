@@ -1,5 +1,5 @@
 define({
-  _formName : "frmName",
+  _formName : "frmOffersNearMe",
   /**
      * @function onNavigate
      * @description default buildin method onNavigate called from navigate API
@@ -8,7 +8,6 @@ define({
      */
   onNavigate: function(context, isBackNavigation) {
     kony.print("onNavigate start...");
-    this.context = context;
     this.onInit();
   },
   /**
@@ -26,8 +25,58 @@ define({
      * @description preShow of the form
      */
   onPreShow: function(){
+    
     kony.print(this._formName + " : onPreShow start...");
-    this.setOffersData();
+    var latitude = "";
+    var longitude = "";
+    var self = this;
+    this.view.mapNearMe.locationData = [{
+        lat: "17.419805",
+        lon: "78.379124",
+        name: "Parshat Hills",
+        desc: "Hyderabad,Telangana",
+        image: "pin1.png",
+        showCallout: true,
+        calloutData: {
+            lbl1: "KonyLabs"
+        }
+    }, {
+        lat: "17.420962",
+        lon: "78.381141",
+        name: "dtdc",
+        desc: "Telangana",
+        image: "pin1.png",
+        showCallout: true,
+        calloutData: {
+            lbl1: "KonyLabs"
+        }
+    }];
+    kony.location.getCurrentPosition(function(response){
+      
+       latitude = response.coords.latitude;
+       longitude = response.coords.longitude;   
+    	var pin1 = {
+        id: "id1", // id is mandatory for every pin
+        lat: latitude,
+        lon: longitude,
+        name: "Current Location",
+        image: "icon1.png",
+        //focus image will be shown while map pin selected
+        desc: "current location",
+        showCallout: true,
+        meta: {
+            color: "red",
+            label: "A"
+        }
+		};
+		self.view.mapNearMe.addPin(pin1);     
+   },{}, {});
+    this.view.mapNearMe.showZoomControl = true;
+    this.view.mapNearMe.screenLevelWidget = true;
+    this.view.mapNearMe.enableCache = true;
+    this.view.mapNearMe.zoomLevel = 16;
+    
+  	//  this.setOffersData();
   },
   /**
      * @function onPostShow
@@ -43,8 +92,6 @@ define({
   bindActions: function() {
     kony.print(this._formName + ": bindActions start...");
     this.view.onDestroy = this.onDestroyCallback.bind(this);
-    this.view.btnBack.onClick = this.onCloseView.bind(this);   
-    this.view.btnSubmit.onClick = this.onClickSubmit.bind(this);
   },
   /**
      * @function onDestroyCallback

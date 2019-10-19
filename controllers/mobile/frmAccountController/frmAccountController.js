@@ -23,8 +23,8 @@ define({
      * @description preShow of the form
      */
   onPreShow: function(){
-    this.profileData();
-    this.setTrasactionsData();
+   // this.profileData();
+   // this.setTrasactionsData();
   },
   /**
      * @function onPostShow

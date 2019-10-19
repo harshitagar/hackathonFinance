@@ -2,7 +2,7 @@
   "android": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "default",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true,
@@ -17,7 +17,7 @@
   "androidwearos": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "default",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true
@@ -31,7 +31,7 @@
   "desktopweb": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "Helvetica",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true,
@@ -60,7 +60,7 @@
   "ipad": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "System-Bold",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "isForked": true,
     "shadow": {
@@ -82,7 +82,7 @@
   "iphone": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "System-Bold",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "isForked": true,
     "shadow": {
@@ -105,7 +105,7 @@
   "kiosk": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "None",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true
@@ -114,7 +114,7 @@
   "spaan": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "Helvetica",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true,
@@ -137,7 +137,7 @@
   "spaandroidtablet": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "Helvetica",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true,
@@ -160,7 +160,7 @@
   "spabb": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "Helvetica",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true,
@@ -183,7 +183,7 @@
   "spaip": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "Helvetica",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true,
@@ -206,7 +206,7 @@
   "spaipad": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "Helvetica",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true,
@@ -229,7 +229,7 @@
   "spawindowstablet": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "Helvetica",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true,
@@ -252,7 +252,7 @@
   "spawinphone8": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "Helvetica",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true,
@@ -275,7 +275,7 @@
   "tabrcandroid": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "default",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true,
@@ -289,7 +289,7 @@
   },
   "wType": "Label",
   "watchos": {
-    "font_name": "System",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true
@@ -297,7 +297,7 @@
   "windows8": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "None",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true
@@ -305,7 +305,7 @@
   "winphone8": {
     "background_color": "94019400",
     "bg_type": "one",
-    "font_name": "None",
+    "font_name": "FontAwesome",
     "font_size": 125,
     "font_weight": "bold",
     "isForked": true

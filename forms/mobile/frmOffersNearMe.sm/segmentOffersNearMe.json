@@ -11,26 +11,26 @@
                 },
                 "lblofferPlace": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Label"
+                    "text": "Burger King"
                 }
             },
             [
                 {
                     "lblDescription": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "10% offer on Burger"
+                        "text": "Distance"
                     }
                 },
                 {
                     "lblDescription": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "20% offer on ice cream"
+                        "text": "Distance"
                     }
                 },
                 {
                     "lblDescription": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "20% offer on ice cream"
+                        "text": "Distance"
                     }
                 }
             ]
@@ -43,20 +43,20 @@
                 },
                 "lblofferPlace": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Label"
+                    "text": "Mac'd"
                 }
             },
             [
                 {
                     "lblDescription": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "20% offer on ice cream"
+                        "text": "Distance"
                     }
                 },
                 {
                     "lblDescription": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "20% offer on cake"
+                        "text": "Distance"
                     }
                 }
             ]
@@ -69,7 +69,7 @@
     "_indicator_": "none",
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "1%"
     },
     "_margin_": [
         0,
@@ -86,11 +86,11 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "5dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "98%"
     },
     "android": {
         "psp": {
@@ -104,7 +104,7 @@
     "editstyle": "none",
     "focusedindex": null,
     "focuseditem": null,
-    "groupcells": false,
+    "groupcells": true,
     "hasSections": true,
     "id": "segmentOffersNearMe",
     "info": null,
@@ -139,7 +139,7 @@
     "rowTemplateId": "e78a93ab53494dc9ad420133d5e7abea",
     "rowcounter": 1,
     "rowfocusskin": "s71ee8bbd9784ff6b5eb99e6f29b00dc",
-    "rowskin": "sa52fa13c1b14461a5d1d4082dada4bd",
+    "rowskin": "s8ab58280acf4fb7acaec72e42ca9790",
     "rowtemplate": "flxOffersNearMeList",
     "screenlevelwidget": false,
     "seccounter": 1,
@@ -151,9 +151,8 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
-    "selectionbehavior": "singleselect",
-    "selectionbehaviorconfig": {},
+    "selectedsectionindex": null,
+    "selectionbehavior": "default",
     "separatorrequired": false,
     "showprogressindicator": false,
     "showscrollbars": false,

@@ -56,7 +56,7 @@
         }
     },
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "ie210995627449a099637e5bfa06942d",
     "name": "kony.ui.Label",
     "parent": "flxOfferNearMeHeader",
