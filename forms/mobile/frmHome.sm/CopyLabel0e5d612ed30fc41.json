@@ -27,7 +27,7 @@
         0
     ],
     "_skin_": "s05e268129ff49daaa1b6c8dd4b6dfaa",
-    "_text_": "Share & Pay",
+    "_text_": "Pay & Share",
     "_width_": {
         "type": "string",
         "value": "80%"
@@ -62,7 +62,7 @@
     "isvisible": true,
     "kuid": "b8ebeb8931a04b68a1304a5124c8f540",
     "name": "kony.ui.Label",
-    "parent": "CopyFlexContainer0f30f9df072d846",
+    "parent": "flxPayShare",
     "pf": "frmHome",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

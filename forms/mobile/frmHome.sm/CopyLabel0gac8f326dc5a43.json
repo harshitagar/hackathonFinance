@@ -58,7 +58,7 @@
     "isvisible": true,
     "kuid": "eb4af53cbfff4ac3a639c3e4a2a1e6e7",
     "name": "kony.ui.Label",
-    "parent": "flx",
+    "parent": "flxPayContacts",
     "pf": "frmHome",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
