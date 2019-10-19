@@ -2,6 +2,7 @@ define({
 
   //Type your controller code here 
   onClickLogin : function(){
+    
     showDefaultLoading();
     var serviceName = "RhinoLoginService";
     integrationObj = KNYMobileFabric.getIntegrationService(serviceName);
@@ -10,7 +11,7 @@ define({
     var password = this.view.tbxPassword.text;
     var data= {"username": username,"password": password};
     var headers= {};
-    integrationObj.invokeOperation(operationName, headers, data, operationSuccess, operationFailure);
+    callService("signin", data, operationSuccess, operationFailure);
     function operationSuccess(res){
       if(res.success)
       {  
