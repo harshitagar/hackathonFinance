@@ -8,26 +8,20 @@ define({
   },
   PreShow:function(){
     shareObj=this;
-    // this.view.segContacts.setData(contactsData);
     this.view.flxAddNewGrp.centerX="150%";
     this.view.flxAddNewGrp.centerY="150%";
     this.view.flxSeg.showFadingEdges=false;
   },
   PostShow:function(){
-    this.view.flxAdd.onClick=()=>{
-      showDefaultLoading();
-      // callService("getAllUsers",{},showContactsSuccess,showContactsFail,shareObj);
-      serviceKey="getAllUsers";
-      var serviceName = MFserviceList[serviceKey].serviceName;
-      integrationObj = KNYMobileFabric.getIntegrationService(serviceName);
-      var operationName =  MFserviceList[serviceKey].OperationName;
-      var data = {};
-      var headers= {};
-      integrationObj.invokeOperation(operationName, headers, data, this.showContactsSuccess, this.showContactsFail);
 
-
-      // animate(this.view.flxAddNewGrp,{"centerX":"50%","centerY":"50%"});
-    };
+    showDefaultLoading();
+    serviceKey="getAllUsers";
+    var serviceName = MFserviceList[serviceKey].serviceName;
+    integrationObj = KNYMobileFabric.getIntegrationService(serviceName);
+    var operationName =  MFserviceList[serviceKey].OperationName;
+    var data = {};
+    var headers= {};
+    integrationObj.invokeOperation(operationName, headers, data, this.showContactsSuccess, this.showContactsFail);
     this.view.flxBackAddGrp.onClick=()=>{
       animate(this.view.flxAddNewGrp,{"centerX":"150%","centerY":"150%"});};
 
@@ -44,7 +38,7 @@ define({
   },
   showContactsSuccess:function(response){
     this.view.segContacts.removeAll();
-    animate(this.view.flxAddNewGrp,{"centerX":"50%","centerY":"50%"});
+    //animate(this.view.flxAddNewGrp,{"centerX":"50%","centerY":"50%"});
     // alert(response.Users);
     var contactsData=[];
     var tempData={};
@@ -58,6 +52,7 @@ define({
     //alert(contactsData);
     this.view.segContacts.setData(contactsData);
     hideDefaultLoading();
+    this.view.flxAdd.onClick=()=>{animate(this.view.flxAddNewGrp,{"centerX":"50%","centerY":"50%"});};
   },
   showContactsFail:function(error){
     alert("Service Failed. Please try again later: "+error);
@@ -72,13 +67,25 @@ define({
       }
     }
     let membersNames=memberNames.substring(0,memberNames.length-1);
-    if(this.view.txtGrpName.text===null||this.view.txtGrpName.text===undefined||memberNames.length<1){
-      alert("Error");
+    if(this.view.txtGrpName.text===null||this.view.txtGrpName.text===undefined||memberNames.length<2||gblUserName===""){
+      alert("Please enter Group Name and select group members(It least more than one)");
     }
     else{
-      alert("Done");
+      showDefaultLoading();
+      var servData={
+        "username": gblUserName,
+        "memberNames" : membersNames,
+        "groupName" : this.view.txtGrpName.text
+      };
+      callService("createNewGroup",servData,(response)=>{
+        animate(this.view.flxAddNewGrp,{"centerX":"150%","centerY":"150%"},0.25,()=>{hideDefaultLoading();});
+      },(error)=>{
+        alert("Service Failed. Please try again later.");
+      });
     }
   },
+
+
 
 
 });
