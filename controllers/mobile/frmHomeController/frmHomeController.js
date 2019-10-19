@@ -30,7 +30,9 @@ define({
       this.view.lbl3.skin="sknFooterInActive";
       this.view.lbl31.skin="sknFooterInActive1";
       this.view.lbl2.skin="sknFooterActive";
-      this.view.lbl21.skin="sknFooterActive1";});
+      this.view.lbl21.skin="sknFooterActive1";
+      commonNavigateFunction("frmCamera");
+    });
   },
   tabThreeSelected:function(){
     animate(this.view.flxAnimate,{"left":"70%"},0.25,()=>{
