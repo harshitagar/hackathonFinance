@@ -5,10 +5,10 @@
   "androidwearos": {
     "font_name": "default"
   },
-  "background_color": "1b9ed9ff",
+  "background_color": "e8672bff",
   "bg_type": "one",
-  "border_color": "00000000",
-  "border_radius": 20,
+  "border_color": "000000ff",
+  "border_radius": 10,
   "border_style": "custom",
   "border_type": 0,
   "border_width": 1,
@@ -25,7 +25,7 @@
   "kiosk": {
     "font_name": "None"
   },
-  "kuid": "saf40b2324584c8f9de2d25ee1c5c0e8",
+  "kuid": "sffc170793af409ea42cc3fd0d88e609",
   "spaan": {
     "font_name": "Helvetica"
   },
