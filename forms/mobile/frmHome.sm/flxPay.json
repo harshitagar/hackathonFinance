@@ -38,12 +38,12 @@
     "bounces": true,
     "canUpdateUI": true,
     "children": [
-        "FlexContainer0b80dbd286f3f49",
-        "CopyFlexContainer0d4494f10dcf046",
-        "CopyFlexContainer0c74c4613a66845",
+        "flxCharity",
+        "flxScan",
+        "flxPayContacts",
         "CopyFlexContainer0d0f180fc7fc142",
-        "CopyFlexContainer0b70349b34a1b45",
-        "CopyFlexContainer0f30f9df072d846"
+        "flxSharePay",
+        "flxPayShare"
     ],
     "clipbounds": true,
     "containerweight": 100,

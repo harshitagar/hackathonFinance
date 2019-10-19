@@ -23,10 +23,10 @@
         "value": "5%"
     },
     "_skin_": "sd60401fbee943f88d948339181aa776",
-    "_text_": "$100,00,000",
+    "_text_": "",
     "_width_": {
         "type": "string",
-        "value": "30%"
+        "value": "35%"
     },
     "_wrapping_": 2,
     "android": {

@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "89%"
+        "value": "65%"
     },
     "_left_": {
         "type": "string",
@@ -26,7 +26,7 @@
     "_skin_": "s9126664d93841af822c526315310ad5",
     "_top_": {
         "type": "string",
-        "value": "10%"
+        "value": "33%"
     },
     "_width_": {
         "type": "string",
@@ -58,7 +58,7 @@
     "layouttype": 2,
     "name": "kony.ui.FlexScrollContainer",
     "pagingenabled": false,
-    "parent": "CopyflxAddGrpBody0cad01e87ce274a",
+    "parent": "flxGrp",
     "pf": "frmShare",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

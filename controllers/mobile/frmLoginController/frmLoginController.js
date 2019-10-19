@@ -17,7 +17,7 @@ define({
       if(res.success)
       {  
         commonNavigateFunction("frmHome");
-        hideDefaultLoading();
+//         hideDefaultLoading();
       }
       else
       {

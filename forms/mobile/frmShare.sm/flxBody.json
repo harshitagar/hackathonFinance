@@ -38,9 +38,7 @@
     "bounces": true,
     "canUpdateUI": true,
     "children": [
-        "flx1",
-        "flx2",
-        "flx3"
+        "flx"
     ],
     "clipbounds": false,
     "containerweight": 100,
