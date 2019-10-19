@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_b7237a330e314c5cb3ae1bd2699c180c": {
+        "id": "AS_FlexContainer_b7237a330e314c5cb3ae1bd2699c180c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_cbbe23439b7f4aa78609b7dec52eb284",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "commonNavigateFunction",
+            "display": "commonNavigateFunction",
+            "inputparams": [{
+                "name": "frmName",
+                "value": "\"frmShare\""
+            }],
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_b540ae2cfa6f4707a957ffd1e61893f8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showDefaultLoading();",
+            "callbackType": null
+        }]
+    }
+}

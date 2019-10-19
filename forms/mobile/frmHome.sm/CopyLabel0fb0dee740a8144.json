@@ -3,12 +3,8 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "50%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "26dp"
+        "type": "ref",
+        "value": "preferred"
     },
     "_margin_": [
         1,
@@ -22,15 +18,15 @@
         0,
         0
     ],
-    "_skin_": "sc1f723ce5bf4debae3fc7af43a43533",
-    "_text_": "Profile",
+    "_skin_": "sd016264f6a945a28e9fc49cca57a0bb",
+    "_text_": "Offers",
     "_top_": {
         "type": "string",
-        "value": "60dp"
+        "value": "63%"
     },
     "_width_": {
-        "type": "string",
-        "value": "20%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -42,15 +38,11 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "80%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "66%"
+        "value": "50%"
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "lbl31",
+    "id": "CopyLabel0fb0dee740a8144",
     "info": null,
     "ipad": {
         "psp": {
@@ -64,14 +56,14 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "d0f22215737f4a8fbd54bbb40cb28e4b",
+    "kuid": "b3e29a2cabbe45359a2545c44cc2c102",
     "name": "kony.ui.Label",
-    "parent": "flxFooter",
+    "parent": "flxOffers",
     "pf": "frmHome",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},
     "tooltip": "",
     "wType": "Label",
-    "zindex": 4
+    "zindex": 1
 }
