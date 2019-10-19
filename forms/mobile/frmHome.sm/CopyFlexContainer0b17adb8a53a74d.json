@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30%"
+        "value": "55%"
     },
     "_margin_": [
         0,
@@ -35,7 +35,9 @@
         "type": "string",
         "value": "50%"
     },
-    "children": [],
+    "children": [
+        "donutchart"
+    ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,

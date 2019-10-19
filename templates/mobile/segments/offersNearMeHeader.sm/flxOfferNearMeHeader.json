@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "57dp"
+        "value": "30dp"
     },
     "_left_": {
         "type": "string",
@@ -36,8 +36,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblofferPlace",
-        "lblOfferDistance"
+        "lblofferPlace"
     ],
     "clipbounds": true,
     "containerId": true,
@@ -49,7 +48,7 @@
     "ismodalcontainer": false,
     "isvisible": true,
     "kuid": "c6da587acb8e4e07b193fc268d60575d",
-    "layouttype": 4,
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "flxOffersNearMeHeader",
     "pf": "offersNearMeHeader",
