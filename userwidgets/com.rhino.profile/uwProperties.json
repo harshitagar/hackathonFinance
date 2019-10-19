@@ -17,7 +17,93 @@
         },
         "properties": {
             "custom": [],
-            "passthrough": []
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d2ef7570643048ebb869c86c76b3ede9",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 1,
+                    "propertyKey": "src",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "src",
+                        "srcWidget": "memberImage",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "ef25f96cd58a453893a61560b1a6b4e8"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "cfcb259883a54f30bfdcef140b33cbf4",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "UserName",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "UserName",
+                        "srcWidget": "lblMemeberName",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bc90bba800894de0a7715177a0d06ea2"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f2a7e8989c044e04a017d97612c40f07",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "AccountNumber",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "AccountNumber",
+                        "srcWidget": "lblAccountNumber",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ad38f4b5caa24b81889f1ebc4c1aa574"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ad773fe02f1046549341b2033e7470d4",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 4,
+                    "propertyKey": "RemainingBalance",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "RemainingBalance",
+                        "srcWidget": "lblBalanceRemaining",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ca4e4731446e4aa7a277eab952c28db9"
+                }
+            ]
         },
         "widgets": {
             "expose": [],

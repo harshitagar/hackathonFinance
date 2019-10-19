@@ -27,6 +27,7 @@ define({
      */
   onPreShow: function(){
     kony.print(this._formName + " : onPreShow start...");
+    this.setOffersData();
   },
   /**
      * @function onPostShow
@@ -66,4 +67,29 @@ define({
       CommonUtil.logException(+ " : onCloseView", exception);
     }
   },
+  
+  setOffersData : function(){
+   
+    showDefaultLoading();
+    var serviceName = "";
+    integrationObj = KNYMobileFabric.getIntegrationService(serviceName);
+    var operationName =  "";
+    var data= {};
+    var headers= {};
+    integrationObj.invokeOperation(operationName, headers, data, operationSuccess, operationFailure);
+    function operationSuccess(res){
+      if(res.success)
+      {          
+        hideDefaultLoading();
+      }
+      else
+      {
+        hideDefaultLoading();
+      }
+    }
+    function operationFailure(res){
+      hideDefaultLoading();
+      //code for failure call back
+    }
+  }
 });
