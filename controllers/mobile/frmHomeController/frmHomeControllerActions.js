@@ -13,5 +13,11 @@ define({
         var self = this;
         commonNavigateFunction.call(this, "frmShare");
         showDefaultLoading();
+    },
+    /** onClick defined for flxOffers **/
+    AS_FlexContainer_b7237a330e314c5cb3ae1bd2699c180c: function AS_FlexContainer_b7237a330e314c5cb3ae1bd2699c180c(eventobject) {
+        var self = this;
+        commonNavigateFunction.call(this, "frmShare");
+        showDefaultLoading();
     }
 });
