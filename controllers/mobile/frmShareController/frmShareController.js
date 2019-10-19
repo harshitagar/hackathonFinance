@@ -115,7 +115,8 @@ this.getGroupInfo();
         grpTotal += transaction.amount;
         data.push({
           "lblCheck": "",
-          "lblName" : transaction.transactionName
+          "lblName" : transaction.transactionName,
+          "lblAmount" : transaction.amount+""
         });
       }
     }
@@ -332,7 +333,7 @@ this.getGroupInfo();
       "zIndex": 1
     }, {}, {});
     flxTransHistory.setDefaultUnit(kony.flex.DP);
-    kony.mvc.registry.add('tmpTransaction', 'tmpTransaction', 'tmpTransactionController');
+    kony.mvc.registry.add('tempDebitCardTrans', 'tempDebitCardTrans', 'tempDebitCardTransController');
     var segTransaction = new kony.ui.SegmentedUI2({
       "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
       "centerX": "50%",
@@ -347,7 +348,7 @@ this.getGroupInfo();
       "retainSelection": false,
       "rowFocusSkin": "seg2Normal",
       "rowSkin": "seg2Normal",
-      "rowTemplate": "flxTransaction",
+      "rowTemplate": "tempDebitTrans",
       "scrollingEvents": {},
       "sectionHeaderSkin": "sliPhoneSegmentHeader",
       "selectionBehavior": constants.SEGUI_DEFAULT_BEHAVIOR,
@@ -356,7 +357,8 @@ this.getGroupInfo();
       "top": "0%",
       "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
       "widgetDataMap": {
-        "lblName": "lblName"
+        "lblName": "lblName",
+        "lblAmount": "lblAmount"
       },
       "width": "100%",
       "zIndex": 1
