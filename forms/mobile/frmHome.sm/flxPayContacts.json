@@ -41,7 +41,7 @@
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flx",
+    "id": "flxPayContacts",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

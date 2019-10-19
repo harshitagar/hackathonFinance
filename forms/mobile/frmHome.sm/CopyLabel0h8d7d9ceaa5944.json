@@ -62,7 +62,7 @@
     "isvisible": true,
     "kuid": "e3e3bc6228c64bc495417305c68b78f7",
     "name": "kony.ui.Label",
-    "parent": "CopyFlexContainer0f30f9df072d846",
+    "parent": "flxPayShare",
     "pf": "frmHome",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
