@@ -15,7 +15,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s88da84457ae4f7cadaf24b0469529ea",
+    "_skin_": "s93e27b835df4e8099d886a20a24c460",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
@@ -30,27 +30,24 @@
     },
     "canUpdateUI": true,
     "children": [
-        "flxCameraWidget",
-        "flxBack",
-        "Label0f2263daf80dd48",
-        "frmOffersNear"
+        "frmOffersNear",
+        "flxBack"
     ],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
             "channel": "mobile",
-            "name": "frmOffersNearMeController"
+            "name": "frmOffersImageController"
         }
     },
     "currentLocale": "default",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "GalaxyS8",
+    "device": "iPhoneXS",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "friendlyName": "frmOffersNearMe",
-    "id": "frmOffersNearMe",
+    "id": "frmOffersImage",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -68,7 +65,7 @@
             "titleBarAttributes": {
                 "barStyle": 0,
                 "hidesBackButton": false,
-                "kuid": "hf818c6984274016b8bab28b5e5dd605",
+                "kuid": "b5417a3f56944d29b656ffbc57de25b3",
                 "leftBarButtonItems": [],
                 "leftItemsSupplementBackButton": true,
                 "prompt": "",
@@ -79,7 +76,7 @@
                         "info": {
                             "title": "Edit"
                         },
-                        "kuid": "ec20f4471fcb4dcca8f07321804dc03f",
+                        "kuid": "d46b0215e39949ae96b9fb7fc1cd862a",
                         "style": 0,
                         "tintColor": "4b88f100",
                         "type": 1
@@ -96,18 +93,18 @@
     "kiosk": {
         "needAppMenu": false
     },
-    "kuid": "ge7c93fdf6f74f48b976d64d897faea9",
+    "kuid": "c5172c44c37c4c4797b33038162e3f9e",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": false,
     "paddinginpixel": false,
-    "platform": "android",
-    "prevDevice": "Pixel3",
+    "platform": "iphone",
+    "prevDevice": "iPhoneXS",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,
-    "shellCSS": "and_GalaxyS8",
+    "shellCSS": "iOS_iPhoneXS",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {

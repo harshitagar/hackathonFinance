@@ -27,7 +27,7 @@
     "_indicator_": "none",
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "1%"
     },
     "_margin_": [
         0,
@@ -44,11 +44,11 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "2dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "98%"
     },
     "android": {
         "psp": {
@@ -80,7 +80,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "fdaa5313447c474cbbfc711912e1b135",
+    "kuid": "iba46b1a36b44b72974f931dfea0ed65",
     "masterdata": {},
     "name": "kony.ui.SegmentedUI2",
     "needpageindicator": true,
@@ -90,7 +90,7 @@
         "position": "bottom"
     },
     "parent": "flxOffersSegment",
-    "pf": "frmOffersNearMe",
+    "pf": "frmOffersImage",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainselection": false,
@@ -109,7 +109,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": null,
+    "selectedsectionindex": 0,
     "selectionbehavior": "default",
     "separatorrequired": false,
     "showprogressindicator": false,

@@ -30,11 +30,8 @@ define({
       try{
         var transData = res.Transactions;
         if(transData){
-          //           alert(transData);
-
           for(var i=0;i<transData.length;i++)
-          {/* 
-	  alert(transData.amount); */
+          {
             transDataVal = transData[i];
             if(transDataVal.payeeUserName == gblUserName)
             {
@@ -84,7 +81,7 @@ define({
     params = {"username":gblUserName};
     callService("getUser", params, userSuccessCall, userErrorCall);
     function userSuccessCall(res){
-      self.view.lblBalance.text = "Balance: $"+res.User.accountBalance;
+      self.view.lblBalance.text = "Balance: $"+res.User.accountBalance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+".00";
       hideDefaultLoading();
     }
     function userErrorCall(res){
