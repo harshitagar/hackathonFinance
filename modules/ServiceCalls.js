@@ -13,6 +13,7 @@ var MFserviceList = {
   "offerByName":{ "serviceName":"RhinoOfferServices", "OperationName":"RhinoOfferByName"},
   "offerByLocation":{ "serviceName":"RhinoOfferServices", "OperationName":"RhinoOfferByLoc"}
 };
+
 function callService(serviceKey, params, successCall, ErrorCall)
 {
   var serviceName = MFserviceList[serviceKey].serviceName;

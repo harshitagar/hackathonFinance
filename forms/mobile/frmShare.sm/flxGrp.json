@@ -39,8 +39,7 @@
     },
     "children": [
         "flxGrpTop",
-        "flxGrpBody",
-        "CopyflxAddGrpBody0cad01e87ce274a"
+        "flxTransHistory"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -48,7 +47,7 @@
     "dragg": false,
     "enablescrolling": true,
     "horizontalscrollindicator": true,
-    "id": "flxGrp1",
+    "id": "flxGrp",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
@@ -56,7 +55,7 @@
     "layouttype": 2,
     "name": "kony.ui.FlexScrollContainer",
     "pagingenabled": false,
-    "parent": "flx1",
+    "parent": "flx",
     "pf": "frmShare",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

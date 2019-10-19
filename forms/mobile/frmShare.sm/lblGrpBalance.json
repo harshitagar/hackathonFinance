@@ -58,7 +58,7 @@
     "isvisible": true,
     "kuid": "a5edbed18d17494787caa3461a6e69bf",
     "name": "kony.ui.Label",
-    "parent": "FlexContainer0a5310970460e4a",
+    "parent": "flxInfo",
     "pf": "frmShare",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

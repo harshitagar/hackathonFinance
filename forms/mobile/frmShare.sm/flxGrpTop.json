@@ -37,8 +37,8 @@
     },
     "children": [
         "flxImg",
-        "FlexContainer0a5310970460e4a",
-        "FlexContainer0d97ec4f3681549"
+        "flxInfo",
+        "flxLine"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -50,7 +50,7 @@
     "kuid": "b5e1f1b752794000842dc89ca7b446fc",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxGrp1",
+    "parent": "flxGrp",
     "pf": "frmShare",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

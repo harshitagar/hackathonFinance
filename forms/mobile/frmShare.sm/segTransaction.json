@@ -165,7 +165,9 @@
     },
     "iphone": {
         "psp": {
-            "indicator": "rowselect"
+            "bounces": true,
+            "indicator": "rowselect",
+            "showProgressIndicator": false
         }
     },
     "iscustomlayout": false,
