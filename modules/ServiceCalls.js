@@ -1,12 +1,14 @@
 //Type your code here
 var MFserviceList = {
   "getAllUsers":{ "serviceName":"RhinoUserServices", "OperationName":"getAllUsers"}, 
+  "getUser":{ "serviceName":"RhinoUserServices", "OperationName":"getUserInfo"}, 
   "signup":{ "serviceName":"RhinoLoginService", "OperationName":"RhinoSignup"},
   "signin":{ "serviceName":"RhinoLoginService", "OperationName":"RhinoSignin"},
   "nearByPleaces":{ "serviceName":"RhinoGoogleMapApi", "OperationName":"RhinoNearbyPlaces"},
   "visionAPI":{ "serviceName":"RhinoGoogleVisionApi", "OperationName":"RhinoImageLogoDetector"},
   "createNewGroup":{ "serviceName":"RhinoGroupServices", "OperationName":"RhinoAddNewGroup"},
   "showGroupsForUser":{ "serviceName":"RhinoGroupServices", "OperationName":"RhinoGetUserGroups"},
+  "makeGroupTransaction":{ "serviceName":"RhinoTransactionServices", "OperationName":"RhinoShareTransaction"}
 };
 function callService(serviceKey, params, successCall, ErrorCall)
 {

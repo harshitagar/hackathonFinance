@@ -13,10 +13,23 @@ define({
     this.view.lbl21.onClick=this.tabTwoSelected.bind(this);
     this.view.flxTab3.onClick=this.tabThreeSelected.bind(this);
     this.view.lbl31.onClick=this.tabThreeSelected.bind(this);
-    this.view.flxOffers.onClick = function(){
-      commonNavigateFunction("frmOffersNearMe");
-    }.bind(this);
-    
+  },
+    getUserInfo:function(){
+    /*
+    "User": {
+    "phoneNumber": 12,
+    "_id": "5daabd08287fa053dace267f",
+    "accountBalance": 1100000,
+    "
+    */
+    params = {"username":gblUserName};
+    callService("getUser", params, userSuccessCall, userErrorCall);
+    function userSuccessCall(res){
+      alert(res.User.accountBalance+"   "+res.User.phoneNumber);
+    }
+    function userErrorCall(res){
+      
+    }
   },
   navigateToVision:function(){
 	commonNavigateFunction("frmCamera");
