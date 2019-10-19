@@ -14,7 +14,7 @@ define({
   },
   PostShow:function(){
     this.getContactsInfo();
-    this.getGroupInfo();
+    
     this.view.lblUserName.text = gblUserName;
     this.view.flxBackAddGrp.onClick=()=>{
       animate(this.view.flxAddNewGrp,{"centerX":"150%","centerY":"150%"});};
@@ -22,7 +22,6 @@ define({
     this.view.segContacts.onRowClick=this.segSelect.bind(this);
     
     this.view.btnCreateGroup.onClick=this.servCreateGroup.bind(this);
-    hideDefaultLoading();
   },
   getContactsInfo:function(){
     showDefaultLoading();
@@ -54,6 +53,7 @@ define({
     this.view.segContacts.setDataAt( data[parseInt(slectedRow)], parseInt(slectedRow), 0);
   },
   showContactsSuccess:function(response){
+    
     this.view.segContacts.removeAll();
     //animate(this.view.flxAddNewGrp,{"centerX":"50%","centerY":"50%"});
     // alert(response.Users);
@@ -68,10 +68,9 @@ define({
     }
     //alert(contactsData);
     this.view.segContacts.setData(contactsData);
-    hideDefaultLoading();
     this.view.flxAdd.onClick=()=>{animate(this.view.flxAddNewGrp,{"centerX":"50%","centerY":"50%"});};
     //  this.view.segContacts.removeAll();
-
+this.getGroupInfo();
   },
   showContactsFail:function(error){
     hideDefaultLoading();
