@@ -20,7 +20,7 @@ define({
       animate(this.view.flxAddNewGrp,{"centerX":"150%","centerY":"150%"});};
 
     this.view.segContacts.onRowClick=this.segSelect.bind(this);
-    this.view.flxSeg.showFadingEdges=false;
+    
     this.view.btnCreateGroup.onClick=this.servCreateGroup.bind(this);
     hideDefaultLoading();
   },

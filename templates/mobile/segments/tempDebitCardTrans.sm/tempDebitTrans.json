@@ -1,9 +1,8 @@
 {
     "DNDConfig": null,
-    "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "40dp"
     },
     "_left_": {
         "type": "string",
@@ -23,7 +22,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s202d22373344e4cba29e38715747f5d",
+    "_skin_": "s76c0a04f51144efa5782f714a708f3e",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -32,34 +31,40 @@
         "type": "string",
         "value": "100%"
     },
+    "activeNativeBorderCornerRadiusControl": "centerControl",
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxFooter",
-        "flxShare",
-        "flxOffers",
-        "frmTop",
-        "flxHomeBody"
+        "lblName",
+        "lblAmount",
+        "CopyFlexContainer0e42b2667ee6a49"
     ],
     "clipbounds": true,
+    "containerId": true,
     "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "mobile",
+            "name": "tempDebitTransController"
+        }
+    },
     "enablescrolling": true,
-    "id": "flxMain",
+    "id": "tempDebitTrans",
     "info": null,
+    "isTemplate": true,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b11a4a85b79045c7adb0722d8a88de8b",
+    "kuid": "c6baad0e2c004340bf8e3a47819293ce",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmHome",
-    "pf": "frmHome",
+    "parent": "tempDebitCardTrans",
+    "pf": "tempDebitCardTrans",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

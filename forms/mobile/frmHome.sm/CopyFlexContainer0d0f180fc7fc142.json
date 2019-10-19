@@ -3,11 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "0dp"
+        "value": "12.50%"
     },
     "_margin_": [
         0,
@@ -23,36 +19,34 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s202d22373344e4cba29e38715747f5d",
+    "_right_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_skin_": "saf40b2324584c8f9de2d25ee1c5c0e8",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "57.50%"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "42.50%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "flxFooter",
-        "flxShare",
-        "flxOffers",
-        "frmTop",
-        "flxHomeBody"
-    ],
+    "children": [],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxMain",
+    "id": "CopyFlexContainer0d0f180fc7fc142",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b11a4a85b79045c7adb0722d8a88de8b",
+    "kuid": "g8c0e317cd8d433ba4fc08da113a1325",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmHome",
+    "parent": "flxPay",
     "pf": "frmHome",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

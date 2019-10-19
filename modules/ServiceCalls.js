@@ -9,7 +9,9 @@ var MFserviceList = {
   "createNewGroup":{ "serviceName":"RhinoGroupServices", "OperationName":"RhinoAddNewGroup"},
   "showGroupsForUser":{ "serviceName":"RhinoGroupServices", "OperationName":"RhinoGetUserGroups"},
   "makeGroupTransaction":{ "serviceName":"RhinoTransactionServices", "OperationName":"RhinoShareTransaction"},
-  "getAllTransForUser":{ "serviceName":"RhinoTransactionServices", "OperationName":"RhinoGetTransactionsAll"}
+  "getAllTransForUser":{ "serviceName":"RhinoTransactionServices", "OperationName":"RhinoGetTransactionsAll"},
+  "offerByName":{ "serviceName":"RhinoOfferServices", "OperationName":"RhinoOfferByName"},
+  "offerByLocation":{ "serviceName":"RhinoOfferServices", "OperationName":"RhinoOfferByLoc"}
 };
 
 function callService(serviceKey, params, successCall, ErrorCall)
