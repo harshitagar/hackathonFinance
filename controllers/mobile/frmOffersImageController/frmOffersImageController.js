@@ -1,5 +1,6 @@
 define({
   _formName : "frmOffersImage",
+  _placeName : "", 
   /**
      * @function onNavigate
      * @description default buildin method onNavigate called from navigate API
@@ -8,6 +9,8 @@ define({
      */
   onNavigate: function(context, isBackNavigation) {
     kony.print("onNavigate start...");
+    alert(context);
+    this._placeName = context;
     this.onInit();
   },
   /**
@@ -61,7 +64,7 @@ define({
     try{
       kony.print(this._formName + " : onCloseView start...");
       var prevForm = kony.application.getPreviousForm();
-      CommonUtil.navigateToForm(prevForm.id);
+      navigateToForm(prevForm.id);
       kony.application.destroyForm(this._formName);
     }catch(exception){
       CommonUtil.logException(+ " : onCloseView", exception);
@@ -71,7 +74,7 @@ define({
   setOffersData : function(value){
 
     showDefaultLoading();
-    var data= {"placeName" : value};
+    var data= {"placeName" : this._placeName};
     callService("offerByName", data, operationSuccess, operationFailure);
     function operationSuccess(res){
       if(res.success)
@@ -99,11 +102,22 @@ define({
       {
         alert("No Offers Available");
         hideDefaultLoading();
+        var param = {
+        "lblofferPlace" : "No Data Available",
+        "template" : "flxOffersNearMeHeader"
+      };
+      this.view.segmentOffersNearMe.setData(param);
       }
     }
+    
     function operationFailure(res){
       alert("No Offers Available");
       hideDefaultLoading();
+      var data = {
+        "lblofferPlace" : "No Data Available",
+        "template" : "flxOffersNearMeHeader"
+      };
+      this.view.segmentOffersNearMe.setData(data);
     }
   },
 });

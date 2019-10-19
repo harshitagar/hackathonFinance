@@ -30,7 +30,6 @@
     },
     "canUpdateUI": true,
     "children": [
-        "flxCameraWidget",
         "flxBack",
         "Label0f2263daf80dd48",
         "frmOffersNear",

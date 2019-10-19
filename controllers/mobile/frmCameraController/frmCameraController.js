@@ -6,7 +6,6 @@ define({
   },
   PreShow:function(){
     this.view.btnOffers.text = "See All Offers Instead";
-    this.view.btnOffers.onClick = this.navigateToAllOffers;
     this.view.lblStoreName.text ="";
     this.view.camera.onCapture=this.img.bind(this);
   },
@@ -28,21 +27,15 @@ define({
       hideDefaultLoading();
       if(res.logoAnnotations.length>0 && res.logoAnnotations[0].description)
       {
-        self.view.lblStoreName.text = "You are at "+res.logoAnnotations[0].description+"!"+"\nLet's find offers for you!!";
-        self.view.btnOffers.text = res.logoAnnotations[0].description+" Offers";
-      }
-      else
-      {
-        self.view.lblStoreName.text = "We can't find where you are!\nTake a look at nearby Offers!";
-        self.view.btnOffers.text = "See All Offers Instead";
+       var value = res.logoAnnotations[0].description; 
+       navigateToForm("frmOffersImage", value);
       }
     }
     
     function imageReadfail(res)
     {
       hideDefaultLoading();
-      self.view.lblStoreName.text = "We can't find where you are!\nTake a look at nearby Offers!";
-      self.view.btnOffers.text = "See All Offers Instead";
+      commonNavigateFunction("frmOffersNearMe");
     }
   },
 });

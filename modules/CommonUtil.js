@@ -24,6 +24,22 @@ function commonNavigateFunction(frmName){
   var ntf = new kony.mvc.Navigation(frmName);
   ntf.navigate();
 }
+  /**
+   * @function navigateToForm
+   * @param formName 
+   */
+  function navigateToForm(formName,param){
+    if(kony.sdk.getChannelType() === 'desktop'){
+      formName = "web" + formName;
+    }
+    var frmNavigation = new kony.mvc.Navigation(formName);
+    if(param){
+      frmNavigation.navigate(param);
+    }else{
+      frmNavigation.navigate();
+    }
+  }
+
 function showDefaultLoading (){
   kony.application.showLoadingScreen("sknFlxLoading","Loading...",
                                      constants.LOADING_SCREEN_POSITION_ONLY_CENTER,
