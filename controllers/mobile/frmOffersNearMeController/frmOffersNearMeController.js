@@ -28,14 +28,15 @@ define({
 	
     kony.print(this._formName + " : onPreShow start...");
     var self = this;
-    this.setCurrentLocation();
+   
 	this.view.mapNearMe.height = "100%";
     this.view.mapNearMe.showZoomControl = true;
     this.view.mapNearMe.screenLevelWidget = true;
     this.view.mapNearMe.enableCache = true;
     this.view.mapNearMe.zoomLevel = 15;
     this.setLocationData();
-    //   this.setOffersData();  
+    //this.setOffersData();
+    this.setCurrentLocation();
   },
   /**
      * @function onPostShow
