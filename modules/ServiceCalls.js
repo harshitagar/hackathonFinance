@@ -8,7 +8,10 @@ var MFserviceList = {
   "visionAPI":{ "serviceName":"RhinoGoogleVisionApi", "OperationName":"RhinoImageLogoDetector"},
   "createNewGroup":{ "serviceName":"RhinoGroupServices", "OperationName":"RhinoAddNewGroup"},
   "showGroupsForUser":{ "serviceName":"RhinoGroupServices", "OperationName":"RhinoGetUserGroups"},
-  "makeGroupTransaction":{ "serviceName":"RhinoTransactionServices", "OperationName":"RhinoShareTransaction"}
+  "makeGroupTransaction":{ "serviceName":"RhinoTransactionServices", "OperationName":"RhinoShareTransaction"},
+  "getAllTransForUser":{ "serviceName":"RhinoTransactionServices", "OperationName":"RhinoGetTransactionsAll"},
+  "offerByName":{ "serviceName":"RhinoOfferServices", "OperationName":"RhinoOfferByName"},
+  "offerByLocation":{ "serviceName":"RhinoOfferServices", "OperationName":"RhinoOfferByLoc"}
 };
 function callService(serviceKey, params, successCall, ErrorCall)
 {
