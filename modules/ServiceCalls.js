@@ -11,6 +11,7 @@ var MFserviceList = {
   "makeGroupTransaction":{ "serviceName":"RhinoTransactionServices", "OperationName":"RhinoShareTransaction"},
   "getAllTransForUser":{ "serviceName":"RhinoTransactionServices", "OperationName":"RhinoGetTransactionsAll"}
 };
+
 function callService(serviceKey, params, successCall, ErrorCall)
 {
   var serviceName = MFserviceList[serviceKey].serviceName;

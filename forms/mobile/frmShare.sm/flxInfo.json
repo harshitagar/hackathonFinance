@@ -3,7 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30%"
+        "value": "120dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "50%"
     },
     "_margin_": [
         0,
@@ -22,35 +26,35 @@
     "_skin_": "s202d22373344e4cba29e38715747f5d",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "37dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "45%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
+    "centery": {
         "type": "string",
         "value": "50%"
     },
     "children": [
-        "CopyflxImg0c973a0aa14ec4b",
-        "CopyFlexContainer0id6ab9f22d3d47",
-        "CopyFlexContainer0d5636b761ce649"
+        "lblGrpName",
+        "lblGrpMembers",
+        "lblGrpBalance"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyflxGrpTop0b0ea008747fd42",
+    "id": "flxInfo",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "af914ddbfeeb4df392ba4efa388e9a74",
+    "kuid": "a70b29c7656948089773cbdf077036ff",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "CopyflxGrp0e00c2133d5024b",
+    "parent": "flxGrpTop",
     "pf": "frmShare",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
