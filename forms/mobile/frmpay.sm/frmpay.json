@@ -15,7 +15,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s93e27b835df4e8099d886a20a24c460",
+    "_skin_": "se1219d8708145fc941938cd1ab85e37",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
@@ -30,25 +30,23 @@
     },
     "canUpdateUI": true,
     "children": [
-        "flxAccount",
-        "flxBack"
+        "frmMain"
     ],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
             "channel": "mobile",
-            "name": "frmAccountController"
+            "name": "frmpayController"
         }
     },
     "currentLocale": "default",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhoneXS",
+    "device": "GalaxyS8",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "friendlyName": "frmAccount",
-    "id": "frmAccount",
+    "id": "frmpay",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -66,7 +64,7 @@
             "titleBarAttributes": {
                 "barStyle": 0,
                 "hidesBackButton": false,
-                "kuid": "d46e974e433e47969bd060a6dc5ae376",
+                "kuid": "f4fe4f931c544d6ea5c5ddf0366b7f83",
                 "leftBarButtonItems": [],
                 "leftItemsSupplementBackButton": true,
                 "prompt": "",
@@ -77,7 +75,7 @@
                         "info": {
                             "title": "Edit"
                         },
-                        "kuid": "f58c38ac80ca4e5399943874ee4c8c56",
+                        "kuid": "j3d7f64a257c4dba9f190ebd95054056",
                         "style": 0,
                         "tintColor": "4b88f100",
                         "type": 1
@@ -94,18 +92,18 @@
     "kiosk": {
         "needAppMenu": false
     },
-    "kuid": "a027255aa56d409eb523834415d192a5",
+    "kuid": "c8aedf093a8f4513a662f42963fd85bc",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": false,
     "paddinginpixel": false,
-    "platform": "iphone",
+    "platform": "android",
     "prevDevice": "iPhoneXS",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhoneXS",
+    "shellCSS": "and_GalaxyS8",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {
@@ -129,7 +127,7 @@
     "spawinphone8": {
         "needAppMenu": false
     },
-    "titleBarSkin": "saaaf156d4da4a1e9b396d2ea147175d",
+    "titleBarSkin": "sc73d6f94db84ad0847d1c05fa72ebc0",
     "titlebar": true,
     "type": 3,
     "wType": "Form",

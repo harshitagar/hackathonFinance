@@ -17,6 +17,9 @@ define({
     this.view.flxTransHistory.showFadingEdges=false;
     this.view.flxTransHistoryCredit.showFadingEdges=false;
     this.setAllData();
+    this.view.flxSharePay.onClick = function(){
+      
+    };
   },
   setAllData:function(){
     //     showDefaultLoading();
@@ -123,7 +126,10 @@ define({
       this.view.lbl31.skin="sknFooterActive1";});
     animate(this.view.flxHomeBody,{"left":"-200%"});
   },
+ 
   PostShow:function(){
 
   },
+  
+  
 });

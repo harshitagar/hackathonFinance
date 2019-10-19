@@ -3,12 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
-        "type": "number",
-        "value": "43"
+        "type": "string",
+        "value": "5%"
     },
     "_margin_": [
         1,
@@ -22,15 +22,15 @@
         0,
         0
     ],
-    "_skin_": "se0ec37bce7e4156881b505702e8b8cb",
-    "_text_": "Grocery",
+    "_skin_": "s51d984b178841c5aaa4601a38b14b57",
+    "_text_": "Select Group",
     "_top_": {
         "type": "string",
-        "value": "12dp"
+        "value": "2.50%"
     },
     "_width_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -50,7 +50,7 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "Label0g713ab2ca67347",
+    "id": "CopylblContacts0j900d5a055c44d",
     "info": null,
     "ipad": {
         "psp": {
@@ -64,10 +64,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "i26cfab8630d44b195bb364890bfb672",
+    "kuid": "g8704aad5b9141ada0fe2912dfc1d663",
     "name": "kony.ui.Label",
-    "parent": "CopyFlexContainer0cde9e762b1034a",
-    "pf": "frmHome",
+    "parent": "FlexContainer0i9ebad0cb97e48",
+    "pf": "frmpay",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

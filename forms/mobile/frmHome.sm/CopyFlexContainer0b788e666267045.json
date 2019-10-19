@@ -3,11 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "20%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "5%"
+        "value": "12.50%"
     },
     "_margin_": [
         0,
@@ -23,10 +19,14 @@
         0
     ],
     "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "5%"
+    },
     "_skin_": "saf40b2324584c8f9de2d25ee1c5c0e8",
     "_top_": {
         "type": "string",
-        "value": "75%"
+        "value": "57.50%"
     },
     "_width_": {
         "type": "string",
@@ -39,11 +39,11 @@
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyFlexContainer0d47c8a9954b046",
+    "id": "CopyFlexContainer0b788e666267045",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f6ec31ef760541309a3f446910a67853",
+    "kuid": "a9837031efbd41b588ce11002fb7078b",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxProfile",

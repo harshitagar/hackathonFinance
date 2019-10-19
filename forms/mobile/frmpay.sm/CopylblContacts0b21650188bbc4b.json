@@ -3,12 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "5%"
     },
     "_margin_": [
         1,
@@ -22,15 +22,15 @@
         0,
         0
     ],
-    "_skin_": "s7ce8178422a4cc0b8b4e869bd8258fa",
-    "_text_": "",
+    "_skin_": "s51d984b178841c5aaa4601a38b14b57",
+    "_text_": "Select Members",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "2.50%"
     },
     "_width_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -42,15 +42,15 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "45%"
+        "value": "50%"
     },
     "centery": {
         "type": "string",
-        "value": "48%"
+        "value": "50%"
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "Label0d3b7f38d98fe4b",
+    "id": "CopylblContacts0b21650188bbc4b",
     "info": null,
     "ipad": {
         "psp": {
@@ -64,10 +64,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "a8e309ec4394460a835d11d4efcb895e",
+    "kuid": "d686d5805bea4f309a4559953b520950",
     "name": "kony.ui.Label",
-    "parent": "flxBack",
-    "pf": "frmAccount",
+    "parent": "FlexContainer0e7beb1ef46bc42",
+    "pf": "frmpay",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

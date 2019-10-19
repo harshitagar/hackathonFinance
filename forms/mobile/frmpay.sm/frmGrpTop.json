@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "20%"
+        "value": "25%"
     },
     "_left_": {
         "type": "string",
-        "value": "5%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -23,31 +23,36 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "saf40b2324584c8f9de2d25ee1c5c0e8",
+    "_skin_": "s202d22373344e4cba29e38715747f5d",
     "_top_": {
         "type": "string",
-        "value": "75%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "42.50%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "CopyflxImg0caa16dea7fd54e",
+        "txtGrpName",
+        "CopyFlexContainer0e42b2667ee6a49",
+        "btnCreateGroup"
+    ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyFlexContainer0d47c8a9954b046",
+    "id": "frmGrpTop",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f6ec31ef760541309a3f446910a67853",
+    "kuid": "d11cf7e0a6bf4adfb2d81a217d141bb5",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxProfile",
-    "pf": "frmHome",
+    "parent": "flxAddNewGrp",
+    "pf": "frmpay",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
