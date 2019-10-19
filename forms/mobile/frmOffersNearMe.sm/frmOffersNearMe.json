@@ -31,7 +31,8 @@
     "canUpdateUI": true,
     "children": [
         "frmOffersNear",
-        "flxCameraWidget"
+        "flxCameraWidget",
+        "flxBack"
     ],
     "containerweight": 100,
     "controllerInfo": {

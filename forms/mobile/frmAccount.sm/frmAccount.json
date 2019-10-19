@@ -30,7 +30,8 @@
     },
     "canUpdateUI": true,
     "children": [
-        "flxAccount"
+        "flxAccount",
+        "flxBack"
     ],
     "containerweight": 100,
     "controllerInfo": {
