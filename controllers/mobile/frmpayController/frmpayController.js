@@ -48,12 +48,13 @@ define({
     var self=this;
     var data=this.view.segContacts.data;
     var memberNames="";
-    var groupName = "";
+    var groupName = "XXX";
     if(this.view.flxSelMembers.skin == "CopyflxInfoVision0g85964711e034e")
     {
       for (let i=0;i<data.length;i++){
         if(data[i].lblCheck.isVisible){
-          memberNames+=data[i].lblName+"~";
+          if(data[i].lblName != gblUserName)
+            memberNames+=data[i].lblName+"~";
         }
       }
     }
@@ -77,6 +78,7 @@ define({
       "groupName"       : groupName,
       "memberNumbers"	  : "8572014047~8960752539"
     };
+//     alert(params);
     callService("makeGroupTransaction", params, transsuccessCall, transErrorCall)
     function transsuccessCall(res){
       if(res.success)
@@ -145,7 +147,8 @@ define({
         var groupMemString = "";
         for(var k=0;k<groupDataVal.usersName.length;k++)
         {
-          groupMemString=groupMemString+groupDataVal.usersName[k]+"~";
+          if(groupDataVal.usersName[k]!=gblUserName)
+            groupMemString=groupMemString+groupDataVal.usersName[k]+"~";
         }
         var temp = {"lblName":groupDataVal.groupName,"members":groupMemString,"lblCheck":{text: "", isVisible: false}};
         members.push(temp);
