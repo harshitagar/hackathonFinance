@@ -15,6 +15,7 @@ define({
      * @description initialization of the form
      */
   onInit: function() {
+    var self = this;
     kony.print(this._formName + " : onInit start...");
     this.view.preShow = this.onPreShow.bind(this);
     this.view.postShow = this.onPostShow.bind(this);
@@ -32,11 +33,12 @@ define({
     this.view.mapNearMe.showZoomControl = true;
     this.view.mapNearMe.screenLevelWidget = true;
     this.view.mapNearMe.enableCache = true;
-    this.view.mapNearMe.zoomLevel = 15;
-    this.view.flxCamera.onClick = function(){
-      commonNavigateFunction("frmCamera");
-    }.bind(this);
+    this.view.mapNearMe.zoomLevel = 16;
     //this.setOffersData();
+     this.view.camera.onCapture = function(){  
+      showDefaultLoading();
+      self.image();
+     }.bind(this);
      this.setLocationData();
      this.setCurrentLocation();
   },
@@ -48,7 +50,36 @@ define({
   onPostShow: function(){
     kony.print(this._formName + " : onPostShow start...");
   },
-
+  
+  
+   image : function(){
+    var self=this;
+    var img = this.view.camera.base64;
+    var params = {
+      "image":img
+    };
+    callService("visionAPI", params, imageReadSuccess, imageReadfail);
+    function imageReadSuccess(res)
+    {
+      alert(JSON.stringify(res));
+      if(res.logoAnnotations.length>0 && res.logoAnnotations[0].description)
+      {      
+       var value = res.logoAnnotations[0].description; 
+       navigateToForm("frmOffersImage", value);
+      }else{
+        alert("No offers available");
+      }
+      hideDefaultLoading();
+    }
+    
+    function imageReadfail(res)
+    {
+      alert("We can't find where you are");
+      hideDefaultLoading();
+      commonNavigateFunction("frmOffersNearMe");
+    }
+  },
+  
   setCurrentLocation : function(){
     var self = this;
     showDefaultLoading();
