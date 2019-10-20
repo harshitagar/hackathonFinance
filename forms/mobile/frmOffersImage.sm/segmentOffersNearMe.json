@@ -119,6 +119,7 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
+        "CopyFlexContainer0e42b2667ee6a49": "CopyFlexContainer0e42b2667ee6a49",
         "flxOffersNearMeHeader": "flxOffersNearMeHeader",
         "flxOffersRow": "flxOffersRow",
         "lblOffer": "lblOffer",

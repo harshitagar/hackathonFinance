@@ -11,7 +11,7 @@ define({
     var username = ""+this.view.tbxuserName.text;
     username=username.trim();
     var password = ""+this.view.tbxPassword.text;
-    password=password.trim();
+    password = password.trim();
     gblUserName = username;
     var data= {"username": username,"password": password};
     var headers= {};
@@ -19,8 +19,8 @@ define({
     function operationSuccess(res){
       if(res.success)
       {  
-        commonNavigateFunction("frmHome");
-        //         hideDefaultLoading();
+        commonNavigateFunction("frmHome");       
+        // hideDefaultLoading();
       }
       else
       {
@@ -33,6 +33,11 @@ define({
       alert("Wrong Password!");
       //code for failure call back
     }
+    var self = this;
+    kony.location.getCurrentPosition(function(response){
+          gblLatitide = response.coords.latitude;
+          gblLongitude = response.coords.longitude;
+        });
   }
-
+ 
 });

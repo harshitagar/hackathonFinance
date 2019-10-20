@@ -4,11 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "60%"
+        "value": "100%"
     },
     "_left_": {
-        "type": "string",
-        "value": "0dp"
+        "type": "number",
+        "value": "43"
     },
     "_margin_": [
         1,
@@ -22,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "s8d91efa71ec4db2a1c6ec09450bd6be",
-    "_text_": "  Click and                                See offers",
+    "_skin_": "se0ec37bce7e4156881b505702e8b8cb",
+    "_text_": "Travel",
     "_top_": {
         "type": "string",
-        "value": "30%"
+        "value": "12dp"
     },
     "_width_": {
         "type": "string",
@@ -40,13 +40,17 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "centery": {
         "type": "string",
-        "value": "40%"
+        "value": "50%"
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "Label0a81d225035ce4a",
+    "id": "CopyLabel0c82e5d2b11c144",
     "info": null,
     "ipad": {
         "psp": {
@@ -60,10 +64,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c3d2dc38e5994249836cc9e03dc60cae",
+    "kuid": "ea170b6629b94e8188466b0188cb5bf6",
     "name": "kony.ui.Label",
-    "parent": "FlexContainer0d8e01bf35af540",
-    "pf": "frmOffersNearMe",
+    "parent": "CopyFlexContainer0d47c8a9954b046",
+    "pf": "frmHome",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

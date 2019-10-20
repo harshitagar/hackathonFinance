@@ -3,12 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "60%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "25dp"
     },
     "_margin_": [
         1,
@@ -22,15 +22,15 @@
         0,
         0
     ],
-    "_skin_": "s8d91efa71ec4db2a1c6ec09450bd6be",
-    "_text_": "  Click and                                See offers",
+    "_skin_": "s0a44cff33d840aa9047d63bc2dc922f",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "30%"
+        "value": "15%"
     },
     "_width_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,13 +40,13 @@
         }
     },
     "canUpdateUI": true,
-    "centery": {
+    "centerx": {
         "type": "string",
-        "value": "40%"
+        "value": "50%"
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "Label0a81d225035ce4a",
+    "id": "Label0d74d1b662fc645",
     "info": null,
     "ipad": {
         "psp": {
@@ -60,9 +60,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c3d2dc38e5994249836cc9e03dc60cae",
+    "kuid": "g589232d92654c7581ded021f9e408ce",
     "name": "kony.ui.Label",
-    "parent": "FlexContainer0d8e01bf35af540",
+    "parent": "flxCamera",
     "pf": "frmOffersNearMe",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

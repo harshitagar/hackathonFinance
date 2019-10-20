@@ -33,10 +33,10 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "50.00%"
+        "value": "50%"
     },
     "children": [
-        "Label0a81d225035ce4a"
+        "Label0d74d1b662fc645"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -57,5 +57,5 @@
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 10
+    "zindex": 11
 }

@@ -40,7 +40,8 @@
         "value": "50%"
     },
     "children": [
-        "flxCamera"
+        "flxCamera",
+        "FlexContainer0d8e01bf35af540"
     ],
     "clipbounds": true,
     "containerweight": 100,

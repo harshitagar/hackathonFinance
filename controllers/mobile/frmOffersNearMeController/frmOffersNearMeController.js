@@ -28,15 +28,19 @@ define({
 	
     kony.print(this._formName + " : onPreShow start...");
     var self = this;
+    showDefaultLoading();
     this.view.mapNearMe.showZoomControl = true;
     this.view.mapNearMe.screenLevelWidget = true;
     this.view.mapNearMe.enableCache = true;
     this.view.mapNearMe.zoomLevel = 15;
-    this.view.flxCamera.onClick = commonNavigateFunction("frmCamera");
-    this.setLocationData();
+    this.view.flxCamera.onClick = function(){
+      commonNavigateFunction("frmCamera");
+    }.bind(this);
     //this.setOffersData();
-    this.setCurrentLocation();
+     this.setLocationData();
+     this.setCurrentLocation();
   },
+  
   /**
      * @function onPostShow
      * @description postShow of the form
@@ -47,11 +51,11 @@ define({
 
   setCurrentLocation : function(){
     var self = this;
-    kony.location.getCurrentPosition(function(response){
-      var pin1 = {
+    showDefaultLoading();
+    var pin1 = {
         id: "id1", // id is mandatory for every pin
-        lat: response.coords.latitude,
-        lon: response.coords.longitude,
+        lat: gblLatitide,
+        lon: gblLongitude,
         name: "Current Location",
         image: "icon1.png",
         //focus image will be shown while map pin selected
@@ -63,8 +67,8 @@ define({
           label: "A"
         }
       };
-      self.view.mapNearMe.addPin(pin1);     
-    },{}, {});
+      self.view.mapNearMe.addPin(pin1); 
+      hideDefaultLoading();
   },
   /**
      * @function bindActions
@@ -136,20 +140,13 @@ define({
     }
   },
 
-  setLocationData : function(){
-
-    var data= {
-      "longitude" : "",
-      "latitude" : ""
-    }; 
+  setLocationData : function(lat , lon){
     var self = this;
     showDefaultLoading();
-    kony.location.getCurrentPosition(function(response){ 
-      data.latitude = response.coords.latitude;
-      data.longitude = response.coords.longitude;  
-    });
-    data.latitude = "17";
-    data.longitude = "78";
+    var data = {
+      "latitude" : gblLatitide,
+      "longitude" : gblLongitude
+    };
     callService("offerByLocation", data, operationSuccess, operationFailure);
     function operationSuccess(res){
       if(res.success)
@@ -191,7 +188,6 @@ define({
         });
         self.view.segmentOffersNearMe.setData(segData);   
         self.view.mapNearMe.addPins(data);
-        self.view.mapNearMe.height = "50%";
         hideDefaultLoading();
       }
       else
@@ -205,5 +201,4 @@ define({
       hideDefaultLoading();
     }
   }
-
 });
