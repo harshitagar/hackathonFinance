@@ -1,5 +1,7 @@
 //Type your code here
-gblUserName="";
+gblUserName= "";
+gblLatitide = "";
+gblLongitude = "";
 
 function animate( element, params, duration, callback, delay ){
   duration = duration || 0.25;
