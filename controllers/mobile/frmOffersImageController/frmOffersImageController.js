@@ -9,8 +9,9 @@ define({
      */
   onNavigate: function(context, isBackNavigation) {
     kony.print("onNavigate start...");
-    alert(context);
+    this.view.lblOffersplace.text = context;
     this._placeName = context;
+    alert(this._placeName);
     this.onInit();
   },
   /**
@@ -74,7 +75,8 @@ define({
   setOffersData : function(value){
 
     showDefaultLoading();
-    var data= {"placeName" : this._placeName};
+    var self = this;
+    var data = {"placeName" : (this._placeName).substr(0,5)};
     callService("offerByName", data, operationSuccess, operationFailure);
     function operationSuccess(res){
       if(res.success)
@@ -96,28 +98,22 @@ define({
             data.push(row);
           });
         });
-        this.view.segmentOffersNearMe.setData(data);
+        
+        self.view.segmentOffersNearMe.setData(data);
+        self.view.segmentOffersNearMe.setVisibility(true);
+        self.view.flxNoOffer.setVisibility(false);
         hideDefaultLoading();
-      }else
-      {
-        alert("No Offers Available");
-        hideDefaultLoading();
-        var param = {
-        "lblofferPlace" : "No Data Available",
-        "template" : "flxOffersNearMeHeader"
-      };
-      this.view.segmentOffersNearMe.setData(param);
+      }else{
+       this.view.segmentOffersNearMe.setVisibility(false);
+       this.view.flxNoOffer.setVisibility(true);
       }
     }
     
     function operationFailure(res){
       alert("No Offers Available");
       hideDefaultLoading();
-      var data = {
-        "lblofferPlace" : "No Data Available",
-        "template" : "flxOffersNearMeHeader"
-      };
-      this.view.segmentOffersNearMe.setData(data);
+      this.view.segmentOffersNearMe.setVisibility(false);
+       this.view.flxNoOffer.setVisibility(true);
     }
   },
 });

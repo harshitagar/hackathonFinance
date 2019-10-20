@@ -3,7 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100dp"
+        "value": "530dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
     },
     "_margin_": [
         0,
@@ -19,44 +23,38 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sa5f4fc2d30e411c86db77b3aa9c939e",
+    "_skin_": "s202d22373344e4cba29e38715747f5d",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0"
     },
     "_width_": {
         "type": "string",
-        "value": "100dp"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50.00%"
-    },
     "children": [
-        "Label0a81d225035ce4a",
-        "camera"
+        "Image0c23308492fa64a"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxCamera",
+    "id": "flxNoOffer",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "be8c179030384271acdfae05774945a4",
+    "kuid": "a67a876d394646159e2af9cfaa393d80",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "FlexContainer0gdc0f61df57c4c",
-    "pf": "frmOffersNearMe",
+    "parent": "flxOffersSegment",
+    "pf": "frmOffersImage",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 10
+    "widgetalignment": 1
 }

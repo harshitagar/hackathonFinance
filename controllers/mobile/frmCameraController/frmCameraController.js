@@ -1,22 +1,19 @@
 define({ 
 
   //Type your controller code here 
-  onNavigate:function(){
-    this.view.preShow=this.PreShow;
+  onNavigate:function(img){
+    if(img){
+      alert("image captured");
+    }
+    this.view.preShow=this.PreShow(img);
   },
-  PreShow:function(){
-    this.view.btnOffers.text = "See All Offers Instead";
-    this.view.lblStoreName.text ="";
-    this.view.camera.onCapture=this.img.bind(this);
+  PreShow:function(img){
+    this.img(img);
   },
-  navigateToAllOffers:function(){
-    commonNavigateFunction("frmOffersNearMe");
-  },
-  
-  img:function(){
+ 
+  img:function(img){
     var self=this;
     showDefaultLoading();
-    var img = this.view.camera.base64;
     //     this.view.img.base64=img;
     var params = {
       "image":img
@@ -24,17 +21,19 @@ define({
     callService("visionAPI", params, imageReadSuccess, imageReadfail);
     function imageReadSuccess(res)
     {
-      hideDefaultLoading();
       if(res.logoAnnotations.length>0 && res.logoAnnotations[0].description)
       {
        var value = res.logoAnnotations[0].description; 
        navigateToForm("frmOffersImage", value);
+      }else{
+        alert("No offers available");
+        commonNavigateFunction("frmOffersNearMe");
       }
     }
     
     function imageReadfail(res)
     {
-      hideDefaultLoading();
+      alert("NO offers available");
       commonNavigateFunction("frmOffersNearMe");
     }
   },

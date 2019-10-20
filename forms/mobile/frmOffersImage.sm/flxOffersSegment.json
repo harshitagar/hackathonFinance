@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "-3dp"
     },
     "_margin_": [
         0,
@@ -32,7 +32,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "segmentOffersNearMe"
+        "segmentOffersNearMe",
+        "flxNoOffer"
     ],
     "clipbounds": true,
     "containerweight": 100,
