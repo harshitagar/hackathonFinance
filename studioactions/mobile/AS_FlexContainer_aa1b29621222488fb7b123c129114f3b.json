@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_aa1b29621222488fb7b123c129114f3b": {
+        "id": "AS_FlexContainer_aa1b29621222488fb7b123c129114f3b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_ja3f16126dff4ec7afe48f8b9498b4b4",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmHome",
+            "formKUID": "j5481af9f81642a69d5790f389780cb2",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": "",
+            "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"flxBackAddGrp\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

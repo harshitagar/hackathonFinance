@@ -3,8 +3,8 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "90%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -22,11 +22,15 @@
         0,
         0
     ],
-    "_skin_": "sd60401fbee943f88d948339181aa776",
-    "_text_": "Amrit",
-    "_width_": {
+    "_skin_": "s51d984b178841c5aaa4601a38b14b57",
+    "_text_": "Select Charity Group",
+    "_top_": {
         "type": "string",
-        "value": "80%"
+        "value": "2.50%"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -36,14 +40,17 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "centery": {
         "type": "string",
         "value": "50%"
     },
-    "containerId": true,
     "containerweight": 100,
-    "contentalignment": 4,
-    "id": "lblName",
+    "contentalignment": 5,
+    "id": "CopylblContacts0b21650188bbc4b",
     "info": null,
     "ipad": {
         "psp": {
@@ -57,16 +64,14 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "a1a5dc0b1f61429eabc0da4df933286e",
-    "maxnumberoflines": 1,
+    "kuid": "g37b2e96431b44268ffdbf19d3dc2169",
     "name": "kony.ui.Label",
-    "parent": "flxAddMembers",
-    "pf": "tempAddMembers",
+    "parent": "flxSelMembers",
+    "pf": "frmCharity",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},
-    "texttruncateposition": 3,
     "tooltip": "",
     "wType": "Label",
-    "zindex": 2
+    "zindex": 1
 }

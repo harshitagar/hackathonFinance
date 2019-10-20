@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Transaction Catagory",
+    "_skin_": "s7707d5da7c34df587e1e2e42482251c",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "54%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "45%"
+    },
+    "android": {},
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "s7707d5da7c34df587e1e2e42482251c",
+    "id": "tbxTransType",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "j16619b70fb6441189148de3a35afc9a",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "frmGrpTop",
+    "pf": "frmCharity",
+    "placeholderskin": "saa611a88bd74ae285110604ae122eca",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 2
+}

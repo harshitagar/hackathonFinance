@@ -14,6 +14,7 @@ define({
     this.view.flxTab3.onClick=this.tabThreeSelected.bind(this);
     this.view.lbl31.onClick=this.tabThreeSelected.bind(this);
     this.view.lblUserName.text="Hello! "+gblUserName;
+    this.view.flxCharity.onClick = this.navigateToCharity;
     this.view.flxTransHistory.showFadingEdges=false;
     this.view.flxTransHistoryCredit.showFadingEdges=false;
     this.setAllData();
@@ -93,6 +94,9 @@ define({
   },
   navigateToOffers:function(){
     commonNavigateFunction("frmOffersNearMe");
+  },
+  navigateToCharity:function(){
+    commonNavigateFunction("frmCharity");
   },
   tabOneSelected:function(){
     animate(this.view.flxAnimate,{"left":"10%"},0.25,()=>{
