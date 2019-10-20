@@ -22,7 +22,7 @@
         0,
         0
     ],
-    "_skin_": "s74f940fae30465fb820eb5a69f48807",
+    "_skin_": "s42d59cb744c4738a81a3ec6a5441c50",
     "_text_": "Rhino Bank",
     "_top_": {
         "type": "number",
@@ -59,7 +59,7 @@
         }
     },
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "h0c28c4ac2f543c2a55672ad0d4701d0",
     "name": "kony.ui.Label",
     "parent": "flxLoginImage",

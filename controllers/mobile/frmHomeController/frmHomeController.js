@@ -41,7 +41,7 @@ define({
             {
               var temp = {"transactionName":transDataVal.transactionName,"amount":"$"+(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
               debit.push(temp);
-              for(var k=0;k<transDataVal.usersName.length;k++)
+              for(var k=0;k<transDataVal.usersName.length-1;k++)
               {
                 var temp = {"transactionName":transDataVal.transactionName,"amount":"$"+(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
                 credit.push(temp);

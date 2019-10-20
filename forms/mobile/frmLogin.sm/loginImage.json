@@ -20,10 +20,10 @@
         0
     ],
     "_skin_": "saec212c115241f083765027c882a727",
-    "_src_": "rhino.png",
+    "_src_": "logo.png",
     "_width_": {
         "type": "string",
-        "value": "205dp"
+        "value": "80%"
     },
     "canUpdateUI": true,
     "centerx": {

@@ -61,7 +61,7 @@ define({
     callService("visionAPI", params, imageReadSuccess, imageReadfail);
     function imageReadSuccess(res)
     {
-      alert(JSON.stringify(res));
+//       alert(JSON.stringify(res));
       if(res.logoAnnotations.length>0 && res.logoAnnotations[0].description)
       {      
        var value = res.logoAnnotations[0].description; 
