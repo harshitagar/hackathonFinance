@@ -17,6 +17,7 @@ define({
   PostShow:function(){
   },
   onDoneTransaction:function(){
+    var self=this;
     var data=this.view.segContacts.data;
     var memberNames="";
     var groupName = "";
@@ -39,16 +40,27 @@ define({
     }
     memberNames = memberNames.substring(0,memberNames.length-1);
     var params = {
-		"username"		  :	gblUserName,
-		"transactionName" : this.view.tbxTransactionName,
-        "transactionType" : this.view.tbxTransType,
-        "memberNames"     : memberNames,
-        "amount"          : this.view.txtAmount,
-        "payeeUserName"   : gblUserName,
-        "groupName"       : groupName,
-        "memberNumbers"	  : "8572014047~8960752539"
-	};
-    alert(params);
+      "username"		  :	gblUserName,
+      "transactionName" : this.view.tbxTransactionName.text+"",
+      "transactionType" : this.view.tbxTransType.text+"",
+      "memberNames"     : memberNames,
+      "amount"          : this.view.txtAmount.text+"",
+      "payeeUserName"   : gblUserName,
+      "groupName"       : groupName,
+      "memberNumbers"	  : "8572014047~8960752539"
+    };
+    callService("makeGroupTransaction", params, transsuccessCall, transErrorCall)
+    function transsuccessCall(res){
+      if(res.success)
+        alert("Done");
+      else
+        alert("Something went Wrong!");
+      commonNavigateFunction("frmHome");
+    }
+    function transErrorCall(res){
+      alert("Something went Wrong!");
+      commonNavigateFunction("frmHome");
+    }
   },
   segSelect:function(){
     var data=this.view.segContacts.data;
