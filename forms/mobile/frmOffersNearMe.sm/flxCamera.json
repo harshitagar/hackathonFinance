@@ -36,7 +36,8 @@
         "value": "50%"
     },
     "children": [
-        "camera"
+        "camera",
+        "lblOffersLabel"
     ],
     "clipbounds": true,
     "containerweight": 100,

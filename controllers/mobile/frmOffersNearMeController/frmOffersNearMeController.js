@@ -85,8 +85,8 @@ define({
     showDefaultLoading();
     var pin1 = {
         id: "id1", // id is mandatory for every pin
-        lat: gblLatitide,
-        lon: gblLongitude,
+        lat: 17.447973,//gblLatitide,
+        lon: 78.371173, //gblLongitude,
         name: "Current Location",
         image: "icon1.png",
         //focus image will be shown while map pin selected

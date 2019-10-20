@@ -11,7 +11,6 @@ define({
     kony.print("onNavigate start...");
     this.view.lblOffersplace.text = context;
     this._placeName = context;
-    alert(this._placeName);
     this.onInit();
   },
   /**
@@ -76,7 +75,7 @@ define({
 
     showDefaultLoading();
     var self = this;
-    var data = {"placeName" : (this._placeName).substr(0,5)};
+    var data = {"placeName" : (this._placeName).substring(0,4)};
     callService("offerByName", data, operationSuccess, operationFailure);
     function operationSuccess(res){
       if(res.success)

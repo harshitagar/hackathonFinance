@@ -23,7 +23,7 @@
         0
     ],
     "_skin_": "s8d91efa71ec4db2a1c6ec09450bd6be",
-    "_text_": "  Click and                                See offers",
+    "_text_": "",
     "_top_": {
         "type": "string",
         "value": "30%"
@@ -62,7 +62,7 @@
     "isvisible": true,
     "kuid": "c3d2dc38e5994249836cc9e03dc60cae",
     "name": "kony.ui.Label",
-    "parent": "FlexContainer0d8e01bf35af540",
+    "parent": "flxCamera",
     "pf": "frmOffersNearMe",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

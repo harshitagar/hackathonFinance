@@ -3,12 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "70dp"
     },
     "_left_": {
         "type": "string",
-        "value": "25dp"
+        "value": "12dp"
     },
     "_margin_": [
         1,
@@ -22,15 +22,15 @@
         0,
         0
     ],
-    "_skin_": "s0a44cff33d840aa9047d63bc2dc922f",
-    "_text_": "",
+    "_skin_": "sfaaf80e83c845df99ac07acdc4c1f08",
+    "_text_": "Click and see offers",
     "_top_": {
         "type": "string",
-        "value": "15%"
+        "value": "15dp"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "60dp"
     },
     "_wrapping_": 2,
     "android": {
@@ -41,12 +41,16 @@
     },
     "canUpdateUI": true,
     "centerx": {
-        "type": "string",
-        "value": "50%"
+        "type": "number",
+        "value": "50"
+    },
+    "centery": {
+        "type": "number",
+        "value": "40"
     },
     "containerweight": 100,
-    "contentalignment": 5,
-    "id": "Label0d74d1b662fc645",
+    "contentalignment": 8,
+    "id": "lblOffersLabel",
     "info": null,
     "ipad": {
         "psp": {
@@ -60,7 +64,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "g589232d92654c7581ded021f9e408ce",
+    "kuid": "d1bd7a772b234494b0802bf90d0a373f",
     "name": "kony.ui.Label",
     "parent": "flxCamera",
     "pf": "frmOffersNearMe",
@@ -68,6 +72,5 @@
     "retainflexpositionproperties": false,
     "textstyle": {},
     "tooltip": "",
-    "wType": "Label",
-    "zindex": 1
+    "wType": "Label"
 }

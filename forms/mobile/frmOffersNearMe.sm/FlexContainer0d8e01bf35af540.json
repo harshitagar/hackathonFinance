@@ -7,7 +7,7 @@
     },
     "_height_": {
         "type": "string",
-        "value": "60%"
+        "value": "95.93%"
     },
     "_left_": {
         "type": "string",
@@ -44,7 +44,7 @@
     "id": "FlexContainer0d8e01bf35af540",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "g80ebb7190554d9ab7a80b0cd165a85f",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
