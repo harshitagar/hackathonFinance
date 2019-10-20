@@ -22,7 +22,7 @@
         0,
         0
     ],
-    "_skin_": "se28ed4ad9a7469b8f5355122f2aeb73",
+    "_skin_": "s09ebc1e3e9f4fc4b51579d70f389813",
     "_text_": "Login",
     "_top_": {
         "type": "string",
@@ -35,12 +35,12 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "50%"
+        "value": "51%"
     },
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "se28ed4ad9a7469b8f5355122f2aeb73",
+    "focusskin": "s09ebc1e3e9f4fc4b51579d70f389813",
     "id": "btnlogin",
     "ide_onClick": "AS_Button_cd583a9a3e5d4833b9d87fcb771177b6",
     "info": null,
