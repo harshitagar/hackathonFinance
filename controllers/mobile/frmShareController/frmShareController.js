@@ -13,6 +13,7 @@ define({
     this.view.flxSeg.showFadingEdges=false;
   },
   PostShow:function(){
+    
     this.getContactsInfo();
     this.view.lblUserName.text = gblUserName;
     this.view.flxBackAddGrp.onClick=()=>{
@@ -42,7 +43,7 @@ define({
     };
     callService("getAllTransForUser", params, this.getAllTransForUserSuccessCallback.bind(this,res.Groups), this.showContactsFail);
   },
-  
+
   segSelect:function(){
     var data=this.view.segContacts.data;
     var slectedRow=this.view.segContacts.selectedRowIndex[1]+"";
@@ -50,7 +51,7 @@ define({
     this.view.segContacts.setDataAt( data[parseInt(slectedRow)], parseInt(slectedRow), 0);
   },
   showContactsSuccess:function(response){
-    
+
     this.view.segContacts.removeAll();
     //animate(this.view.flxAddNewGrp,{"centerX":"50%","centerY":"50%"});
     // alert(response.Users);
@@ -67,7 +68,7 @@ define({
     this.view.segContacts.setData(contactsData);
     this.view.flxAdd.onClick=()=>{animate(this.view.flxAddNewGrp,{"centerX":"50%","centerY":"50%"});};
     //  this.view.segContacts.removeAll();
-this.getGroupInfo();
+    this.getGroupInfo();
   },
   showContactsFail:function(error){
     hideDefaultLoading();
@@ -120,12 +121,14 @@ this.getGroupInfo();
     return data;
   },
   getAllTransForUserSuccessCallback : function(groups, res){
+    this.view.flxBody.removeAll();
     var transactions = res.Transactions;
     for(var i=0; i<groups.length; i++){
       var groupName = groups[i].groupName;
       var usersName = groups[i].usersName;
       var segData = this.getSegData(transactions,groupName);
       var grpFlx = this.getGroupFlx(i,groupName , usersName.length, "Total Spent: "+grpTotal, segData);
+      
       this.view.flxBody.add(grpFlx);
     }
     hideDefaultLoading();
