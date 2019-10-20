@@ -104,6 +104,7 @@ define({
       }else{
         this.view.segmentOffersNearMe.setVisibility(false);
         this.view.flxNoOffer.setVisibility(true);
+        hideDefaultLoading();
       }
     }
 
@@ -113,5 +114,6 @@ define({
       this.view.segmentOffersNearMe.setVisibility(false);
       this.view.flxNoOffer.setVisibility(true);
     }
+    hideDefaultLoading();
   },
 });

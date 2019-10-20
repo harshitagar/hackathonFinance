@@ -74,7 +74,7 @@ define({
     
     function imageReadfail(res)
     {
-      alert("We can't find where you are");
+      alert("We are unable find where you are");
       hideDefaultLoading();
       commonNavigateFunction("frmOffersNearMe");
     }

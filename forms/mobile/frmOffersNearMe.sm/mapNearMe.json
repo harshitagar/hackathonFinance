@@ -31,6 +31,11 @@
         "type": "string",
         "value": "100%"
     },
+    "android": {
+        "psp": {
+            "showZoomControl": true
+        }
+    },
     "calloutwidth": 80,
     "canUpdateUI": true,
     "containerweight": 100,
@@ -57,6 +62,7 @@
     "retainflexpositionproperties": false,
     "screenlevelwidget": false,
     "showCurrentLocation": "circle",
+    "showZoomControl": true,
     "wType": "Map",
     "zoomlevel": 4
 }
