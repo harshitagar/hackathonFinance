@@ -18,7 +18,7 @@ define({
     this.view.flxTransHistoryCredit.showFadingEdges=false;
     this.setAllData();
     this.view.flxSharePay.onClick = function(){
-      
+      commonNavigateFunction("frmpay");
     };
   },
   setAllData:function(){

@@ -7,10 +7,10 @@
             "name": "eventobject"
         }],
         "contextObj": {
-            "name": "frmpay",
             "type": "forms",
             "platform": null,
-            "KUID": "c8aedf093a8f4513a662f42963fd85bc"
+            "KUID": "c8aedf093a8f4513a662f42963fd85bc",
+            "name": "frmpay"
         },
         "language": "js",
         "actions": [{

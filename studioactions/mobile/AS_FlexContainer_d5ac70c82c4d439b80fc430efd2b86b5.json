@@ -7,10 +7,10 @@
             "name": "eventobject"
         }],
         "contextObj": {
-            "name": "frmShare",
             "type": "forms",
             "platform": "",
-            "KUID": "b049e9e3c621478f8e7a81ad3c5edcbb"
+            "KUID": "b049e9e3c621478f8e7a81ad3c5edcbb",
+            "name": "frmShare"
         },
         "language": "js",
         "actions": [{

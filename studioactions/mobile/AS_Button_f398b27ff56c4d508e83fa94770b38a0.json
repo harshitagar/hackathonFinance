@@ -7,10 +7,10 @@
             "name": "eventobject"
         }],
         "contextObj": {
-            "name": "frmLogin",
             "type": "forms",
             "platform": "",
-            "KUID": "be0ce36808e448de9bf6dca7f96d7012"
+            "KUID": "be0ce36808e448de9bf6dca7f96d7012",
+            "name": "frmLogin"
         },
         "language": "js",
         "actions": [{

@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "40dp"
+        "value": "35dp"
     },
     "_margin_": [
         0,
@@ -23,7 +23,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblOffer"
+        "lblOffer",
+        "CopyFlexContainer0e42b2667ee6a49"
     ],
     "clipbounds": true,
     "containerId": true,
@@ -40,7 +41,7 @@
     "isTemplate": true,
     "isvisible": true,
     "kuid": "dcf6a23f949f4401b9fe444dde63ca42",
-    "layouttype": 4,
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "offersRowTemplate",
     "pf": "offersRowTemplate",

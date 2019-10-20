@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "45dp"
+        "value": "6%"
     },
     "_left_": {
         "type": "string",
@@ -23,10 +23,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s202d22373344e4cba29e38715747f5d",
+    "_skin_": "s53667ca1e034d65ab8789fb83c192b6",
     "_top_": {
         "type": "string",
-        "value": "25%"
+        "value": "34%"
     },
     "_width_": {
         "type": "string",
@@ -36,8 +36,10 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "FlexContainer0e7beb1ef46bc42",
-        "FlexContainer0i9ebad0cb97e48"
+        "flxSelMembers",
+        "flxSelGroups",
+        "CopyFlexContainer0dc57923c85b247",
+        "CopyFlexContainer0fb13564b0cb442"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -47,7 +49,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "h008c295d2194f298d994c873a6f56c5",
-    "layouttype": 3,
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxAddNewGrp",
     "pf": "frmpay",
@@ -57,5 +59,6 @@
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1
+    "widgetalignment": 1,
+    "zindex": 3
 }

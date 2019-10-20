@@ -33,7 +33,7 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "50.00%"
+        "value": "50%"
     },
     "children": [
         "Label0a81d225035ce4a",
@@ -58,5 +58,5 @@
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 10
+    "zindex": 11
 }

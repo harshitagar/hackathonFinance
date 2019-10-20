@@ -7,10 +7,10 @@
             "name": "eventobject"
         }],
         "contextObj": {
-            "name": "frmHome",
             "type": "forms",
             "platform": "",
-            "KUID": "j5481af9f81642a69d5790f389780cb2"
+            "KUID": "j5481af9f81642a69d5790f389780cb2",
+            "name": "frmHome"
         },
         "language": "js",
         "actions": [{

@@ -1,6 +1,6 @@
 {
   "android": {
-    "font_name": "Helvetica",
+    "font_name": "default",
     "font_size": 100,
     "isForked": false
   },
@@ -9,9 +9,9 @@
     "font_size": 100,
     "isForked": false
   },
-  "background_color": "ffffff00",
+  "background_color": "00000000",
   "bg_type": "one",
-  "border_color": "333333ff",
+  "border_color": "424242ff",
   "border_style": "plain",
   "border_type": 0,
   "border_width": 0,
@@ -25,14 +25,14 @@
   "font_name": "iphoneSystem",
   "font_size": 100,
   "font_style": "normal",
-  "font_weight": "bold",
+  "font_weight": "normal",
   "ipad": {
     "font_name": "System",
     "font_size": 100,
     "isForked": false
   },
   "iphone": {
-    "font_name": "Helvetica-Bold",
+    "font_name": "System",
     "font_size": 100,
     "isForked": false
   },
@@ -42,7 +42,7 @@
     "font_size": 100,
     "isForked": false
   },
-  "kuid": "s7707d5da7c34df587e1e2e42482251c",
+  "kuid": "s8d91efa71ec4db2a1c6ec09450bd6be",
   "spaan": {
     "font_name": "Helvetica",
     "font_size": 100,
@@ -83,7 +83,7 @@
     "font_size": 100,
     "isForked": false
   },
-  "wType": "TextField",
+  "wType": "Label",
   "watchos": {
     "font_name": "System",
     "font_size": 100,

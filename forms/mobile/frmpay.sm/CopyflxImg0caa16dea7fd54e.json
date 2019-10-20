@@ -48,7 +48,7 @@
     "id": "CopyflxImg0caa16dea7fd54e",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "b476671d5ae04c7d8877e50309433e52",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

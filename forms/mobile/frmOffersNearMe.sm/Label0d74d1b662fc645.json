@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "5%"
+        "value": "25dp"
     },
     "_margin_": [
         1,
@@ -22,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "s51d984b178841c5aaa4601a38b14b57",
-    "_text_": "Select Members",
+    "_skin_": "s0a44cff33d840aa9047d63bc2dc922f",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "2.50%"
+        "value": "15%"
     },
     "_width_": {
         "type": "ref",
@@ -44,13 +44,9 @@
         "type": "string",
         "value": "50%"
     },
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "CopylblContacts0b21650188bbc4b",
+    "id": "Label0d74d1b662fc645",
     "info": null,
     "ipad": {
         "psp": {
@@ -64,10 +60,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "d686d5805bea4f309a4559953b520950",
+    "kuid": "g589232d92654c7581ded021f9e408ce",
     "name": "kony.ui.Label",
-    "parent": "flxSelMembers",
-    "pf": "frmpay",
+    "parent": "flxCamera",
+    "pf": "frmOffersNearMe",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

@@ -1,6 +1,10 @@
 {
     "DNDConfig": null,
     "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_height_": {
         "type": "string",
         "value": "1dp"
@@ -26,24 +30,28 @@
     "_skin_": "s82fec5a526a471eaf416570d5cf0e7e",
     "_top_": {
         "type": "string",
-        "value": "75%"
+        "value": "64%"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "60%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyFlexContainer0e42b2667ee6a49",
+    "id": "CopyflxUL0de2fda36b3244f",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
-    "kuid": "fcca2712e8ea4e2fa3bcf6087597a340",
+    "isvisible": true,
+    "kuid": "ia801946e9c34817a22a025b41b8afeb",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "frmGrpTop",

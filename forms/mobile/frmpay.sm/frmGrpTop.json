@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "25%"
+        "value": "45%"
     },
     "_left_": {
         "type": "string",
@@ -37,9 +37,17 @@
     "canUpdateUI": true,
     "children": [
         "CopyflxImg0caa16dea7fd54e",
-        "txtGrpName",
+        "btnCreateTrans",
+        "txtVender",
+        "tbxTransactionName",
+        "txtAmount",
         "CopyFlexContainer0e42b2667ee6a49",
-        "btnCreateGroup"
+        "flxUL1",
+        "flxUL2",
+        "flxUL3",
+        "tbxTransType",
+        "CopyflxUL0de2fda36b3244f",
+        "camera"
     ],
     "clipbounds": true,
     "containerweight": 100,

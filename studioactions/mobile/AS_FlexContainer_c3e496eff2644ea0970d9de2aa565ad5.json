@@ -7,10 +7,10 @@
             "name": "eventobject"
         }],
         "contextObj": {
-            "name": "frmOffersImage",
             "type": "forms",
             "platform": null,
-            "KUID": "c5172c44c37c4c4797b33038162e3f9e"
+            "KUID": "c5172c44c37c4c4797b33038162e3f9e",
+            "name": "frmOffersImage"
         },
         "language": "js",
         "actions": [{
