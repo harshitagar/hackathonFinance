@@ -13,8 +13,36 @@ define({
     this.view.flxSelGroups.onClick = this.getAllGroups;
     this.view.segContacts.onRowClick = this.segSelect;
     this.view.btnCreateTrans.onClick = this.onDoneTransaction;
+    this.view.camera.onCapture = this.addCatagoryFromVision;
   },
   PostShow:function(){
+  },
+  addCatagoryFromVision:function(){
+    var self=this;
+    showDefaultLoading();
+    var img = this.view.camera.base64;
+    //     this.view.img.base64=img;
+    var params = {
+      "image":img
+    };
+    callService("visionAPI", params, imageReadSuccess, imageReadfail);
+    function imageReadSuccess(res)
+    {
+      hideDefaultLoading();
+      if(res.logoAnnotations.length>0 && res.logoAnnotations[0].description)
+      {
+        self.view.tbxTransType.text = ""+res.logoAnnotations[0].description;
+      }
+      else
+      {
+        alert("We can't locate where you are!\nPlease Enter Transaction Type Mannually");
+      }
+    }
+    function imageReadfail(res)
+    {
+      hideDefaultLoading();
+      alert("We can't locate where you are!\nPlease Enter Transaction Type Mannually");
+    }
   },
   onDoneTransaction:function(){
     var self=this;
