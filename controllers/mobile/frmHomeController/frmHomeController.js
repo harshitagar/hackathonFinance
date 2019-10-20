@@ -25,7 +25,7 @@ define({
   setAllData:function(){
     //     showDefaultLoading();
     var self = this;
-    var params = gblUserName;
+    var params = {"username":gblUserName};
     var service = "getAllTransForUser";
     callService(service, params, userTransSuccessCall, userTransErrorCall);
     function userTransSuccessCall(res){
