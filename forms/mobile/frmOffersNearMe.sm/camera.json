@@ -76,5 +76,6 @@
     "wType": "Camera",
     "watchos": {
         "render": false
-    }
+    },
+    "zindex": 10
 }
