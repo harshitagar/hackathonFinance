@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "35dp"
+        "value": "10%"
     },
     "_left_": {
         "type": "string",
@@ -22,12 +22,12 @@
         0,
         0
     ],
-    "_placeholder_": "Enter Amount",
+    "_placeholder_": "Transaction Name",
     "_skin_": "s7707d5da7c34df587e1e2e42482251c",
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "78%"
+        "value": "31%"
     },
     "_width_": {
         "type": "string",
@@ -48,17 +48,17 @@
     "containerweight": 100,
     "contentalignment": 5,
     "focusskin": "s7707d5da7c34df587e1e2e42482251c",
-    "id": "txtGrpName",
+    "id": "tbxTransactionName",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
     "keyboardtype": "A",
-    "kuid": "jea74a50046442e888553a5f1228a02c",
+    "kuid": "e2a8c0ac156f490988abdbdc947a045b",
     "mode": "A",
     "name": "kony.ui.TextBox2",
     "parent": "frmGrpTop",
     "pf": "frmpay",
-    "placeholderskin": "s7707d5da7c34df587e1e2e42482251c",
+    "placeholderskin": "saa611a88bd74ae285110604ae122eca",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "securetextentry": false,

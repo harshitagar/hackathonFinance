@@ -1,0 +1,89 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizCamera",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "28%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s11dcbe6c98e4f05a5ea577249ac7648",
+    "_text_": "Get\nCatagory Using\nVision",
+    "_top_": {
+        "type": "string",
+        "value": "68%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "accessmode": "public",
+    "androidwearos": {
+        "render": false
+    },
+    "camerasource": "rear",
+    "canUpdateUI": true,
+    "captureorientation": 2,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "render": false
+    },
+    "id": "camera",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "captureOrientation": 2
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d996e4817b0643cab7a7d7ff232e8f7d",
+    "name": "kony.ui.Camera",
+    "oncapture": null,
+    "parent": "frmGrpTop",
+    "pf": "frmpay",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "spaan": {
+        "render": false
+    },
+    "spaandroidtablet": {
+        "render": false
+    },
+    "spabb": {
+        "render": false
+    },
+    "spaip": {
+        "render": false
+    },
+    "spaipad": {
+        "render": false
+    },
+    "spawindowstablet": {
+        "render": false
+    },
+    "spawinphone8": {
+        "render": false
+    },
+    "wType": "Camera",
+    "watchos": {
+        "render": false
+    },
+    "zindex": 1
+}

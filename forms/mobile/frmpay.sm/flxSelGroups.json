@@ -23,7 +23,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s202d22373344e4cba29e38715747f5d",
+    "_skin_": "sd4ea536b82f486abbd7299bdb25c2fd",
     "_top_": {
         "type": "string",
         "value": "0"
@@ -36,16 +36,16 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "CopylblContacts0b21650188bbc4b"
+        "CopylblContacts0j900d5a055c44d"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "FlexContainer0e7beb1ef46bc42",
+    "id": "flxSelGroups",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ga3c755adc4c4c2a99373d6ea62be1fc",
+    "kuid": "c5011bd497d440ba9ee0744931ee5395",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "FlexContainer0i7d293192bc445",
