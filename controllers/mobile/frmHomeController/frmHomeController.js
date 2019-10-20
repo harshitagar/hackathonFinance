@@ -39,7 +39,7 @@ define({
             transDataVal = transData[i];
             if(transDataVal.payeeUserName == gblUserName)
             {
-              var temp = {"transactionName":transDataVal.transactionName,"amount":"$"+(transDataVal.amount/(transDataVal.usersName.length)).toFixed(2)};
+              var temp = {"transactionName":transDataVal.transactionName,"amount":"$"+(transDataVal.amount).toFixed(2)};
               debit.push(temp);
               for(var k=0;k<transDataVal.usersName.length-1;k++)
               {
@@ -85,7 +85,7 @@ define({
     params = {"username":gblUserName};
     callService("getUser", params, userSuccessCall, userErrorCall);
     function userSuccessCall(res){
-      self.view.lblBalance.text = "Balance: $"+res.User.accountBalance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+".00";
+      self.view.lblBalance.text = "Balance: $"+res.User.accountBalance.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
       hideDefaultLoading();
     }
     function userErrorCall(res){
