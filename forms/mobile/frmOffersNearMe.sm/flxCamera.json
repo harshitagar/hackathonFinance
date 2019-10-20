@@ -36,7 +36,6 @@
         "value": "50%"
     },
     "children": [
-        "Label0a81d225035ce4a",
         "camera"
     ],
     "clipbounds": true,
