@@ -5,10 +5,6 @@
         "type": "string",
         "value": "100%"
     },
-    "_left_": {
-        "type": "string",
-        "value": "0"
-    },
     "_margin_": [
         0,
         0,
@@ -23,14 +19,18 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sd4ea536b82f486abbd7299bdb25c2fd",
-    "_top_": {
+    "_right_": {
         "type": "string",
+        "value": "1.50%"
+    },
+    "_skin_": "sca659b131234b74a9a3f03b079d0e85",
+    "_top_": {
+        "type": "number",
         "value": "0"
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "48%"
     },
     "allboxes": [],
     "autogrowmode": 0,

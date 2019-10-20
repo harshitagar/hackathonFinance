@@ -22,7 +22,7 @@
         0,
         0
     ],
-    "_placeholder_": "Enter Amount",
+    "_placeholder_": "Please Enter Amount",
     "_skin_": "s7707d5da7c34df587e1e2e42482251c",
     "_text_": "",
     "_top_": {
@@ -46,7 +46,7 @@
     "containerheight": "",
     "containerheightmode": 1,
     "containerweight": 100,
-    "contentalignment": 5,
+    "contentalignment": 4,
     "focusskin": "s7707d5da7c34df587e1e2e42482251c",
     "id": "txtAmount",
     "info": null,
