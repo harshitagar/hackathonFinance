@@ -44,11 +44,11 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "2dp"
+        "value": "1%"
     },
     "_width_": {
         "type": "string",
-        "value": "98%"
+        "value": "97%"
     },
     "android": {
         "psp": {
@@ -57,6 +57,10 @@
     },
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "counter": "00",
     "editstyle": "none",
