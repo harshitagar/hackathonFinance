@@ -14,13 +14,10 @@ define({
   },
   PostShow:function(){
     this.getContactsInfo();
-    
     this.view.lblUserName.text = gblUserName;
     this.view.flxBackAddGrp.onClick=()=>{
       animate(this.view.flxAddNewGrp,{"centerX":"150%","centerY":"150%"});};
-
     this.view.segContacts.onRowClick=this.segSelect.bind(this);
-    
     this.view.btnCreateGroup.onClick=this.servCreateGroup.bind(this);
   },
   getContactsInfo:function(){
@@ -225,11 +222,11 @@ this.getGroupInfo();
       "id": "flxInfo"+index,
       "isVisible": true,
       "layoutType": kony.flex.FREE_FORM,
-      "left": "50%",
+      "left": "45%",
       "isModalContainer": false,
       "skin": "slFbox",
       "top": "37dp",
-      "width": "45%",
+      "width": "52%",
       "zIndex": 1
     }, {}, {});
     flxInfo.setDefaultUnit(kony.flex.DP);
@@ -318,7 +315,7 @@ this.getGroupInfo();
       "centerX": "50%",
       "clipBounds": true,
       "enableScrolling": true,
-      "height": "68%",
+      "height": "66%",
       "horizontalScrollIndicator": true,
       "id": "flxTransHistory"+index,
       "isVisible": true,
@@ -327,7 +324,7 @@ this.getGroupInfo();
       "pagingEnabled": false,
       "scrollDirection": kony.flex.SCROLL_VERTICAL,
       "skin": "CopyslFSbox0b3083611992b48",
-      "top": "30%",
+      "top": "32%",
       "verticalScrollIndicator": false,
       "width": "90%",
       "zIndex": 1
