@@ -1,12 +1,13 @@
 {
     "DNDConfig": null,
+    "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "45dp"
+        "value": "97%"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "9dp"
     },
     "_margin_": [
         0,
@@ -22,50 +23,52 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s641b1f334394157bcd58134c542412c",
+    "_skin_": "s9126664d93841af822c526315310ad5",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "1%"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "90%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
-        "lblName",
-        "lblCheck",
-        "CopyFlexContainer0e42b2667ee6a49"
+        "segContacts"
     ],
     "clipbounds": true,
-    "containerId": true,
     "containerweight": 100,
-    "controllerInfo": {
-        "default": {
-            "channel": "mobile",
-            "name": "flxAddMembersController"
-        }
-    },
-    "disabledSkins": {},
+    "decelerat": false,
+    "dragg": false,
     "enablescrolling": true,
-    "focusskin": "s76212ccd9d74677b9149088e9e28b89",
-    "id": "flxAddMembers",
+    "horizontalscrollindicator": true,
+    "id": "flxSeg",
     "info": null,
-    "isTemplate": true,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "dc4cb206a12241d09a8e7934e4638f5a",
+    "kuid": "hd6f65ba2ef94c59b69c327cde28c26a",
     "layouttype": 2,
-    "name": "kony.ui.FlexContainer",
-    "parent": "tempAddMembers",
-    "pf": "tempAddMembers",
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "flxAddGrpBody",
+    "pf": "frmCharity",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
+    "scrolldirection": 2,
     "snapgridsize": 10,
     "snaptogrid": true,
-    "wType": "FlexContainer",
-    "widgetalignment": 1
+    "track": false,
+    "verticalscrollindicator": false,
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1,
+    "zindex": 1
 }
