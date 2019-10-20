@@ -11,7 +11,7 @@ define({
     kony.print("onNavigate start...");
     this.view.lblOffersplace.text = context;
     this._placeName = context;
-    alert(this._placeName);
+    //     alert(this._placeName);
     this.onInit();
   },
   /**
@@ -29,7 +29,7 @@ define({
      * @description preShow of the form
      */
   onPreShow: function(){
-	
+
     kony.print(this._formName + " : onPreShow start...");
     var self = this;
     this.setOffersData();
@@ -73,13 +73,12 @@ define({
   },
 
   setOffersData : function(value){
-
     showDefaultLoading();
     var self = this;
     var data = {"placeName" : (this._placeName).substr(0,5)};
     callService("offerByName", data, operationSuccess, operationFailure);
     function operationSuccess(res){
-      if(res.success)
+      if(res)
       { 
         var input = res.offers;
         var data = [];
@@ -98,22 +97,22 @@ define({
             data.push(row);
           });
         });
-        
+
         self.view.segmentOffersNearMe.setData(data);
         self.view.segmentOffersNearMe.setVisibility(true);
         self.view.flxNoOffer.setVisibility(false);
         hideDefaultLoading();
       }else{
-       this.view.segmentOffersNearMe.setVisibility(false);
-       this.view.flxNoOffer.setVisibility(true);
+        this.view.segmentOffersNearMe.setVisibility(false);
+        this.view.flxNoOffer.setVisibility(true);
       }
     }
-    
+
     function operationFailure(res){
       alert("No Offers Available");
       hideDefaultLoading();
       this.view.segmentOffersNearMe.setVisibility(false);
-       this.view.flxNoOffer.setVisibility(true);
+      this.view.flxNoOffer.setVisibility(true);
     }
   },
 });
